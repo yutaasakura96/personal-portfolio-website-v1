@@ -34,7 +34,7 @@ export default function Header() {
           setSelectedIndex1={setSelectedIndex1}
         />
       </div>
-      <header className={`${isScrolled ? 'headerShow' : ''} fixed top-0 z-50 transition-all duration-500`}
+      <header className={`${isScrolled ? 'headerShow' : ''} w-full fixed top-0 z-50 transition-all duration-500`}
       style={{
         backgroundColor: isScrolled ? '#fff' : 'transparent',
         boxShadow: isScrolled ? '#48afde -10px 25px 50px 10px' : ''
