@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import Drawer from './DiagonalDrawer'
 
 export default function Header() {
   const [selectedIndex1, setSelectedIndex1] = useState(0);
@@ -19,15 +20,36 @@ export default function Header() {
     };
   }, []);
 
-  console.log(isScrolled);
+  const openDrawer = ()=>{
+    setIsOpen(true)
+  }
 
   return (
     <React.Fragment>
+      <div className={`diagonal-drawer ${isOpen ? 'open' : ''}`}>
+        <Drawer
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          selectedIndex1={selectedIndex1}
+          setSelectedIndex1={setSelectedIndex1}
+        />
+      </div>
       <header className={`${isScrolled ? 'headerShow' : ''} fixed top-0 z-50 transition-all duration-500`}
       style={{
         backgroundColor: isScrolled ? '#fff' : 'transparent',
         boxShadow: isScrolled ? '#48afde -10px 25px 50px 10px' : ''
       }}>
+
+        <div className='relative'>
+          <div
+          onClick={openDrawer}
+          className='z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#48afde] flex justify-center items-center rounded-br-3xl'>
+            <div className='relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center'>
+              <img src='/drawer.png' alt='drawer-item' className='w-[150px] h-10'/>
+            </div>
+          </div>
+        </div>
+
         <nav className="invisible xl:visible xl:max-w-4xl 2xl:max-w-7xl mx-auto ">
            <ul className="flex font-recoletaBlack flex-row items-center h-24">
                <li className="group text-2xl relative font-bold mr-20" >
