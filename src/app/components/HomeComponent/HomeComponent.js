@@ -1,5 +1,8 @@
 import React from "react";
 import { Hind } from "next/font/google";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -7,6 +10,90 @@ const hind = Hind({
 });
 
 export default function HomeComponent() {
+  var settings = {
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    speed: 2000,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1760,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1460,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1290,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <React.Fragment>
       <div
@@ -61,6 +148,117 @@ export default function HomeComponent() {
                   decoding="async"
                   alt="profile picture"
                 ></img>
+              </div>
+            </div>
+          </div>
+          <div className="container m-auto absolute">
+            <div className="px-3">
+              <div
+                className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl  px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
+                style={{ boxShadow: "#48afde -10px 25px 50px 10px" }}
+              >
+                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
+                  <Slider {...settings}>
+                    <img
+                      height={8}
+                      width={50}
+                      src="/bootstrap.png"
+                      alt="bootstrap"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/css.png"
+                      alt="css"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/reactjs.png"
+                      alt="reactjs"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer  "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/nextjs.png"
+                      alt="nextjs"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/git.png"
+                      alt="git"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/github.png"
+                      alt="github"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/heroku.png"
+                      alt="heroku"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/html.png"
+                      alt=""
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/javascript.png"
+                      alt="javascript"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/netlify.png"
+                      alt="netlify"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/nextjs.png"
+                      alt="nextjs"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/postgres.png"
+                      alt="postgres"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/html.png"
+                      alt="rails"
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                    <img
+                      height={8}
+                      width={50}
+                      src="/ruby.png"
+                      alt=""
+                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                    />
+                  </Slider>
+                </div>
               </div>
             </div>
           </div>
