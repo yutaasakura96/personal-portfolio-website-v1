@@ -1,8 +1,8 @@
 import React from "react";
-import { Hind } from "next/font/google";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Hind } from "next/font/google";
 
 const hind = Hind({
   subsets: ["latin"],
