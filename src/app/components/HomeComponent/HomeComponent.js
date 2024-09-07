@@ -144,9 +144,10 @@ export default function HomeComponent() {
             <div className="col-span-12 pt-[50px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md:col-span-7">
               <div className="container m-auto">
                 <img
-                  src="/yutahomepage.png"
+                  src="/pixaryuta.png"
                   decoding="async"
                   alt="profile picture"
+                  className='max-w-[60%] translate-x-32'
                 ></img>
               </div>
             </div>
@@ -160,103 +161,26 @@ export default function HomeComponent() {
                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
                     <img
-                      height={8}
-                      width={50}
                       src="/bootstrap.png"
                       alt="bootstrap"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                      className="h-12"
                     />
+                    <img src="/css.png" alt="css" className="h-12" />
+                    <img src="/reactjs.png" alt="reactjs" className="h-12 " />
+                    <img src="/nextjs.png" alt="nextjs" className="h-12" />
+                    <img src="/git.png" alt="git" className="h-12" />
+                    <img src="/github.png" alt="github" className="h-12" />
+                    <img src="/heroku.png" alt="heroku" className="h-12" />
+                    <img src="/html.png" alt="" className="h-12" />
                     <img
-                      height={8}
-                      width={50}
-                      src="/css.png"
-                      alt="css"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/reactjs.png"
-                      alt="reactjs"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer  "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/nextjs.png"
-                      alt="nextjs"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/git.png"
-                      alt="git"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/github.png"
-                      alt="github"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/heroku.png"
-                      alt="heroku"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/html.png"
-                      alt=""
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
                       src="/javascript.png"
                       alt="javascript"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
+                      className="h-12"
                     />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/netlify.png"
-                      alt="netlify"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/nextjs.png"
-                      alt="nextjs"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/postgres.png"
-                      alt="postgres"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/html.png"
-                      alt="rails"
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
-                    <img
-                      height={8}
-                      width={50}
-                      src="/ruby.png"
-                      alt=""
-                      className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer "
-                    />
+                    <img src="/netlify.png" alt="netlify" className="h-12" />
+                    <img src="/nextjs.png" alt="nextjs" className="h-12" />
+                    <img src="/postgres.png" alt="postgres" className="h-12" />
+                    <img src="/ruby.png" alt="" className="h-12" />
                   </Slider>
                 </div>
               </div>
