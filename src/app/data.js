@@ -21,10 +21,8 @@ export const AboutData = [
     img: "/second.svg",
     array: [
       "HTML",
-      "CSS",
-      "SASS",
-      "TailwindCSS",
-      "Bootstrap",
+      "CSS/SASS",
+      "TailwindCSS/Bootstrap",
       "JavaScript (ES6)",
       "ReactJS",
       "NextJS",

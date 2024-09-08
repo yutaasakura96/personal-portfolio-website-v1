@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { Hind } from "next/font/google";
-
 import { AboutData } from "@/app/data";
+
+import './aboutme.css'
 
 const hind = Hind({
   subsets: ["latin"],
@@ -152,7 +153,9 @@ export default function AboutMe() {
           </div>
 
           <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
-            <div className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
+            <div
+            style={{height: '30rem'}}
+            className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
               <section
                 className={`fade-left overflow-hidden ${
                   isFaded ? "fade-out" : ""
