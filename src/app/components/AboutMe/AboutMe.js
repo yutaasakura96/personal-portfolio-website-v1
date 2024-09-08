@@ -29,6 +29,22 @@ export default function AboutMe() {
     setTimeout(() => myFunctions(data), 600);
   };
 
+  const HandleNext = () => {
+    if (selectedIndex < AboutData.length - 1) {
+      handleCardClick(AboutData[selectedIndex + 1], selectedIndex + 1);
+    } else {
+      handleCardClick(AboutData[0], 0);
+    }
+  };
+
+  const HandlePrev = () => {
+    if (selectedIndex > 0) {
+      handleCardClick(AboutData[selectedIndex - 1], selectedIndex - 1);
+    } else {
+      handleCardClick(AboutData[AboutData.length - 1], AboutData.length - 1);
+    }
+  };
+
   return (
     <React.Fragment>
       <div
@@ -136,8 +152,7 @@ export default function AboutMe() {
           </div>
 
           <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
-            <div
-            className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
+            <div className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
               <section
                 className={`fade-left overflow-hidden ${
                   isFaded ? "fade-out" : ""
@@ -161,16 +176,61 @@ export default function AboutMe() {
                   ))}
                 </ul>
               </section>
-              <div className={`absolute perspective-500 -top-7 sm:top-30 right-0 sm:-right-20 card ${
+              <div
+                className={`absolute perspective-500 -top-7 sm:top-30 right-0 sm:-right-20 card ${
                   isFlipped ? "flipped" : ""
-                }`}>
-                  <div className='card-inner'>
-                    <div className='rounded-2xl cursor-pointer  text-7xl  xl:text-9xl font-recoletaBlack text-white bg-[#47626D]  p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48  transform transition duration-500 transform-preserve -rotate-6 transform-preserve'>
+                }`}
+              >
+                <div className="card-inner">
+                  <div className="rounded-2xl cursor-pointer  text-7xl  xl:text-9xl font-recoletaBlack text-white bg-[#47626D]  p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48  transform transition duration-500 transform-preserve -rotate-6 transform-preserve">
                     <span className="text-2xl xl:text-6xl mr-2 sm:mr-3">*</span>
                     {mapData.count}
-                    </div>
                   </div>
                 </div>
+              </div>
+
+              <div className="absolute right-10 -bottom-5 flex">
+                <a
+                  onClick={HandlePrev}
+                  className="w-12 h-12 rounded-xl mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="w-6 h-6 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 19l-7-7 7-7"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  onClick={HandleNext}
+                  className="w-12 h-12 rounded-xl mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="w-6 h-6 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>
