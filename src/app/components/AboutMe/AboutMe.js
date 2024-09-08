@@ -111,9 +111,12 @@ export default function AboutMe() {
                     />
                   </div>
                   <h4
-                    className={`text-center text-sm lg:text-xl  font-recoletaBold transition-colors duration-500 group-hover:text-white text-[#47626D] mt-3 ${
-                      selectedIndex === index ? "text-white" : ""
-                    }`}
+                    className={`text-center text-sm lg:text-xl font-recoletaBold transition-colors duration-500 mt-3
+    ${
+      selectedIndex === index
+        ? "text-white"
+        : "text-[#47626D] group-hover:text-white"
+    }`}
                   >
                     {item.title}
                   </h4>
@@ -129,6 +132,34 @@ export default function AboutMe() {
                   </div>
                 </a>
               ))}
+            </div>
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
+            <div className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
+              <section
+                className={`fade-left overflow-hidden ${
+                  isFaded ? "fade-out" : ""
+                }`}
+              >
+                <p
+                  class={`text-[#47626D] ${hind.className}  text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100`}
+                >
+                  My Tech Skills Are:{" "}
+                </p>
+                <h2 class="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100">
+                  {mapData?.title}
+                </h2>
+                <ul
+                  class={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined`}
+                >
+                  {mapData?.array?.map((obj) => (
+                    <li key={obj} class="mb-2">
+                      {obj}
+                    </li>
+                  ))}
+                </ul>
+              </section>
             </div>
           </div>
         </section>

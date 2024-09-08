@@ -51,7 +51,6 @@ export const AboutData = [
       "Git / Github",
       "Bash / Powershell",
       "NPM / Yarn",
-      "Plesk Control Panel",
       "Vercel / Heroku / Netlify",
       "Postman / Insomnia",
     ],
