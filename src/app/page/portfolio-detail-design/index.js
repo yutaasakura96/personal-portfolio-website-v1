@@ -14,17 +14,22 @@ export default function Index({ id, data, DataArray }) {
   const [prev, setPrev] = useState();
 
   useEffect(() => {
-    if (JSON.parse(id) === DataArray.length - 1) {
-      setNext(0);
-    } else {
-      setNext(JSON.parse(id) + 1);
-    }
-    if (JSON.parse(id) === 0) {
-      setPrev(DataArray.length - 1);
-    } else {
-      setPrev(JSON.parse(id) - 1);
-    }
-  },[DataArray.length, id]);
+    const parsedId = JSON.parse(id);
+
+    // Set next project, wrap to first project if current is the last one
+  if (parsedId === DataArray.length - 1) {
+    setNext(0); // Loop to the first project
+  } else {
+    setNext(parsedId + 1); // Move to the next project
+  }
+
+  // Set previous project, wrap to the last project if current is the first one
+  if (parsedId === 0) {
+    setPrev(DataArray.length - 1); // Loop to the last project
+  } else {
+    setPrev(parsedId - 1); // Move to the previous project
+  }
+}, [DataArray.length, id, prev, next]);
 
   return (
     <React.Fragment>
@@ -88,6 +93,13 @@ export default function Index({ id, data, DataArray }) {
               {data?.des1}
             </p>
             <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
+            <a href={data?.demo} target="_blank">Live Demo</a>
+            </p>
+            <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
+            <a href={data?.github} target="_blank">Github</a>
+            </p>
+
+            <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
               Tech Stack:
             </p>
             <div className="flex flex-wrap">
@@ -111,7 +123,7 @@ export default function Index({ id, data, DataArray }) {
         >
           <a
             className="flex justify-center group:hover:bg-[#223740] cursor-pointer transition-colors duration-300 bg-[#405B66]  bg-opacity-90 items-center w-full h-full"
-            onClick={() => router.push(`/portfolio-detail/${prev}`)}
+            onClick={() => router.push(`/portfoliodetail/${prev}`)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
