@@ -91,41 +91,42 @@ export const AboutData = [
 // this is for the slider
 export const DataArray = [
   {
-    title: "Personal Relationship Manager is an AI powered CRM-like tool aimed at individual mobile users who want to further their career.",
+    title: " AI powered CRM-like tool",
     name: "Personal Relations Manager",
-    des: "This Application was developed as part of a 2 week challenge from inception to completition as part of the Tokyo Le Wagon bootcamp.",
-    des1: "This project was made using, Ruby, RubyonRails, Javascript, OpenAi API, PostgreSQL, Bootstrap, SASS and HTML.",
+    des: "Personal Relationship Manager is an AI powered CRM-like tool aimed at individual mobile users who want to further their career.This Application was developed as part of a 2 week challenge from inception to completition as part of the Tokyo Le Wagon bootcamp.",
+    des1: "",
     images: ["/prm1.png"],
+    tech: ['Ruby', 'Ruby on Rails', 'Javascript', 'OpenAi API', 'PostgreSQL', 'Bootstrap', 'SASS', 'HTML'],
   },
   {
-    title: "Desktop first fully responsive multi page vanilla javascript project.",
+    title: "Desktop first fully responsive MPA",
     name: "Code and Create",
     des: "This project is a fully responsive, multi-page web app created using HTML, CSS, and vanilla JavaScript. It features a modern design with dynamic content and advanced CSS techniques, enhancing both the look and functionality of the site.",
     des1: "",
-
     images: ["/codeandcreate.png"],
+    tech: ['Javascript', 'CSS', 'HTML'],
   },
   {
-    title: "Fully responsive desktop first single page application",
+    title: "Fully responsive desktop SPA",
     name: "Omnifood Project",
     des: "Omnifood is a fictional company specializing in AI-based meal subscriptions, and this single-page website highlights both responsive design and advanced CSS techniques.",
-    des1: "This project was made using HTML, CSS and Javascript.",
-
+    des1: "",
     images: ["/projectomnifood.png"],
+    tech: ['Javascript', 'CSS', 'HTML'],
   },
   {
-    title: "This project demonstrates advanced CSS Grid and SCSS techniques, resulting in a fully responsive layout with rich features and an elegant design.",
+    title: "Fictional real estate website",
     name: "Nexter Project ",
     des: "Nexter is a fictional real estate website designed to showcase luxurious homes and provide users with a seamless home-buying experience. This project demonstrates advanced CSS Grid and SCSS techniques, resulting in a fully responsive layout with rich features and an elegant design.",
     des1: "",
-
     images: ["/nexterproject.png"],
+    tech: ['Javascript', 'SASS', 'HTML'],
   },
   {
-    title: "Natours is a fictional tour company website designed to inspire people to explore the natural world through exciting adventures.",
+    title: "Fictional tour company website",
     name: "Natours Project",
     des: "Natours is a fictional tour company website designed to inspire people to explore the natural world through exciting adventures. This project is built using advanced SCSS techniques, showcasing features like animations, color management, responsive design with Sass mixins, and modern web design practices.",
-
     images: ["/natoursproject.png"],
+    tech: ['Javascript', 'SASS', 'HTML'],
   },
 ];
