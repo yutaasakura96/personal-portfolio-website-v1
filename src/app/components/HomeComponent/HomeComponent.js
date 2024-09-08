@@ -109,11 +109,11 @@ export default function HomeComponent() {
       >
         <div className="container m-auto">
           <div className="grid grid-cols-12">
-            <div className="bg-white flex flex-col justify-center col-span-12 md:col-span-5 md:bg-transparent">
+            <div className="bg-white  flex flex-col justify-center col-span-12 md:col-span-5  md:bg-transparent">
               <div className="container m-auto">
-                <div className="lg:pl-24 sm:pl-10 pl-0 py20 md:py-0 md:text-start text-center">
+                <div className="llg:pl-24 sm:pl-10 pl-0 md:py-0 py-20 md:text-start text-center">
                   <p
-                    className={`text-[#47aede] text-3xl md:text-base lg:text-2xl ${hind.className}`}
+                    className={`text-[#47AEDE]   text-3xl md:text-base lg:text-2xl ${hind.className}`}
                   >
                     Hi There!
                   </p>
@@ -144,10 +144,15 @@ export default function HomeComponent() {
             <div className="col-span-12 pt-[50px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md:col-span-7">
               <div className="container m-auto">
                 <img
+                  className=""
+                  alt="Full-Stack Developer"
                   src="/pixaryuta.png"
                   decoding="async"
-                  alt="profile picture"
-                  className='max-w-[60%] translate-x-32'
+                  data-nimg="intrinsic"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
                 ></img>
               </div>
             </div>
