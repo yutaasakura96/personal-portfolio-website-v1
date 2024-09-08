@@ -103,7 +103,7 @@ export const DataArray = [
     name: "Code and Create",
     des: "This project is a fully responsive, multi-page web app created using HTML, CSS, and vanilla JavaScript. It features a modern design with dynamic content and advanced CSS techniques, enhancing both the look and functionality of the site.",
     des1: "",
-    images: ["/codeandcreate.png"],
+    images: ["/codeandcreate.png", "/codeandcreatefull.png"],
     tech: ['Javascript', 'CSS', 'HTML'],
   },
   {
@@ -111,7 +111,7 @@ export const DataArray = [
     name: "Omnifood Project",
     des: "Omnifood is a fictional company specializing in AI-based meal subscriptions, and this single-page website highlights both responsive design and advanced CSS techniques.",
     des1: "",
-    images: ["/projectomnifood.png"],
+    images: ["/projectomnifood.png", "/omnifoodfull.png"],
     tech: ['Javascript', 'CSS', 'HTML'],
   },
   {
@@ -119,14 +119,14 @@ export const DataArray = [
     name: "Nexter Project ",
     des: "Nexter is a fictional real estate website designed to showcase luxurious homes and provide users with a seamless home-buying experience. This project demonstrates advanced CSS Grid and SCSS techniques, resulting in a fully responsive layout with rich features and an elegant design.",
     des1: "",
-    images: ["/nexterproject.png"],
+    images: ["/nexterproject.png", "/nexterfull.png"],
     tech: ['Javascript', 'SASS', 'HTML'],
   },
   {
     title: "Fictional tour company website",
     name: "Natours Project",
     des: "Natours is a fictional tour company website designed to inspire people to explore the natural world through exciting adventures. This project is built using advanced SCSS techniques, showcasing features like animations, color management, responsive design with Sass mixins, and modern web design practices.",
-    images: ["/natoursproject.png"],
+    images: ["/natoursproject.png", "/natoursfull.png"],
     tech: ['Javascript', 'SASS', 'HTML'],
   },
 ];
