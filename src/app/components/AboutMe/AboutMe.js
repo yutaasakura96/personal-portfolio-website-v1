@@ -136,7 +136,8 @@ export default function AboutMe() {
           </div>
 
           <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
-            <div className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
+            <div
+            className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
               <section
                 className={`fade-left overflow-hidden ${
                   isFaded ? "fade-out" : ""
@@ -160,6 +161,16 @@ export default function AboutMe() {
                   ))}
                 </ul>
               </section>
+              <div className={`absolute perspective-500 -top-7 sm:top-30 right-0 sm:-right-20 card ${
+                  isFlipped ? "flipped" : ""
+                }`}>
+                  <div className='card-inner'>
+                    <div className='rounded-2xl cursor-pointer  text-7xl  xl:text-9xl font-recoletaBlack text-white bg-[#47626D]  p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48  transform transition duration-500 transform-preserve -rotate-6 transform-preserve'>
+                    <span className="text-2xl xl:text-6xl mr-2 sm:mr-3">*</span>
+                    {mapData.count}
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </section>
