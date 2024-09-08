@@ -1,9 +1,22 @@
-import React from 'react'
+'use client'
+import  React  from 'react'
+import PortfolioDetailDesign  from  '../../page/portfolio-detail-design'
+import { DataArray } from '@/app/data'
 
-export default function page() {
-  return (
-    <div>
-      <h1 className='text-7xl'>Dynamic Page</h1>
-    </div>
+
+
+const  Portfolio  =(props)=>{
+  console.log("the id is: ", props.params.id)
+
+  return(
+    <React.Fragment>
+      <PortfolioDetailDesign
+      data={DataArray[props.params.id]}
+      id={props.params.id}
+      DataArray={DataArray}
+      />
+    </React.Fragment>
   )
+
 }
+export default Portfolio
