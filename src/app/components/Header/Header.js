@@ -6,7 +6,7 @@ import '../Header/DiagonalDrawer.css'
 export default function Header() {
   const [selectedIndex1, setSelectedIndex1] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -37,10 +37,7 @@ export default function Header() {
         />
       </div>
       <header className={`${isScrolled ? 'headerShow' : ''} w-full fixed top-0 z-50 transition-all duration-500`}
-      style={{
-        backgroundColor: isScrolled ? '#fff' : 'transparent',
-        boxShadow: isScrolled ? '#48afde -10px 25px 50px 10px' : ''
-      }}>
+      >
 
         <div className='relative'>
           <div

@@ -147,7 +147,7 @@ export default function DiagonalDrawer({
             </nav>
             <section className="mt-14 sm:mt-12 lg:mt-14 text-center relative sm:absolute lg:relative sm:right-0 lg:right-0 h-auto sm:h-full lg:h-auto">
               <h3 className="block sm:hidden lg:block font-bold text-[#48AFDE]  text-2xl uppercase mb-5">
-                Follow Me Around
+                Follow Me
               </h3>
               <div className="flex flex-row sm:flex-col  lg:flex-row">
                 <a
