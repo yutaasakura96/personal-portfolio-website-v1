@@ -5,6 +5,8 @@ import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 import { FaHeadphones } from "react-icons/fa";
 import { Hind } from "next/font/google";
+import { ToastClassName, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -13,7 +15,7 @@ const hind = Hind({
 
 
 
-export default function page() {
+export default function Page() {
 
   const [state, setState] = useState({
     name: "",
@@ -50,8 +52,42 @@ export default function page() {
     });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    let data = {
+      ...state,
+    };
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(async (res) => {
+        setLoading(false);
+        const response = await res.json();
+        if (!response.error) {
+          clearState();
+          toast(response.message);
+        } else {
+          clearState();
+          toast("something went wrong");
+        }
+      })
+      .catch((e) => {
+        setLoading(false);
+        clearState();
+        toast("something went wrong");
+      });
+  };
+
+
   return (
     <React.Fragment>
+      <ToastContainer/>
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
         <div className='flex flex-col items-center justify-center bg-[url("/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
           <div className="flex flex-col items-center justify-center  w-full h-full bg-[#223740]/70 backdrop-brightness-50">
@@ -203,7 +239,7 @@ export default function page() {
               Contact Me
             </p>
           </div>
-          <form className="flex flex-col gap-[20px]">
+          <form className="flex flex-col gap-[20px]" onSubmit={handleSubmit}>
             <div
               className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
             >
@@ -259,9 +295,9 @@ export default function page() {
               />
             </div>
             <div>
-              {/* {loading && (
+              {loading && (
                 <div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rounded-full"></div>
-              )} */}
+              )}
               <button className="bg-[#48AFDE] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white">
                 Send Me a Message
               </button>
