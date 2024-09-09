@@ -83,12 +83,13 @@ export default function AboutMe() {
               JavaScript and React, and in my free time, I enjoy bouldering,
               skateboarding, bodybuilding, and practicing yoga.
             </p>
-            <img
+            <Image
               src="/customer-care4.png"
               alt="yuta"
-              layout="fill"
+              width={500}
+              height={500}
+              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full"
               objectFit="cover"
-              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
             />
           </section>
         </div>
