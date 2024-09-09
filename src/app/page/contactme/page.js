@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
@@ -10,7 +11,45 @@ const hind = Hind({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+
+
 export default function page() {
+
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const key = e.target.name;
+    const value = e.target.value;
+    setState({
+      ...state,
+      [key]: value,
+    });
+  };
+
+  const handlePhoneChange = (e) => {
+    const value = e.target.value;
+    const numericValue = value.replace(/[^0-9]/g, "");
+    setState({ ...state, phoneNumber: numericValue });
+  };
+
+  const clearState = () => {
+    setState({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      subject: "",
+      message: "",
+    });
+  };
+
   return (
     <React.Fragment>
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
@@ -173,6 +212,8 @@ export default function page() {
                 name="name"
                 placeholder="Your Name.."
                 required
+                onChange={handleChange}
+                value={state.name}
                 className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
               />
               <input
@@ -180,6 +221,8 @@ export default function page() {
                 name="email"
                 placeholder="Your Email.."
                 required
+                onChange={handleChange}
+                value={state.email}
                 className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
               />
             </div>
@@ -191,6 +234,8 @@ export default function page() {
                 name="phoneNumber"
                 placeholder="Your Number.."
                 required
+                onChange={handlePhoneChange}
+                value={state.phoneNumber}
                 className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
               />
               <input
@@ -198,6 +243,8 @@ export default function page() {
                 name="subject"
                 placeholder="Your Subject.."
                 required
+                onChange={handleChange}
+                value={state.subject}
                 className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
               />
             </div>
@@ -206,6 +253,8 @@ export default function page() {
                 required
                 name="message"
                 placeholder="Your Message.."
+                onChange={handleChange}
+                value={state.message}
                 className="px-[12px] outline-none h-[180px] w-full rounded-md py-[12px] flex-1 bg-gray-200"
               />
             </div>
