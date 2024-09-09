@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Hind } from "next/font/google";
+import Image from "next/image";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -143,7 +144,7 @@ export default function HomeComponent() {
             </div>
             <div className="col-span-12 pt-[50px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md:col-span-7">
               <div className="container m-auto">
-                <img
+                <Image
                   className=""
                   alt="Full-Stack Developer"
                   src="/pixaryuta.png"
@@ -152,8 +153,8 @@ export default function HomeComponent() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                ></img>
+                  style={{ width: "100%", height: "auto" }}
+                />
               </div>
             </div>
           </div>
@@ -165,27 +166,97 @@ export default function HomeComponent() {
               >
                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
-                    <img
+                    <Image
+                      height={8}
+                      width={50}
                       src="/bootstrap.png"
                       alt="bootstrap"
                       className="h-12"
                     />
-                    <img src="/css.png" alt="css" className="h-12" />
-                    <img src="/reactjs.png" alt="reactjs" className="h-12 " />
-                    <img src="/nextjs.png" alt="nextjs" className="h-12" />
-                    <img src="/git.png" alt="git" className="h-12" />
-                    <img src="/github.png" alt="github" className="h-12" />
-                    <img src="/heroku.png" alt="heroku" className="h-12" />
-                    <img src="/html.png" alt="" className="h-12" />
-                    <img
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/css.png"
+                      alt="css"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/reactjs.png"
+                      alt="reactjs"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/nextjs.png"
+                      alt="nextjs"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/git.png"
+                      alt="git"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/github.png"
+                      alt="github"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/heroku.png"
+                      alt="heroku"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/html.png"
+                      alt="html"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
                       src="/javascript.png"
                       alt="javascript"
                       className="h-12"
                     />
-                    <img src="/netlify.png" alt="netlify" className="h-12" />
-                    <img src="/nextjs.png" alt="nextjs" className="h-12" />
-                    <img src="/postgres.png" alt="postgres" className="h-12" />
-                    <img src="/ruby.png" alt="" className="h-12" />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/netlify.png"
+                      alt="netlify"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/nextjs.png"
+                      alt="nextjs"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/postgres.png"
+                      alt="postgres"
+                      className="h-12"
+                    />
+                    <Image
+                      height={8}
+                      width={50}
+                      src="/ruby.png"
+                      alt="ruby"
+                      className="h-12"
+                    />
                   </Slider>
                 </div>
               </div>

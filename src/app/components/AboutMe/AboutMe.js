@@ -59,7 +59,7 @@ export default function AboutMe() {
               About Me
             </h1>
             <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
-              Multi Lingual Web Developer
+              Full-Stack Web Developer
             </h4>
           </div>
           <section className="relative flex flex-col justify-between lg:flex-row px-5 md:px-24">
@@ -88,7 +88,7 @@ export default function AboutMe() {
               alt="yuta"
               width={500}
               height={500}
-              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full"
+              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
               objectFit="cover"
             />
           </section>

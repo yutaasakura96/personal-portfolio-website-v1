@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Drawer from './DiagonalDrawer'
 import '../Header/DiagonalDrawer.css'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   const pathname = usePathname();
@@ -51,9 +53,12 @@ export default function Header() {
         <div className='relative'>
           <div
           onClick={openDrawer}
-          className='z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#48afde] flex justify-center items-center rounded-br-3xl'>
+          className='z-30 absolute cursor-pointer w-14 h-14 xl:hidden lg:w-24 lg:h-24 bg-[#48afde] flex justify-center items-center rounded-br-3xl'>
             <div className='relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center'>
-              <img src='/drawer.png' alt='drawer-item' className='w-[150px] h-10'/>
+            <Image
+                    height={100}
+                    width={100}
+                    src="/drawer.png" alt="drawer item" className="w-[150px] h-10"/>
             </div>
           </div>
         </div>
@@ -105,12 +110,12 @@ export default function Header() {
                 ):(
                   <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
                 )}
-                  <a className={`menu-item ${selectedIndex1 === 3 ? "text-black":""} text-[#666d47] group-hover:text-black`}
+                  <Link className={`menu-item ${selectedIndex1 === 3 ? "text-black":""} text-[#666d47] group-hover:text-black`}
                   href="/page/contactme"
                   onClick={()=> setSelectedIndex1(3)}
                   >
                    Hire Me
-                  </a>
+                  </Link>
                </li>
            </ul>
         </nav>
