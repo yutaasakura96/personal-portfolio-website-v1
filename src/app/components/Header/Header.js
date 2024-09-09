@@ -1,13 +1,22 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Drawer from './DiagonalDrawer'
 import '../Header/DiagonalDrawer.css'
 
 export default function Header() {
+  const pathname = usePathname();
   const [selectedIndex1, setSelectedIndex1] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
   const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    if (pathname === '/#home') setSelectedIndex1(0);
+    else if (pathname === '/#portfolio') setSelectedIndex1(1);
+    else if (pathname === '/#about-me-component') setSelectedIndex1(2);
+    else if (pathname === '/page/contactme') setSelectedIndex1(3);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
