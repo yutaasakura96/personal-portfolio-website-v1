@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { Hind } from "next/font/google";
 import { AboutData } from "@/app/data";
+import Image from "next/image";
 
-import './aboutme.css'
+import "./aboutme.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -50,62 +51,48 @@ export default function AboutMe() {
     <React.Fragment>
       <div
         id="about-me-component"
-        className="bg-[#E0F3FD] pt-[250px] mt-4  pb-[100px] lg:pb-[600px] relative lg:h-[800px]"
+        className="bg-[#E0F3FD] pt-[250px] mt-4  pb-[100px] lg:pb-[250px] relative lg:h-100"
       >
         <div className="container m-auto">
-          <h1 className="text-[240px] w-[80%] overflow-hidden absolute lg:left-40 md:left-30 top-[-50px]  text-[#EAF7FC]">
-            About Me
-          </h1>
-          <h1 className="relative font-recoletaBlack text-5xl  text-[#48AFDE] mb-5 -mt-40  md:px-24 px-5">
-            About My Self
-          </h1>
-          <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
-            Multi Lingual Web Developer
-          </h4>
-
-          <section className="relative flex flex-col lg:flex-row px-5 md:px-24">
+          <div>
+            <h1 className="relative font-recoletaBlack text-5xl  text-[#48AFDE] mb-5 -mt-40  md:px-24 px-5">
+              About Me
+            </h1>
+            <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
+              Multi Lingual Web Developer
+            </h4>
+          </div>
+          <section className="relative flex flex-col justify-between lg:flex-row px-5 md:px-24">
             <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
+              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className} text-[16px] leading-7`}
             >
               Before transitioning into tech, I spent 8 years in the
-              construction industry. 4 years as a scaffolder and 4 years as a
-              construction foreman. These experiences shaped my ability to lead
-              teams, solve problems, and focus on delivering high-quality
-              results, all of which I now apply to my work as a web developer.
+              construction industry as a construction foreman. These experiences
+              shaped my ability to lead teams, solve problems, and focus on
+              delivering high-quality results, all of which I now apply to my
+              work as a web developer. Recently, I graduated from Le Wagon
+              Tokyo’s full-time full-stack web development bootcamp, where I
+              honed my skills in web development. I am actively seeking a
+              full-stack developer role where I can continue growing and
+              contributing to meaningful projects. I’m driven by a love for
+              learning and the endless pursuit of knowledge, as I believe it
+              brings purpose to everything I do. My goal is to create impactful,
+              user-centered projects while collaborating with teams to build
+              innovative solutions. I also look forward to one day mentoring
+              other aspiring developers. I have a particular interest in
+              JavaScript and React, and in my free time, I enjoy bouldering,
+              skateboarding, bodybuilding, and practicing yoga.
             </p>
-
-            <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
-            >
-              Recently, I graduated from Le Wagon Tokyo’s full-time full-stack
-              web development bootcamp, where I honed my skills in web
-              development. I have a particular interest in JavaScript and React,
-              and I am actively seeking a frontend web developer role where I
-              can continue growing and contributing to meaningful projects.
-            </p>
-            <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
-            >
-              I’m driven by a love for learning and the endless pursuit of
-              knowledge, as I believe it brings purpose to everything I do. My
-              goal is to create impactful, user-centered projects while
-              collaborating with teams to build innovative solutions. I also
-              look forward to one day mentoring other aspiring developers. In my
-              free time, I enjoy bouldering, skateboarding, bodybuilding, and
-              practicing yoga.
-            </p>
+            <img
+              src="/customer-care4.png"
+              alt="yuta"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
+            />
           </section>
         </div>
-      </div>
-
-      <div
-        style={{
-          backgroundImage: "linear-gradient(45deg, #EAF7FC  70%,#48AFDE 30%)",
-          width: "100%",
-        }}
-        className="lg:-mt-60"
-      >
-        <section className="container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]">
+        <section className="container flex pt-[250px] flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]">
           <div className=" hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
             <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-6 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
@@ -120,7 +107,7 @@ export default function AboutMe() {
                   }`}
                 >
                   <div className="w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16">
-                    <img
+                    <Image
                       height={100}
                       width={100}
                       src={item.img}
@@ -154,8 +141,9 @@ export default function AboutMe() {
 
           <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
             <div
-            style={{height: '30rem'}}
-            className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
+              style={{ height: "30rem" }}
+              className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative"
+            >
               <section
                 className={`fade-left overflow-hidden ${
                   isFaded ? "fade-out" : ""

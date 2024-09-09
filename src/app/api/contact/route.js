@@ -68,12 +68,11 @@ export async function POST(request) {
 <body>
     <div class="email-container">
 
-        <p>edubaba digital</p>
+        <p>${data.subject}</p>
         <ul>
             <li><strong>Name:</strong> ${data.name}</li>
             <li><strong>Email:</strong> ${data.email}</li>
             <li><strong>Phone:</strong> ${data.phoneNumber}</li>
-            <li><strong>Subject:</strong> ${data.subject}</li>
             <li><strong>Message:</strong><br>${data.message}</li>
         </ul>
     </div>

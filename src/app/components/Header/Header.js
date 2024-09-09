@@ -11,7 +11,7 @@ export default function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
+   useEffect(() => {
     if (pathname === '/#home') setSelectedIndex1(0);
     else if (pathname === '/#portfolio') setSelectedIndex1(1);
     else if (pathname === '/#about-me-component') setSelectedIndex1(2);
