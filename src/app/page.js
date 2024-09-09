@@ -3,6 +3,7 @@ import HomeComponent from "./components/HomeComponent/HomeComponent";
 import { Hind } from "next/font/google";
 import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/AboutMe";
+import CallToAction from "./components/CallToAction/CallToAction";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function Home() {
         </div>
         </div>
         <AboutMe/>
+        <CallToAction/>
       </div>
     </main>
   );

@@ -6,6 +6,7 @@ import '../Header/DiagonalDrawer.css'
 export default function Header() {
   const [selectedIndex1, setSelectedIndex1] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
