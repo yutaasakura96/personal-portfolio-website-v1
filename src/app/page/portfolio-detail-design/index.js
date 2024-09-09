@@ -16,20 +16,18 @@ export default function Index({ id, data, DataArray }) {
   useEffect(() => {
     const parsedId = JSON.parse(id);
 
-    // Set next project, wrap to first project if current is the last one
-  if (parsedId === DataArray.length - 1) {
-    setNext(0); // Loop to the first project
-  } else {
-    setNext(parsedId + 1); // Move to the next project
-  }
+    if (parsedId === DataArray.length - 1) {
+      setNext(0);
+    } else {
+      setNext(parsedId + 1);
+    }
 
-  // Set previous project, wrap to the last project if current is the first one
-  if (parsedId === 0) {
-    setPrev(DataArray.length - 1); // Loop to the last project
-  } else {
-    setPrev(parsedId - 1); // Move to the previous project
-  }
-}, [DataArray.length, id, prev, next]);
+    if (parsedId === 0) {
+      setPrev(DataArray.length - 1);
+    } else {
+      setPrev(parsedId - 1);
+    }
+  }, [DataArray.length, id, prev, next]);
 
   return (
     <React.Fragment>
@@ -93,10 +91,14 @@ export default function Index({ id, data, DataArray }) {
               {data?.des1}
             </p>
             <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
-            <a href={data?.demo} target="_blank">Live Demo</a>
+              <a href={data?.demo} target="_blank">
+                Live Demo
+              </a>
             </p>
             <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
-            <a href={data?.github} target="_blank">Github</a>
+              <a href={data?.github} target="_blank">
+                Github
+              </a>
             </p>
 
             <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
