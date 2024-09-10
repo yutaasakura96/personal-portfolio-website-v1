@@ -51,7 +51,12 @@ export default function AboutMe() {
     <React.Fragment>
       <div
         id="about-me-component"
-        className="bg-[#E0F3FD] pt-[250px] mt-4  pb-[100px] lg:pb-[250px] relative lg:h-100"
+        className="bg-[##eef7fb] pt-[250px] mt-4  pb-[100px] lg:pb-[250px] relative lg:h-100"
+        style={{
+          backgroundImage:
+            "linear-gradient(108.7deg, #E0F3FD 0 45%, #eef7fb 0% 100%)",
+          width: "100%",
+        }}
       >
         <div className="container m-auto">
           <div>
@@ -126,15 +131,7 @@ export default function AboutMe() {
                     {item.title}
                   </h4>
 
-                  <div
-                    className={`absolute -top-2 -right-2 transform transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl w-12 h-12 rounded-lg bg-[#476571] flex justify-center items-center font-bold text-white font-recoletaBold text-xl  ${
-                      selectedIndex === index
-                        ? "opacity-100 rotate-12"
-                        : "group-hover:rotate-12"
-                    }`}
-                  >
-                    {item.count}
-                  </div>
+                  
                 </a>
               ))}
             </div>

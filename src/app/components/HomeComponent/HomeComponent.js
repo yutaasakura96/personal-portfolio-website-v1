@@ -101,7 +101,7 @@ export default function HomeComponent() {
         id="home"
         style={{
           backgroundImage:
-            "linear-gradient(62deg, #eef7fb 0 50%, #48afde 0 100%)",
+            "linear-gradient(60deg, #E0F3FD 0 50%, #eef7fb 0 100%)",
           minHeight: "500px",
           maxHeight: "1200px",
           height: "100%",
@@ -162,7 +162,7 @@ export default function HomeComponent() {
             <div className="px-3">
               <div
                 className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl  px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
-                style={{ boxShadow: "#48afde -10px 20px 30px 5px" }}
+                style={{ boxShadow: "#48afde -5px 10px 20px 0" }}
               >
                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
