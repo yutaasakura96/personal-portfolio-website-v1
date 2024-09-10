@@ -75,7 +75,7 @@ export default function Home() {
             width: "100%",
           }}
         >
-          <div className="container m-auto">
+          <div className="container m-auto mobile-height">
             <p
               className="text-[300px] text-[#f7fbfd] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden opacity-0"
               style={{ transform: "translate(0px, -20px)" }}

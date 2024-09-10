@@ -61,22 +61,26 @@
   }
 
   @media (max-width:640px) {
-    .my-slider{
-    width: 100% !important;
-    }
-    .mt-special {
-      margin-top: 1.25rem;
-    }
-    .p-special {
-      padding: 0 1.5rem;
-    }
+  .my-slider{
+  width: 100% !important;
+  }
+  .mt-special {
+    margin-top: 1.25rem;
+  }
+  .p-special {
+    padding: 0 1.5rem;
+  }
 
-    .header-xs {
-      padding: 1rem;
-    }
-    .hide-slider {
-      visibility: hidden;
-    }
+  .header-xs {
+    padding: 1rem;
+  }
+  .hide-slider {
+    visibility: hidden;
+  }
+
+  .mobile-height {
+    margin: -10rem 0;
+  }
   }
 
   @media (min-width: 1280px){
