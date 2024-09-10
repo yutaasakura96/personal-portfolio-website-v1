@@ -3,20 +3,6 @@
 export const AboutData = [
   {
     count: 1,
-    title: "UI / UX Designer",
-    img: "/first.svg",
-    array: [
-      "Wireframe",
-      "Prototyping",
-      "Figma",
-      "Canva",
-      "Excalidraw",
-      "Coolors",
-      "FontPair",
-    ],
-  },
-  {
-    count: 2,
     title: "Front-end Developer",
     img: "/second.svg",
     array: [
@@ -30,7 +16,7 @@ export const AboutData = [
     ],
   },
   {
-    count: 3,
+    count: 2,
     title: "Back-end Developer",
     img: "/third.svg",
     demo: "https://yasakura-vanillajs-1.netlify.app/",
@@ -40,6 +26,20 @@ export const AboutData = [
       "Ruby on Rails",
       "PostgreSQL",
       "Next.js (API)",
+    ],
+  },
+  {
+    count: 3,
+    title: "UI / UX Designer",
+    img: "/first.svg",
+    array: [
+      "Wireframe",
+      "Prototyping",
+      "Figma",
+      "Canva",
+      "Excalidraw",
+      "Coolors",
+      "FontPair",
     ],
   },
   {
