@@ -166,22 +166,118 @@ export default function HomeComponent() {
               >
                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
-                    <img src='/html.svg' alt='html' className='h-20 w-10'/>
-                    <img src='/css.svg' alt='css' className='h-20 w-10'/>
-                    <img src='/sass.svg' alt='sass' className='h-20 w-10'/>
-                    <img src='/bootstrap.svg' alt='bootstrap' className='h-20 w-10'/>
-                    <img src='/tailwind.svg' alt='tailwind' className='h-20 w-10'/>
-                    <img src='/javascript.svg' alt='javascript' className='h-20 w-10'/>
-                    <img src='/react.svg' alt='react' className='h-20 w-10'/>
-                    <img src='/nextjs.svg' alt='next' className='h-20 w-10'/>
-                    <img src='/vercels.svg' alt='vercels' className='h-20 w-10'/>
-                    <img src='/heroku.svg' alt='heroku' className='h-20 w-10'/>
-                    <img src='/netlify.svg' alt='netlify' className='h-20 w-10'/>
-                    <img src='/ruby.svg' alt='ruby' className='h-20 w-10'/>
-                    <img src='/rails.svg' alt='rails' className='h-20 w-10'/>
-                    <img src='/postgres.svg' alt='postgres' className='h-20 w-10'/>
-                    <img src='/git.svg' alt='git' className='h-20 w-10'/>
-                    <img src='/github.svg' alt='github' className='h-20 w-10'/>
+                    <Image
+                      src="/html.svg"
+                      alt="html"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/css.svg"
+                      alt="css"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/sass.svg"
+                      alt="sass"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/bootstrap.svg"
+                      alt="bootstrap"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/tailwind.svg"
+                      alt="tailwind"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/javascript.svg"
+                      alt="javascript"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/react.svg"
+                      alt="react"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/nextjs.svg"
+                      alt="next"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/vercels.svg"
+                      alt="vercels"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/heroku.svg"
+                      alt="heroku"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/netlify.svg"
+                      alt="netlify"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/ruby.svg"
+                      alt="ruby"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/rails.svg"
+                      alt="rails"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/postgres.svg"
+                      alt="postgres"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/git.svg"
+                      alt="git"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
+                    <Image
+                      src="/github.svg"
+                      alt="github"
+                      width={80}
+                      height={80}
+                      className="h-20"
+                    />
                   </Slider>
                 </div>
               </div>
