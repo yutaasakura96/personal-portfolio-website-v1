@@ -21,6 +21,8 @@ export default function HomeComponent() {
     autoplaySpeed: 2000,
     loop: true,
     cssEase: "linear",
+    variableWidth: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1760,
@@ -158,131 +160,122 @@ export default function HomeComponent() {
               </div>
             </div>
           </div>
-          <div className="container m-auto absolute">
-            <div className="px-3">
-              <div
-                className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl  px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
-                style={{ boxShadow: "#48afde -5px 10px 20px 0" }}
-              >
-                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
+          <div className="w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons">
                   <Slider {...settings}>
                     <Image
                       src="/html.svg"
                       alt="html"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons "
                     />
                     <Image
                       src="/css.svg"
                       alt="css"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                       className="h-20 px-10 infinite-icons "
                     />
                     <Image
                       src="/sass.svg"
                       alt="sass"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/bootstrap.svg"
                       alt="bootstrap"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/tailwind.svg"
                       alt="tailwind"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/javascript.svg"
                       alt="javascript"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/react.svg"
                       alt="react"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/nextjs.svg"
                       alt="next"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/vercels.svg"
                       alt="vercels"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/heroku.svg"
                       alt="heroku"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/netlify.svg"
                       alt="netlify"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/ruby.svg"
                       alt="ruby"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/rails.svg"
                       alt="rails"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/postgres.svg"
                       alt="postgres"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/git.svg"
                       alt="git"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                     <Image
                       src="/github.svg"
                       alt="github"
-                      width={80}
+                      width={0}
                       height={80}
-                      className="h-20"
+                      className="h-20 px-10 infinite-icons"
                     />
                   </Slider>
                 </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </React.Fragment>

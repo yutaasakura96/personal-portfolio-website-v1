@@ -84,4 +84,8 @@
       width: 100%;
       height: 100%;
     }
+    .infinite-icons {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
   }
