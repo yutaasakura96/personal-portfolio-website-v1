@@ -64,10 +64,10 @@ export const DataArray = [
     name: "Personal Relations Manager",
     demo: "https://www.theprm.tech/",
     github:'https://github.com/jpblicer/PRM',
-    des: "Personal Relationship Manager is an AI powered CRM-like tool aimed at individual mobile users who want to further their career.This Application was developed as part of a 2 week challenge from inception to completition as part of the Tokyo Le Wagon bootcamp.",
+    des: "Personal Relationship Manager is an open source mobile AI powered CRM-like tool aimed at individual mobile users who want to further their career.This Application was developed as part of a 2 week challenge from inception to completition as part of the Tokyo Le Wagon bootcamp.",
     des1: "Login Credentials for the live demo: user: admin@admin.com pw: adminadmin",
     images: ["/prm1.png"],
-    tech: ['Ruby', 'Ruby on Rails', 'Javascript', 'OpenAi API', 'PostgreSQL', 'Bootstrap', 'SASS', 'HTML'],
+    tech: ['Ruby', 'Ruby on Rails', 'Javascript', 'OpenAI API', 'PostgreSQL', 'Bootstrap', 'SASS', 'HTML'],
   },
   {
     title: "Desktop first fully responsive MPA",

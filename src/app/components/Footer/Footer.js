@@ -58,7 +58,7 @@ export default function Footer() {
             <a
               className="group flex flex-col items-center justify-center"
               target="_blank"
-              href="dribble"
+              href="#"
             >
               <svg
                 stroke="currentColor"
