@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
-import { FaHeadphones } from "react-icons/fa";
 import { Hind } from "next/font/google";
 import { ToastClassName, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

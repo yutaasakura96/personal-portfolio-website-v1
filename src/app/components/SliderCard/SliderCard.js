@@ -15,7 +15,7 @@ export default function SliderCard({ item, index }) {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%', height: '80%' }} 
+            style={{ width: '100%', height: '80%' }}
             className="w-full h-[200px] lg:h-[350px] md:h-[300px] max-w-[100%] rounded-lg"
           />
           <div

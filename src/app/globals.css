@@ -35,7 +35,7 @@
   display: none;
   }
 
-  /* /_portfolio deytails overlay background _/ */
+  /* /_portfolio details overlay background _/ */
   .overlay {
   position: absolute;
   left: 0;
@@ -69,7 +69,7 @@
   @media (min-width: 1280px){
     .headerShow{
       background-color: #fff;
-      box-shadow: #48AFDE -1px 25px 50px 10px;
+      box-shadow: #48AFDE -1px 10px 30px 10px;
     }
   }
 
