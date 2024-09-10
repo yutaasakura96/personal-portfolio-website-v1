@@ -57,7 +57,6 @@ export const AboutData = [
   },
 ];
 
-
 // this is for the slider
 export const DataArray = [
   {
