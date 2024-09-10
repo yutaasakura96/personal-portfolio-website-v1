@@ -166,97 +166,22 @@ export default function HomeComponent() {
               >
                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/bootstrap.png"
-                      alt="bootstrap"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/css.png"
-                      alt="css"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/reactjs.png"
-                      alt="reactjs"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/nextjs.png"
-                      alt="nextjs"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/git.png"
-                      alt="git"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/github.png"
-                      alt="github"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/heroku.png"
-                      alt="heroku"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/html.png"
-                      alt="html"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/javascript.png"
-                      alt="javascript"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/netlify.png"
-                      alt="netlify"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/nextjs.png"
-                      alt="nextjs"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/postgres.png"
-                      alt="postgres"
-                      className="h-12"
-                    />
-                    <Image
-                      height={8}
-                      width={50}
-                      src="/ruby.png"
-                      alt="ruby"
-                      className="h-12"
-                    />
+                    <img src='/html.svg' alt='html' className='h-20 w-10'/>
+                    <img src='/css.svg' alt='css' className='h-20 w-10'/>
+                    <img src='/sass.svg' alt='sass' className='h-20 w-10'/>
+                    <img src='/bootstrap.svg' alt='bootstrap' className='h-20 w-10'/>
+                    <img src='/tailwind.svg' alt='tailwind' className='h-20 w-10'/>
+                    <img src='/javascript.svg' alt='javascript' className='h-20 w-10'/>
+                    <img src='/react.svg' alt='react' className='h-20 w-10'/>
+                    <img src='/nextjs.svg' alt='next' className='h-20 w-10'/>
+                    <img src='/vercels.svg' alt='vercels' className='h-20 w-10'/>
+                    <img src='/heroku.svg' alt='heroku' className='h-20 w-10'/>
+                    <img src='/netlify.svg' alt='netlify' className='h-20 w-10'/>
+                    <img src='/ruby.svg' alt='ruby' className='h-20 w-10'/>
+                    <img src='/rails.svg' alt='rails' className='h-20 w-10'/>
+                    <img src='/postgres.svg' alt='postgres' className='h-20 w-10'/>
+                    <img src='/git.svg' alt='git' className='h-20 w-10'/>
+                    <img src='/github.svg' alt='github' className='h-20 w-10'/>
                   </Slider>
                 </div>
               </div>
