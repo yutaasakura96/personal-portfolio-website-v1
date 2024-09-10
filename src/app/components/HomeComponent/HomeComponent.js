@@ -119,7 +119,7 @@ export default function HomeComponent() {
                     Hi There!
                   </p>
                   <h1 className="text-[#223740] font-recoletaBlack text-5xl md:text-5xl lg:text-7xl xl:text-7xl mt-5 md:mt-3">
-                    I'm Yuta Asakura
+                    I&apos;m Yuta Asakura
                   </h1>
                   <h2
                     className={`text-[#223740] py-2 font-bold uppercase md:text-xl ${hind.className}`}
