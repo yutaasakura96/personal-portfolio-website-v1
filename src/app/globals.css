@@ -70,6 +70,10 @@
   .p-special {
     padding: 0 1.5rem;
   }
+
+  .header-xs {
+    padding: 1rem;
+  }
   }
 
   @media (min-width: 1280px){

@@ -114,7 +114,7 @@ export default function HomeComponent() {
           <div className="grid grid-cols-12">
             <div className="bg-white  flex flex-col justify-center col-span-12 md:col-span-5  md:bg-transparent">
               <div className="container m-auto">
-                <div className="llg:pl-24 sm:pl-10 pl-0 md:py-0 py-20 md:text-start text-center">
+                <div className="header-xs lg:pl-24 sm:pl-10 pl-0 md:py-0 py-20 md:text-start text-center">
                   <p
                     className={`text-[#47AEDE]   text-3xl md:text-base lg:text-2xl ${hind.className}`}
                   >
