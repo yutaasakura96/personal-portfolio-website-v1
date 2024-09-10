@@ -12,10 +12,7 @@ const hind = Hind({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-
-
 export default function Page() {
-
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -83,13 +80,12 @@ export default function Page() {
       });
   };
 
-
   return (
     <React.Fragment>
-      <ToastContainer/>
+      <ToastContainer />
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
         <div className='flex flex-col items-center justify-center bg-[url("/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
-          <div className="flex flex-col items-center justify-center  w-full h-full bg-[#223740]/70 backdrop-brightness-50">
+          <div className="flex flex-col items-center justify-center  w-full h-full bg-[#223740]/70 backdrop-brightness-50 p-special">
             <div className="text-center bg-[#48AFDE] py-[5px] px-[10px] tracking-wide uppercase font-semibold text-[20px] text-white rounded-lg hover:translate-y-1 hover:bg-[#223740]">
               <a href="#contact" className="cursor-pointer">
                 Contact Form
@@ -153,16 +149,11 @@ export default function Page() {
                     </div>
                   </div>
                 </div>
-                <div>
-                  <p className="text-[#666666]">Mobile</p>
-                </div>
-                <div>
-                  <p className="text-[#666666]">070-1481-7160</p>
-                </div>
+                  <p className="text-[#666666]">Mobile: 070-1481-7160</p>
               </div>
             </div>
 
-            <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
+            <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-special">
               <div
                 className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
@@ -211,10 +202,11 @@ export default function Page() {
         id="contact"
         className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-100px]"
       >
-        <div
-          className="hidden md:block relative w-[50%] xl:w-[50%] h-[550px] rounded-xl md:w-full lg:w-[50%] bg-center bg-cover"
-          style={{ backgroundImage: `url('/customer-care2.png')` }}
-        >
+        <div className="hidden md:block relative w-[50%] xl:w-[50%] h-[550px] md:w-full lg:w-[50%] overflow-hidden rounded-xl">
+          <div
+            className="absolute inset-0 bg-center bg-cover"
+            style={{ backgroundImage: `url('/customer-care2.png')` }}
+          />
           <div className="absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70"></div>
           <div className="absolute inset-0 flex flex-col gap-[20px] items-center justify-end text-white shadow-lg p-6">
             <div className="font-semibold text-[24px]">Let's Connect!</div>
@@ -233,10 +225,7 @@ export default function Page() {
         </div>
         <div className="flex flex-col gap-[20px]">
           <div className="">
-            <p className="text-[30px] text-[#48AFDE]">
-              {" "}
-              Contact Me
-            </p>
+            <p className="text-[30px] text-[#48AFDE]"> Contact Me</p>
           </div>
           <form className="flex flex-col gap-[20px]" onSubmit={handleSubmit}>
             <div
