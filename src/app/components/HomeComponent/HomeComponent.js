@@ -82,16 +82,20 @@ export default function HomeComponent() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           initialSlide: 1,
+          infinite: true,
+          dots: false,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
     ],
