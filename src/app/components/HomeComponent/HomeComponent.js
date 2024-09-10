@@ -133,10 +133,10 @@ export default function HomeComponent() {
                     Full-Stack Web Developer
                   </h2>
                   <a
-                    href="/#portfolio"
+                    href="/page/contactme"
                     className={`cursor-pointer inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
-                    Projects
+                    Hire Me
                   </a>
                   <a
                     href="yutafullstackcv.pdf"
@@ -164,7 +164,7 @@ export default function HomeComponent() {
               </div>
             </div>
           </div>
-          <div className="w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons">
+          <div className="hide-slider w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons">
                   <Slider {...settings}>
                     <Image
                       src="/html.svg"
