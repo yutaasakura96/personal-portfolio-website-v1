@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#232323] mt-[120px] sm:px-6 lg:space-y-16 lg:px-8">
+    <footer className="bg-[#232323] sm:px-6 lg:space-y-16 lg:px-8">
       <div className="xl:max-w-6xl 2xl:max-w-7xl px-10 md:px-20 xl:px-44 mx-auto sm:pt-10 overflow-hidden">
         <p className="text-center pt-2 block lg:block font-bold text-[#48AFDE]  text-2xl uppercase mb-5">
           Follow Me

@@ -200,7 +200,7 @@ export default function Page() {
 
       <div
         id="contact"
-        className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-100px]"
+        className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] m-auto p-10"
       >
         <div className="hidden md:block relative w-[50%] xl:w-[50%] h-[550px] md:w-full lg:w-[50%] overflow-hidden rounded-xl">
           <div
