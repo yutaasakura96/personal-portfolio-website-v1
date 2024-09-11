@@ -42,10 +42,7 @@ export default function Home() {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:site"
-          content="@asakurayuta_"
-        />
+        <meta name="twitter:site" content="@asakurayuta_" />
         <meta
           name="twitter:title"
           content="Yuta Asakura | Full-stack Web Developer Portfolio"
@@ -54,40 +51,36 @@ export default function Home() {
           name="twitter:description"
           content="Yuta Asakura's portfolio showcasing projects and skills in Full-stack web development."
         />
-        <meta
-          name="twitter:creator"
-          content="@asakurayuta_"
-        />
+        <meta name="twitter:creator" content="@asakurayuta_" />
         <meta name="twitter:image" content="/customer-care4.png" />
 
         {/* Mobile-Friendly Meta Tag */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-
       <main className="min-h-screen relative">
         <HomeComponent />
         <div
-          id="portfolio"
           className="mt-0 pt-5 -mb-40"
+          id="portfolio"
           style={{
             backgroundImage:
-              "linear-gradient(-80deg, #E0F3FD 0 45%, #eef7fb 0% 100%)",
+              "linear-gradient(-80deg, #E0F3FD 0 50%,  #EEF7FB 0% 100%)",
             width: "100%",
           }}
         >
           <div className="container m-auto mobile-height">
             <p
-              className="text-[300px] text-[#f7fbfd] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden opacity-0"
-              style={{ transform: "translate(0px, -20px)" }}
+              className="text-[300px]  text-[#F7FBFD] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden opacity-0"
+              style={{ transform: "translate(0px,-20px)" }}
             >
-              portfolio
+              Portfolio
             </p>
-            <div style={{ transform: "translate(0px, -250px)" }}>
-              <p className="text-[#48afde] md:pl-[80px] px-5 font-extrabold text-5xl">
+            <div className="" style={{ transform: "translate(0px, -290px)" }}>
+              <p className="text-[#48AFDE]  md:pl-[80px] px-5 font-extrabold text-5xl">
                 Projects
               </p>
               <p
-                className={`max-w-2xl md:pl-[80px] px-5 text-[16px] text-[#47626d] leading-8 mt-5 ${hind.className}`}
+                className={`max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}
               >
                 Here’s a look at some of my recent projects. As a full-stack web
                 developer, I focus on building clean, responsive, and
@@ -101,13 +94,13 @@ export default function Home() {
                 is modern, efficient, and built for real-world impact.
               </p>
             </div>
-            <div style={{ transform: "translate(0px, -170px)" }}>
-              <MySlider />
-            </div>
           </div>
-          <AboutMe />
-          <CallToAction />
+          <div style={{ transform: "translate(0px,-190px)" }}>
+            <MySlider />
+          </div>
         </div>
+        <AboutMe />
+        <CallToAction />
       </main>
     </>
   );

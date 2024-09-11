@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import SliderCard from "./SliderCard";
 import { DataArray } from "@/app/data";
 export default function MySlider() {
@@ -11,7 +10,7 @@ export default function MySlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    arrows: false,
+    arrows: true,
     centerMode: true,
     centerPadding: "400px",
     dots: true,
