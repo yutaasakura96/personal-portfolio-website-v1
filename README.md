@@ -1,5 +1,3 @@
-Here’s your updated `README.md` with emojis added to make it more engaging and visually appealing:
-
 ```markdown
 # 🎨 Personal Portfolio Website
 
