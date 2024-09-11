@@ -68,7 +68,7 @@ export default function Home() {
             width: "100%",
           }}
         >
-          <div className="container m-auto mobile-height">
+          <div className="container m-auto">
             <p
               className="text-[300px]  text-[#F7FBFD] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden opacity-0"
               style={{ transform: "translate(0px,-20px)" }}
@@ -95,7 +95,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div style={{ transform: "translate(0px,-190px)" }}>
+          <div style={{ transform: "translate(0px,-170px)" }}>
             <MySlider />
           </div>
         </div>
