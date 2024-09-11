@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills as a 
 
 ## 🌐 Demo
 
-[🚀 Live Demo]([www.asakurayuta.dev](https://www.asakurayuta.dev/))
+[🚀 Live Demo](https://www.asakurayuta.dev/)
 
 ## ✨ Features
 
