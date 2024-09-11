@@ -1,4 +1,3 @@
-```markdown
 # 🎨 Personal Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my skills as a full-stack web developer. It features a fully responsive multi-page design built with modern web technologies, including React.js, Next.js, Tailwind CSS, and Nodemailer.
@@ -26,7 +25,7 @@ Media Queries
 - 🎡 **Slider Carousel**: A smooth, infinite carousel of skills and technologies using `react-slick` and custom configurations.
 - ✉️ **Contact Form**: A contact form with real-time validation and submission using **Nodemailer**.
 - 🔍 **SEO Optimized**: Meta tags for social sharing (Twitter, LinkedIn) and search engine visibility.
-- 📜 **Drawer Menu**: A custom diagonal drawer menu built for easy navigation.
+- 📜 **Drawer Menu**: A custom diagonal drawer menu built for easy navigation in smaller screen sizes.
 - 🌐 **Social Links**: Social media icons with links to profiles on GitHub, LinkedIn, Instagram, and more.
 - 🎨 **Smooth Transitions**: Smooth hover effects and animations for buttons, links, and elements throughout the site.
 - 🔝 **Scroll to Top Button**: A button that appears when the user scrolls, allowing them to easily return to the top of the page.
@@ -36,9 +35,10 @@ Media Queries
 - ⚛️ **React.js**: For building the user interface.
 - ⚡ **Next.js**: For server-side rendering and routing.
 - 💨 **Tailwind CSS**: For utility-first styling and responsive design.
+- - 🚀 **Vercel**: For seamless integration with Next.js and for easy deployment.
 - 📧 **Nodemailer**: For handling contact form submissions.
-- 🛎️ **React Toastify**: For CTA button that scrolls to the top portion of home page.
-- 🎡 **React Slick**: For a dynamic, responsive slider component.
+- 🛎️ **React Toastify**: For CTA button that scrolls up to the top portion of home page by clicking.
+- 🎡 **React Slick**: For a dynamic, responsive slider component and inifinite slider.
 - ✍️ **Google Fonts**: Custom fonts including Hind for a clean and consistent typography.
 - 🖼️ **Image Optimization**: Next.js `Image` component for optimized image loading.
 
@@ -68,57 +68,74 @@ The diagonal drawer navigation system enhances mobile usability, providing users
 
 The footer includes social media links (Twitter, GitHub, LinkedIn, Instagram) and copyright information, styled with custom fonts and colors.
 
+🛠️ Deployment
+
+To deploy on Vercel:
+
+	1.	Push your project to a GitHub repository.
+	2.	Visit Vercel, sign in, and import your repository.
+	3.	Follow the deployment steps, and your project will be live in a few clicks!
+
+
 ## 🛠️ Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
 ### ⚙️ Prerequisites
 
-- 🖥️ Node.js and npm installed
+- 🖥️ [Node.js](https://nodejs.org/) and npm installed
 
-### Getting Started
-
-
+### 🚀 Setup
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    ```
 
-2. Install NPM packages:
+2. Navigate to the project directory:
+   ```bash
+   cd your-repo-name
+   ```
+
+3. Install NPM packages:
    ```bash
    npm install
    ```
 
-3. Run the development server:
+4. Run the development server:
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+   Or, if you prefer using other package managers:
+   ```bash
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+### 🛠️ Deployment
+
+This project was deployed using Vercel, which provides seamless integration with Next.js for easy deployment.
+
+To deploy on Vercel:
+
+	1.	Push your project to a GitHub repository.
+	2.	Visit Vercel, sign in, and import your repository.
+	3.	Follow the deployment steps, and your project will be live in a few clicks!
+ 
+Or Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details on how to deploy your project.
+
+🖥️ Created and Coded by Yuta Asakura © 2024
 
 ## 📞 Contact
 
-Feel free to reach out via the contact form on the website or connect with me on [LinkedIn](your-linkedin-profile-url).
-```
-
-
-## Getting Started
-
-First, run the development server:
+Feel free to reach out via the contact form on the website or connect with me on [LinkedIn](your-linkedin-profile-url) or Gmail yuta.asakura.se@gmail.com
 
 
