@@ -35,7 +35,7 @@ Media Queries
 - ⚛️ **React.js**: For building the user interface.
 - ⚡ **Next.js**: For server-side rendering and routing.
 - 💨 **Tailwind CSS**: For utility-first styling and responsive design.
-- - 🚀 **Vercel**: For seamless integration with Next.js and for easy deployment.
+- 🚀 **Vercel**: For seamless integration with Next.js and for easy deployment.
 - 📧 **Nodemailer**: For handling contact form submissions.
 - 🛎️ **React Toastify**: For CTA button that scrolls up to the top portion of home page by clicking.
 - 🎡 **React Slick**: For a dynamic, responsive slider component and inifinite slider.
