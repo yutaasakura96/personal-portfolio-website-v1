@@ -94,22 +94,22 @@ export default function Index({ id, data, DataArray }) {
               {data?.des1}
             </p>
             <div className="flex flex-col gap-4 mb-5 mt-5 w-full md:w-[25%] lg:w-full">
-            <a
-              href={data?.demo}
-              target="_blank"
-              className="inline-flex items-center justify-center gap-[15px] px-3 py-2 cursor-pointer bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white font-bold uppercase md:text-xs lg:text-base hover:bg-[#223740] hover:show-lg transform hover:translate-y-1"
-            >
-              <IoEarth />
-              <p>Live Demo</p>
-            </a>
-            <a
-              href={data?.github}
-              target="_blank"
-              className="inline-flex items-center justify-center gap-[15px] px-3 py-2 cursor-pointer bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white font-bold uppercase md:text-xs lg:text-base hover:bg-[#223740] hover:show-lg transform hover:translate-y-1"
-            >
-              <FaGithub />
-              <p>Github</p>
-            </a>
+              <a
+                href={data?.demo}
+                target="_blank"
+                className="inline-flex items-center justify-center gap-[15px] px-3 py-2 cursor-pointer bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white font-bold uppercase md:text-xs lg:text-base hover:bg-[#223740] hover:show-lg transform hover:translate-y-1"
+              >
+                <IoEarth />
+                <p>Live Demo</p>
+              </a>
+              <a
+                href={data?.github}
+                target="_blank"
+                className="inline-flex items-center justify-center gap-[15px] px-3 py-2 cursor-pointer bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white font-bold uppercase md:text-xs lg:text-base hover:bg-[#223740] hover:show-lg transform hover:translate-y-1"
+              >
+                <FaGithub />
+                <p>Github</p>
+              </a>
             </div>
             <p id="highlight" className="my-2  text-dark text-[20px] font-sans">
               Tech Stack
