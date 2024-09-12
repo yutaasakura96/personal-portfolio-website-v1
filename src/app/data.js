@@ -12,7 +12,6 @@ export const AboutData = [
       "JavaScript (ES6)",
       "ReactJS",
       "NextJS",
-      "REST API / GraphQL",
     ],
   },
   {
@@ -33,7 +32,7 @@ export const AboutData = [
     title: "UI / UX Designer",
     img: "/first.svg",
     array: [
-      "Wireframe",
+      "Wireframing",
       "Prototyping",
       "Figma",
       "Canva",
@@ -51,6 +50,7 @@ export const AboutData = [
       "Git / Github",
       "Bash / Powershell",
       "NPM / Yarn",
+      "ESlint / Prettier",
       "Vercel / Heroku / Netlify",
       "Postman / Insomnia",
     ],

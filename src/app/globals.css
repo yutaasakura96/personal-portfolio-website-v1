@@ -90,6 +90,12 @@
     }
   }
 
+  @media (min-width: 1150px){
+    .portfolio-img-center {
+      justify-content: center !important;
+    }
+  }
+
   @media (min-width: 375px){
     .xs{
       width: 100%;

@@ -67,21 +67,29 @@ export default function Index({ id, data, DataArray }) {
             "linear-gradient(90deg, rgba(238, 247, 251, 1) 58%, rgba(255, 255, 255, 1) 52%",
         }}
       >
-        <div className="col-span-12  lg:col-span-8 mb-20 scrol lg:px-0 sm:px-20">
-          {data?.images.map((item) => (
-            <div
-              key={item}
-              className="flex justify-center lg:justify-end  items-center"
-            >
-              <Image
-                src={item}
-                alt="portfolio photos"
-                height={100}
-                width={800}
-                className="mt-20 rounded-lg"
-              />
-            </div>
-          ))}
+        <div className="col-span-12 lg:col-span-8 mb-20 scrol lg:px-0 sm:px-20">
+          {data?.images &&
+            (data.images[1] ? (
+              <div className="flex justify-center items-center">
+                <Image
+                  src={data.images[1]}
+                  alt="portfolio photos"
+                  height={100}
+                  width={800}
+                  className="mt-20 rounded-lg"
+                />
+              </div>
+            ) : (
+              <div className="flex justify-center items-center">
+                <Image
+                  src={data.images[0]}
+                  alt="portfolio photos"
+                  height={100}
+                  width={800}
+                  className="mt-20 rounded-lg"
+                />
+              </div>
+            ))}
         </div>
         <div className="col-span-12  lg:col-span-4 lg:px-0 sm:px-20">
           <div className="mt-10 sm:mt-24 w-full lg:max-w-[300px] lg:px-1  px-3 sticky top-36 pb-14">
