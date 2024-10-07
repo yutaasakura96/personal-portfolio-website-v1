@@ -155,7 +155,7 @@ export default function Index({ id, data, DataArray }) {
               className="transform transition-transform group-hover:-translate-x-3 duration-300 w-5 h-5 mr-2"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 d="M7 16l-4-4m0 0l4-4m-4 4h18"
               ></path>
@@ -183,7 +183,7 @@ export default function Index({ id, data, DataArray }) {
               className="transform transition-transform group-hover:translate-x-3 duration-300 w-5 h-5 ml-2"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               ></path>

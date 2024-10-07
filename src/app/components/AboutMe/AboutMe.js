@@ -193,7 +193,7 @@ export default function AboutMe() {
                     className="w-6 h-6 text-white"
                   >
                     <path
-                      stroke-linecap="round"
+                      strokeLinecap="round"
                       stroke-linejoin="round"
                       d="M15 19l-7-7 7-7"
                     ></path>
@@ -213,7 +213,7 @@ export default function AboutMe() {
                     className="w-6 h-6 text-white"
                   >
                     <path
-                      stroke-linecap="round"
+                      strokeLinecap="round"
                       stroke-linejoin="round"
                       d="M9 5l7 7-7 7"
                     ></path>
