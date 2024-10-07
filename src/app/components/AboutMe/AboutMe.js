@@ -131,7 +131,7 @@ export default function AboutMe() {
                     {item.title}
                   </h4>
 
-                  
+
                 </a>
               ))}
             </div>
@@ -187,7 +187,7 @@ export default function AboutMe() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke="currentColor"
                     aria-hidden="true"
                     className="w-6 h-6 text-white"
@@ -207,7 +207,7 @@ export default function AboutMe() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke="currentColor"
                     aria-hidden="true"
                     className="w-6 h-6 text-white"

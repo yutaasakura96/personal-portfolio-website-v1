@@ -17,7 +17,7 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 512 512"
                 class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
@@ -40,7 +40,7 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 496 512"
                 class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
@@ -63,7 +63,7 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
                 class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
@@ -87,7 +87,7 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
                 class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
@@ -110,7 +110,7 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
                 class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
@@ -133,7 +133,7 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 512 512"
                 class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
