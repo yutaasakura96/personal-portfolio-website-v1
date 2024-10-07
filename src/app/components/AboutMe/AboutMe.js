@@ -95,6 +95,7 @@ export default function AboutMe() {
               height={500}
               className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
               style={{ objectFit: "cover" }}
+              priority
             />
           </section>
         </div>
