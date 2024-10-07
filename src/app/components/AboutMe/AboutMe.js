@@ -194,7 +194,7 @@ export default function AboutMe() {
                   >
                     <path
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                       d="M15 19l-7-7 7-7"
                     ></path>
                   </svg>
@@ -214,7 +214,7 @@ export default function AboutMe() {
                   >
                     <path
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                       d="M9 5l7 7-7 7"
                     ></path>
                   </svg>

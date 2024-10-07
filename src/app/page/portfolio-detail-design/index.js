@@ -156,7 +156,7 @@ export default function Index({ id, data, DataArray }) {
             >
               <path
                 strokeLinecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
                 d="M7 16l-4-4m0 0l4-4m-4 4h18"
               ></path>
             </svg>
@@ -184,7 +184,7 @@ export default function Index({ id, data, DataArray }) {
             >
               <path
                 strokeLinecap="round"
-                stroke-linejoin="round"
+                strokeLinejoin="round"
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               ></path>
             </svg>
