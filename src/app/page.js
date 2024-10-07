@@ -2,6 +2,10 @@
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import { Hind } from "next/font/google";
 import MySlider from "./components/SliderCard/MySlider";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 import AboutMe from "./components/AboutMe/AboutMe";
 import CallToAction from "./components/CallToAction/CallToAction";
 import Head from "next/head";
@@ -12,6 +16,95 @@ const hind = Hind({
 });
 
 export default function Home() {
+  var settings = {
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    speed: 2000,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop: true,
+    cssEase: "linear",
+    variableWidth: true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1760,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1460,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1290,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+    ],
+  };
   return (
     <>
       <Head>
@@ -59,6 +152,122 @@ export default function Home() {
       </Head>
       <main className="min-h-screen relative">
         <HomeComponent />
+        <div className="hide-slider w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons">
+          <Slider {...settings}>
+            <Image
+              src="/html.svg"
+              alt="html"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons "
+            />
+            <Image
+              src="/css.svg"
+              alt="css"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons "
+            />
+            <Image
+              src="/sass.svg"
+              alt="sass"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/bootstrap.svg"
+              alt="bootstrap"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/tailwind.svg"
+              alt="tailwind"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/javascript.svg"
+              alt="javascript"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/react.svg"
+              alt="react"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/nextjs.svg"
+              alt="next"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vercels.svg"
+              alt="vercels"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/heroku.svg"
+              alt="heroku"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/netlify.svg"
+              alt="netlify"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/ruby.svg"
+              alt="ruby"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/rails.svg"
+              alt="rails"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/postgres.svg"
+              alt="postgres"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/git.svg"
+              alt="git"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/github.svg"
+              alt="github"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+          </Slider>
+        </div>
         <div
           className="mt-0 pt-5 -mb-40"
           id="portfolio"
