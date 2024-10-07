@@ -94,7 +94,7 @@ export default function AboutMe() {
               width={500}
               height={500}
               className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
             />
           </section>
         </div>
@@ -130,8 +130,6 @@ export default function AboutMe() {
                   >
                     {item.title}
                   </h4>
-
-
                 </a>
               ))}
             </div>
