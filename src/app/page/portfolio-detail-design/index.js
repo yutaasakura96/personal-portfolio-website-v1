@@ -152,7 +152,7 @@ export default function Index({ id, data, DataArray }) {
               strokeWidth="2"
               stroke="currentColor"
               aria-hidden="true"
-              class="transform transition-transform group-hover:-translate-x-3 duration-300 w-5 h-5 mr-2"
+              className="transform transition-transform group-hover:-translate-x-3 duration-300 w-5 h-5 mr-2"
             >
               <path
                 stroke-linecap="round"
@@ -180,7 +180,7 @@ export default function Index({ id, data, DataArray }) {
               strokeWidth="2"
               stroke="currentColor"
               aria-hidden="true"
-              class="transform transition-transform group-hover:translate-x-3 duration-300 w-5 h-5 ml-2"
+              className="transform transition-transform group-hover:translate-x-3 duration-300 w-5 h-5 ml-2"
             >
               <path
                 stroke-linecap="round"

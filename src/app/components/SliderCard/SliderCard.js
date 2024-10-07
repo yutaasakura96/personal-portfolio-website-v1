@@ -30,7 +30,7 @@ export default function SliderCard({ item, index }) {
               strokeWidth="2"
               stroke="currentColor"
               aria-hidden="true"
-              class="w-6 h-6 lg:w-10 lg:h-10 text-white"
+              className="w-6 h-6 lg:w-10 lg:h-10 text-white"
             >
               <path
                 stroke-linecap="round"

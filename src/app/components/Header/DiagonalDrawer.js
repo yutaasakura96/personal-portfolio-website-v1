@@ -28,7 +28,7 @@ export default function DiagonalDrawer({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                class="w-12 h-12 text-white cursor-pointer  "
+                className="w-12 h-12 text-white cursor-pointer  "
               >
                 <path
                   strokeLinecap="round"
@@ -43,7 +43,7 @@ export default function DiagonalDrawer({
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-12 h-12 text-white"
+                className="w-12 h-12 text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -160,7 +160,7 @@ export default function DiagonalDrawer({
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 512 512"
-                    class="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
+                    className="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@ export default function DiagonalDrawer({
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 496 512"
-                    class="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
+                    className="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ export default function DiagonalDrawer({
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 448 512"
-                    class="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
+                    className="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +214,7 @@ export default function DiagonalDrawer({
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 448 512"
-                    class="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
+                    className="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +232,7 @@ export default function DiagonalDrawer({
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 448 512"
-                    class="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
+                    className="w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"

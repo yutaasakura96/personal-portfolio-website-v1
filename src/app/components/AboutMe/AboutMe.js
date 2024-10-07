@@ -148,18 +148,18 @@ export default function AboutMe() {
                 }`}
               >
                 <p
-                  class={`text-[#47626D] ${hind.className}  text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100`}
+                  className={`text-[#47626D] ${hind.className}  text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100`}
                 >
                   My Tech Skills Are:{" "}
                 </p>
-                <h2 class="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100">
+                <h2 className="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100">
                   {mapData?.title}
                 </h2>
                 <ul
-                  class={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined`}
+                  className={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined`}
                 >
                   {mapData?.array?.map((obj) => (
-                    <li key={obj} class="mb-2">
+                    <li key={obj} className="mb-2">
                       {obj}
                     </li>
                   ))}
