@@ -75,7 +75,7 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="invisible xl:visible xl:max-w-4xl 2xl:max-w-7xl mx-auto ">
+        <nav className="invisible xl:visible xl:px-4 2xl:max-w-7xl mx-auto ">
           <ul className="flex font-recoletaBlack flex-row items-center h-24">
             <li className="group text-2xl relative font-bold mr-20">
               {selectedIndex1 === 0 ? (

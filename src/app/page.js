@@ -262,13 +262,7 @@ export default function Home() {
           }}
         >
           <div className="container m-auto">
-            <p
-              className="text-[300px] text-[#F7FBFD] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden opacity-0"
-              style={{ transform: "translate(0px,-20px)" }}
-            >
-              {t("portfolioTitle")}
-            </p>
-            <div style={{ transform: "translate(0px, -290px)" }}>
+            <div style={{ transform: "translate(0px, -290px)" }} className='mt-[500px]'>
               <p className="text-[#48AFDE] md:pl-[80px] px-5 font-extrabold text-5xl">
                 {t("projectsTitle")}
               </p>
