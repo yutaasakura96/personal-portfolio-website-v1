@@ -142,11 +142,6 @@ export default function Header() {
               </Link>
             </li>
             <li className="group text-2xl relative font-bold mr-20">
-              {selectedIndex1 === 4 ? (
-                <span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              ) : (
-                <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              )}
               <LanguageSwitcher/>
             </li>
           </ul>
