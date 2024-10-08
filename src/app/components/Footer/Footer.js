@@ -1,11 +1,13 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
   return (
     <footer className="bg-[#232323] sm:px-6 lg:space-y-16 lg:px-8">
       <div className="xl:max-w-6xl 2xl:max-w-7xl px-10 md:px-20 xl:px-44 mx-auto sm:pt-10 overflow-hidden">
         <p className="text-center pt-2 block lg:block font-bold text-[#48AFDE]  text-2xl uppercase mb-5">
-          Follow Me
+          {t("followMe")}
         </p>
         <div className="flex  flex-wrap justify-between items-center">
           <div className="w-1/3 sm:w-auto sm:mx-4 mb-10 sm:mb-0">
@@ -17,9 +19,9 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 512 512"
-                class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
+                className="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +42,9 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 496 512"
-                class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
+                className="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,9 +65,9 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
-                class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
+                className="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,9 +89,9 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
-                class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
+                className="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,9 +112,9 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
-                class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
+                className="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,9 +135,9 @@ export default function Footer() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 512 512"
-                class="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
+                className="w-6 h-6 text-gray-300 transition-colors duration-300 group-hover:text-[#48AFDE]"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +152,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-white text-center pt-2 pb-2" style={{ marginTop: 0 }}>
-        © {new Date().getFullYear()}. Created and Coded by Yuta Asakura.
+        © {new Date().getFullYear()}. {t("footerText")}
       </p>
     </footer>
   );

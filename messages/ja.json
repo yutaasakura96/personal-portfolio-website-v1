@@ -1,0 +1,216 @@
+{
+  "Header": {
+    "home": "ホーム",
+    "portfolio": "ポートフォリオ",
+    "aboutMe": "私について",
+    "hireMe": "お問い合わせ"
+  },
+  "DiagonalDrawer": {
+    "home": "ホーム",
+    "portfolio": "ポートフォリオ",
+    "aboutMe": "私について",
+    "hireMe": "お問い合わせ",
+    "followMe": "フォローしてください"
+  },
+  "HomePage": {
+    "pageTitle": "朝倉 優太 | フルスタックウェブ開発者",
+    "pageDescription": "フルスタックウェブ開発者、朝倉雄太のポートフォリオ。",
+    "pageKeywords": "朝倉優太, ウェブ開発者, フルスタック, ポートフォリオ",
+    "ogTitle": "朝倉 優太 | フルスタックウェブ開発者",
+    "ogDescription": "朝倉優太のポートフォリオ、ウェブ開発プロジェクトを紹介。",
+    "twitterTitle": "朝倉 優太 | フルスタックウェブ開発者",
+    "twitterDescription": "朝倉優太のポートフォリオ、ウェブ開発プロジェクトを紹介。",
+    "portfolioTitle": "ポートフォリオ",
+    "projectsTitle": "プロジェクト",
+    "projectsDescription": "私の最近のプロジェクトをご覧ください。フルスタックのウェブ開発者として、クリーンでレスポンシブ、高性能なアプリケーションの構築に注力しています。各プロジェクトはスキルを磨く機会であり、パフォーマンスの最適化、ユーザーエクスペリエンスの向上、最新技術の導入などを行っています。コンセプトからデプロイまで、シームレスな機能と洗練されたデザインを提供するために、あらゆる細部に注意を払っています。コーディングと問題解決への情熱が私を学び続け、適応し続けさせ、私が取り組むすべてのプロジェクトが現代的で効率的で、実世界に影響を与えるものになるようにしています。"
+  },
+  "AboutMe": {
+    "aboutMeTitle": "私について",
+    "fullStackDeveloper": "フルスタックウェブ開発者",
+    "aboutMeDescription": "技術業界に転向する前は、8年間建設業界で現場監督として働いていました。これらの経験は、チームを率い、問題を解決し、高品質の結果を提供する能力を形作り、現在はウェブ開発者としての仕事に活かしています。最近、Le Wagon Tokyoのフルタイムのフルスタックウェブ開発ブートキャンプを卒業し、ウェブ開発のスキルを磨きました。成長し、意味のあるプロジェクトに貢献し続けることができるフルスタック開発者の役割を積極的に探しています。学ぶことへの愛と知識の無限の追求に駆り立てられており、それが私のすべての行動に目的を与えると信じています。私の目標は、チームと協力して革新的なソリューションを構築しながら、影響力のあるユーザー中心のプロジェクトを作成することです。また、いつか他の志ある開発者を指導することを楽しみにしています。特にJavaScriptとReactに興味があり、自由な時間にはボルダリング、スケートボード、ボディービル、ヨガを楽しんでいます。",
+    "frontendDeveloper": "フロントエンド開発者",
+    "backendDeveloper": "バックエンド開発者",
+    "uiUxDesigner": "UI / UX デザイナー",
+    "tools": "ツール",
+    "frontendSkills": "HTML\nCSS/SASS\nTailwindCSS/Bootstrap\nJavaScript (ES6)\nReactJS\nNextJS",
+    "backendSkills": "Ruby on Rails\nNode.js\nExpress.js\nPostgreSQL\nMongoDB",
+    "designSkills": "Figma\nAdobe XD\nSketch",
+    "toolsSkills": "Git\nGitHub\nHeroku\nNetlify\nVercel\nWebpack",
+    "myTechSkills": "私の開発スキルは："
+  },
+  "Footer": {
+    "followMe": "フォローしてください",
+    "footerText": "朝倉 優太が作成および開発しました。"
+  },
+  "HomeComponent": {
+    "greeting": "こんにちは！",
+    "name": "朝倉 優太です",
+    "title": "フルスタックウェブ開発者",
+    "hireMe": "お問い合わせ",
+    "myResume": "私の履歴書",
+    "resumeFileName": "yutafullstackcvjp.pdf"
+  },
+  "ContactPage": {
+    "contactForm": "お問い合わせフォーム",
+    "hireMeTitle": "お問い合わせ",
+    "introParagraph": "ウェブサイトやウェブアプリケーションプロジェクトのための信頼できるプロフェッショナルなフルスタックウェブ開発者をお探しですか？またはエキサイティングなプロジェクトで一緒に協力したいと思っていますか？お気軽にご連絡いただき、どのようにお手伝いできるかお知らせください。ぜひお役に立ちたいと思います！",
+    "letsMeet": "お会いしましょう！",
+    "location": "神奈川県、川崎市",
+    "reachMeAt": "連絡先",
+    "mobileNumber": "携帯電話: 070-1481-7160",
+    "emailAddress": "メールアドレス",
+    "activeHours": "活動時間",
+    "workingHours": "月曜 - 金曜 : 午前9時 - 午後7時",
+    "letsConnect": "ご縁をつなぎましょう！",
+    "connectParagraph": "プロジェクトでのコラボレーション、フリーランス/契約の仕事、またはプロのフルスタックウェブ開発者とデザイナーをお探しですか？私のプロジェクトやポートフォリオについてご意見がある場合や、単に連絡を取りたい場合は、お問い合わせフォームからメッセージを送ってお気軽にご連絡ください。お話を伺えることを楽しみにしています！",
+    "contactMe": "お問い合わせ",
+    "yourName": "お名前...",
+    "yourEmail": "メールアドレス...",
+    "yourNumber": "電話番号...",
+    "yourSubject": "件名...",
+    "yourMessage": "メッセージ...",
+    "sendMessage": "メッセージを送る",
+    "successMessage": "メッセージが正常に送信されました！",
+    "errorMessage": "何か問題が発生しました。もう一度お試しください。"
+  },
+  "PortfolioDetail": {
+    "projectSample": "プロジェクトサンプル",
+    "liveDemo": "ライブデモ",
+    "techStack": "プログラミング言語",
+    "previousProject": "前のプロジェクト",
+    "nextProject": "次のプロジェクト"
+  },
+  "AboutData": [
+    {
+      "count": 1,
+      "title": "フロントエンド開発者",
+      "img": "/second.svg",
+      "skills": [
+        "HTML",
+        "CSS/SASS",
+        "TailwindCSS/Bootstrap",
+        "JavaScript (ES6)",
+        "ReactJS",
+        "NextJS"
+      ]
+    },
+    {
+      "count": 2,
+      "title": "バックエンド開発者",
+      "img": "/third.svg",
+      "demo": "https://yasakura-vanillajs-1.netlify.app/",
+      "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
+      "skills": [
+        "Ruby",
+        "Ruby on Rails",
+        "PostgreSQL",
+        "Next.js (API)"
+      ]
+    },
+    {
+      "count": 3,
+      "title": "UI / UX デザイナー",
+      "img": "/first.svg",
+      "skills": [
+        "ワイヤーフレーム",
+        "プロトタイピング",
+        "Figma",
+        "Canva",
+        "Excalidraw",
+        "Coolors",
+        "FontPair"
+      ]
+    },
+    {
+      "count": 4,
+      "title": "ツール",
+      "img": "/sisxth.svg",
+      "skills": [
+        "VSCode",
+        "Git / Github",
+        "Bash / Powershell",
+        "NPM / Yarn",
+        "ESlint / Prettier",
+        "Vercel / Heroku / Netlify",
+        "Postman / Insomnia"
+      ]
+    }
+  ],
+  "DataArray": [
+    {
+      "title": "AI搭載のCRMのようなツール",
+      "name": "パーソナルリレーションズマネージャー",
+      "demo": "https://www.theprm.tech/",
+      "github": "https://github.com/jpblicer/PRM",
+      "description": "Personal Relationship Managerは、キャリアをさらに発展させたい個人のモバイルユーザーを対象としたオープンソースのモバイルAI搭載CRMのようなツールです。このアプリケーションは、東京Le Wagonブートキャンプの一環として、発想から完成まで2週間のチャレンジとして開発されました。",
+      "additionalDescription": "ライブデモのログイン情報：ユーザー：admin@admin.com パスワード：adminadmin",
+      "images": ["/prm1.png"],
+      "tech": [
+        "Ruby",
+        "Ruby on Rails",
+        "Javascript",
+        "OpenAI API",
+        "PostgreSQL",
+        "Bootstrap",
+        "SASS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "デスクトップ初の完全対応 MPA",
+      "name": "コードとクリエイト",
+      "demo": "https://yasakura-vanillajs-1.netlify.app/",
+      "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
+      "description": "このプロジェクトは、HTML、CSS、およびバニラ JavaScript を使用して作成された完全対応のマルチページ Web アプリです。動的なコンテンツと高度な CSS テクニックを備えたモダンなデザインが特徴で、サイトの外観と機能性の両方を強化しています。",
+      "additionalDescription": "",
+      "images": ["/codeandcreate.png", "/codeandcreatefull.png"],
+      "tech": [
+        "Javascript",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "完全対応のデスクトップSPA",
+      "name": "Omnifood プロジェクト",
+      "demo": "https://omnifood-yasakura.netlify.app/",
+      "github": "https://github.com/yutaasakura96/Project-Omnifood",
+      "description": "Omnifood は、AI ベースの食事サブスクリプションを専門とする架空の会社であり、この単一ページのウェブサイトは、応答性の高いデザインと高度な CSS テクニックの両方を強調しています。",
+      "additionalDescription": "",
+      "images": ["/projectomnifood.png", "/omnifoodfull.png"],
+      "tech": [
+        "Javascript",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "架空の不動産サイト",
+      "name": "Nexter プロジェクト",
+      "demo": "https://yasakura-nexterproject.netlify.app/",
+      "github": "https://github.com/yutaasakura96/Nexter-Project",
+      "description": "Nexter は、豪華な家を紹介し、ユーザーにシームレスな家購入体験を提供するように設計された架空の不動産サイトです。このプロジェクトは、高度な CSS グリッドおよび SCSS テクニックを示しており、豊富な機能と洗練されたデザインを備えた完全対応のレイアウトを実現しています。",
+      "additionalDescription": "",
+      "images": ["/nexterproject.png", "/nexterfull.png"],
+      "tech": [
+        "Javascript",
+        "SASS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "架空のツアー会社のウェブサイト",
+      "name": "Natours プロジェクト",
+      "demo": "https://natoursproject-yasakura.netlify.app/",
+      "github": "https://github.com/yutaasakura96/Natours-Project",
+      "description": "Natours は、自然界を探検し、エキサイティングな冒険を楽しむよう人々を鼓舞するために設計された架空のツアー会社のウェブサイトです。このプロジェクトは、高度な SCSS テクニックを使用して構築されており、アニメーション、カラーマネジメント、Sass ミックスインを使用したレスポンシブ デザイン、モダンな Web デザイン プラクティスなどの機能を備えています。",
+      "additionalDescription": "",
+      "images": ["/natoursproject.png", "/natoursfull.png"],
+      "tech": [
+        "Javascript",
+        "SASS",
+        "HTML"
+      ]
+    }
+  ]
+}

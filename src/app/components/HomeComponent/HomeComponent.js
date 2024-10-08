@@ -1,9 +1,7 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Hind } from "next/font/google";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -11,96 +9,7 @@ const hind = Hind({
 });
 
 export default function HomeComponent() {
-  var settings = {
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    speed: 2000,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    loop: true,
-    cssEase: "linear",
-    variableWidth: true,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1760,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1460,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1290,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-    ],
-  };
-
+  const t = useTranslations("HomeComponent");
   return (
     <React.Fragment>
       <div
@@ -122,28 +31,28 @@ export default function HomeComponent() {
                   <p
                     className={`text-[#47AEDE]   text-3xl md:text-base lg:text-2xl ${hind.className}`}
                   >
-                    Hi There!
+                    {t('greeting')}
                   </p>
                   <h1 className="text-[#223740] font-recoletaBlack text-5xl md:text-5xl lg:text-7xl xl:text-7xl mt-5 md:mt-3">
-                    I&apos;m Yuta Asakura
+                  {t('name')}
                   </h1>
                   <h2
                     className={`text-[#223740] py-2 font-bold uppercase md:text-xl ${hind.className}`}
                   >
-                    Full-Stack Web Developer
+                     {t('title')}
                   </h2>
                   <a
                     href="/page/contactme"
                     className={`cursor-pointer inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
-                    Hire Me
+                    {t('hireMe')}
                   </a>
                   <a
-                    href="yutafullstackcv.pdf"
-                    download="yuta yutafullstackcv.pdf"
+                    href={t('resumeFileName')}
+                    download={t('resumeFileName')}
                     className={`cursor-pointer ml-10 inline-block bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
-                    My Resume
+                    {t('myResume')}
                   </a>
                 </div>
               </div>
@@ -160,126 +69,11 @@ export default function HomeComponent() {
                   height={0}
                   sizes="100vw"
                   style={{ width: "100%", height: "auto" }}
+                  priority
                 />
               </div>
             </div>
           </div>
-          <div className="hide-slider w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons">
-                  <Slider {...settings}>
-                    <Image
-                      src="/html.svg"
-                      alt="html"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons "
-                    />
-                    <Image
-                      src="/css.svg"
-                      alt="css"
-                      width={0}
-                      height={80}
-                       className="h-20 px-10 infinite-icons "
-                    />
-                    <Image
-                      src="/sass.svg"
-                      alt="sass"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/bootstrap.svg"
-                      alt="bootstrap"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/tailwind.svg"
-                      alt="tailwind"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/javascript.svg"
-                      alt="javascript"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/react.svg"
-                      alt="react"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/nextjs.svg"
-                      alt="next"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/vercels.svg"
-                      alt="vercels"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/heroku.svg"
-                      alt="heroku"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/netlify.svg"
-                      alt="netlify"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/ruby.svg"
-                      alt="ruby"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/rails.svg"
-                      alt="rails"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/postgres.svg"
-                      alt="postgres"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/git.svg"
-                      alt="git"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                    <Image
-                      src="/github.svg"
-                      alt="github"
-                      width={0}
-                      height={80}
-                      className="h-20 px-10 infinite-icons"
-                    />
-                  </Slider>
-                </div>
         </div>
       </div>
     </React.Fragment>
