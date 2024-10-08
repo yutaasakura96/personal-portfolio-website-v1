@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This project showcases my skills as a full-stack web developer. It features a fully responsive multi-page design built with modern web technologies, including React.js, Next.js, Tailwind CSS, and Nodemailer.
 
+Now with internationalization (i18n) support, the website is available in both English and Japanese, providing a localized experience for users. The language switcher allows seamless toggling between languages, ensuring accessibility for a global audience.
+
 ## 🌐 Demo
 
 [🚀 Live Demo](https://www.asakurayuta.dev/)
@@ -16,12 +18,12 @@ Media Queries
 1366x768
 1280x780
 1024x768
-820x1180 
-768x1024 
-430 x 932 
-393x932 
-375x667 
-- ⚛️ **React.js & Next.js**: Components built for a dynamic user interface with optimized performance using Next.js.
+820x1180
+768x1024
+430 x 932
+393x932
+375x667
+- ⚛️ **React.js & Next.js**: Components built for a dynamic user interface with optimized performance using Next.js, now featuring internationalization (i18n) for seamless language switching between English and Japanese.
 - 🎡 **Slider Carousel**: A smooth, infinite carousel of skills and technologies using `react-slick` and custom configurations.
 - ✉️ **Contact Form**: A contact form with real-time validation and submission using **Nodemailer**.
 - 🔍 **SEO Optimized**: Meta tags for social sharing (Twitter, LinkedIn) and search engine visibility.
@@ -33,7 +35,7 @@ Media Queries
 ## 🛠️ Technologies Used
 
 - ⚛️ **React.js**: For building the user interface.
-- ⚡ **Next.js**: For server-side rendering and routing.
+- ⚡ **Next.js**: For server-side rendering and routing and internationalization (i18n) to support multiple languages.
 - 💨 **Tailwind CSS**: For utility-first styling and responsive design.
 - 🚀 **Vercel**: For seamless integration with Next.js and for easy deployment.
 - 📧 **Nodemailer**: For handling contact form submissions.
@@ -43,6 +45,15 @@ Media Queries
 - 🖼️ **Image Optimization**: Next.js `Image` component for optimized image loading.
 
 ## 📋 Key Components
+
+### 🌍 Internationalization (i18n) Support
+
+The website now supports multiple languages (English and Japanese) using next-intl.
+
+	•	Language Switcher: Allows users to toggle between supported languages (English and Japanese).
+	•	Dynamic Content: All hardcoded strings have been replaced with translation keys, including navigation, section titles, and labels.
+	•	Translation Files: Language files (en.json, ja.json) manage translations and ensure easy scalability for future language support.
+
 
 ### 🔝 Call to Action (Scroll to Top)
 
@@ -129,13 +140,11 @@ To deploy on Vercel:
 	1.	Push your project to a GitHub repository.
 	2.	Visit Vercel, sign in, and import your repository.
 	3.	Follow the deployment steps, and your project will be live in a few clicks!
- 
+
 Or Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details on how to deploy your project.
 
 🖥️ Created and Coded by Yuta Asakura © 2024
 
 ## 📞 Contact
 
-Feel free to reach out via the contact form on the website or connect with me on [LinkedIn](your-linkedin-profile-url) or Gmail yuta.asakura.se@gmail.com
-
-
+Feel free to reach out via the contact form on the website or connect with me on [LinkedIn](www.linkedin.com/in/yuta-asakura) or Gmail yuta.asakura.se@gmail.com
