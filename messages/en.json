@@ -1,0 +1,216 @@
+{
+  "Header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "aboutMe": "About Me",
+    "hireMe": "Hire Me"
+  },
+  "DiagonalDrawer": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "aboutMe": "About Me",
+    "hireMe": "Hire Me",
+    "followMe": "Follow Me"
+  },
+  "HomePage": {
+    "pageTitle": "Yuta Asakura | Full-Stack Web Developer",
+    "pageDescription": "Portfolio of Yuta Asakura, a full-stack web developer.",
+    "pageKeywords": "Yuta Asakura, Web Developer, Full-Stack, Portfolio",
+    "ogTitle": "Yuta Asakura | Full-Stack Web Developer",
+    "ogDescription": "Explore the portfolio of Yuta Asakura, showcasing web development projects.",
+    "twitterTitle": "Yuta Asakura | Full-Stack Web Developer",
+    "twitterDescription": "Portfolio of Yuta Asakura, showcasing web development projects.",
+    "portfolioTitle": "Portfolio",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Here’s a look at some of my recent projects. As a full-stack web developer, I focus on building clean, responsive, and high-performing applications. Each project is a chance to refine my skills, whether I’m optimizing performance, enhancing user experience, or implementing the latest technologies. From concept to deployment, I ensure every detail is carefully crafted to deliver seamless functionality and a polished design. My passion for coding and problem-solving drives me to keep learning and adapting, making sure that every project I work on is modern, efficient, and built for real-world impact."
+  },
+  "AboutMe": {
+    "aboutMeTitle": "About Me",
+    "fullStackDeveloper": "Full-Stack Web Developer",
+    "aboutMeDescription": "Before transitioning into tech, I spent 8 years in the construction industry as a construction foreman. These experiences shaped my ability to lead teams, solve problems, and focus on delivering high-quality results, all of which I now apply to my work as a web developer. Recently, I graduated from Le Wagon Tokyo’s full-time full-stack web development bootcamp, where I honed my skills in web development. I am actively seeking a full-stack developer role where I can continue growing and contributing to meaningful projects. I’m driven by a love for learning and the endless pursuit of knowledge, as I believe it brings purpose to everything I do. My goal is to create impactful, user-centered projects while collaborating with teams to build innovative solutions. I also look forward to one day mentoring other aspiring developers. I have a particular interest in JavaScript and React, and in my free time, I enjoy bouldering, skateboarding, bodybuilding, and practicing yoga.",
+    "frontendDeveloper": "Front-end Developer",
+    "backendDeveloper": "Back-end Developer",
+    "uiUxDesigner": "UI / UX Designer",
+    "tools": "Tools",
+    "frontendSkills": "HTML\nCSS/SASS\nTailwindCSS/Bootstrap\nJavaScript (ES6)\nReactJS\nNextJS",
+    "backendSkills": "Ruby on Rails\nNode.js\nExpress.js\nPostgreSQL\nMongoDB",
+    "designSkills": "Figma\nAdobe XD\nSketch",
+    "toolsSkills": "Git\nGitHub\nHeroku\nNetlify\nVercel\nWebpack",
+    "myTechSkills": "My Tech Skills Are:"
+  },
+  "Footer": {
+    "followMe": "Follow Me",
+    "footerText": "Created and Coded by Yuta Asakura."
+  },
+  "HomeComponent": {
+    "greeting": "Hi There!",
+    "name": "I'm Yuta Asakura",
+    "title": "Full-Stack Web Developer",
+    "hireMe": "Hire Me",
+    "myResume": "My Resume",
+    "resumeFileName": "yutafullstackcv.pdf"
+  },
+  "ContactPage": {
+    "contactForm": "Contact Form",
+    "hireMeTitle": "Hire Me",
+    "introParagraph": "Looking for a reliable, professional full-stack web developer for your website or web application projects? Or perhaps you’d like to connect and collaborate on an exciting project? Feel free to reach out and let me know how I can assist you. I’d love to help!",
+    "letsMeet": "Let's Meet!",
+    "location": "Kanagawa, Kawasaki City",
+    "reachMeAt": "Reach Me At",
+    "mobileNumber": "Mobile: 070-1481-7160",
+    "emailAddress": "E-Mail Address",
+    "activeHours": "Active Hours",
+    "workingHours": "Mon - Fri : 9am - 7pm",
+    "letsConnect": "Let's Connect!",
+    "connectParagraph": "Interested in collaborating on a project, freelance/contract work, or looking to hire a professional full-stack web developer and designer? If you have suggestions about my projects or portfolio, or simply want to connect, feel free to reach out by sending me a message through the contact form. I’d be happy to hear from you!",
+    "contactMe": "Contact Me",
+    "yourName": "Your Name...",
+    "yourEmail": "Your Email...",
+    "yourNumber": "Your Number...",
+    "yourSubject": "Your Subject...",
+    "yourMessage": "Your Message...",
+    "sendMessage": "Send Me a Message",
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "PortfolioDetail": {
+    "projectSample": "Project Sample",
+    "liveDemo": "Live Demo",
+    "techStack": "Tech Stack",
+    "previousProject": "Previous Project",
+    "nextProject": "Next Project"
+  },
+  "AboutData": [
+    {
+      "count": 1,
+      "title": "Front-end Developer",
+      "img": "/second.svg",
+      "skills": [
+        "HTML",
+        "CSS/SASS",
+        "TailwindCSS/Bootstrap",
+        "JavaScript (ES6)",
+        "ReactJS",
+        "NextJS"
+      ]
+    },
+    {
+      "count": 2,
+      "title": "Back-end Developer",
+      "img": "/third.svg",
+      "demo": "https://yasakura-vanillajs-1.netlify.app/",
+      "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
+      "skills": [
+        "Ruby",
+        "Ruby on Rails",
+        "PostgreSQL",
+        "Next.js (API)"
+      ]
+    },
+    {
+      "count": 3,
+      "title": "UI / UX Designer",
+      "img": "/first.svg",
+      "skills": [
+        "Wireframing",
+        "Prototyping",
+        "Figma",
+        "Canva",
+        "Excalidraw",
+        "Coolors",
+        "FontPair"
+      ]
+    },
+    {
+      "count": 4,
+      "title": "Tools",
+      "img": "/sisxth.svg",
+      "skills": [
+        "VSCode",
+        "Git / Github",
+        "Bash / Powershell",
+        "NPM / Yarn",
+        "ESlint / Prettier",
+        "Vercel / Heroku / Netlify",
+        "Postman / Insomnia"
+      ]
+    }
+  ],
+  "DataArray": [
+    {
+      "title": "AI powered CRM-like tool",
+      "name": "Personal Relations Manager",
+      "demo": "https://www.theprm.tech/",
+      "github": "https://github.com/jpblicer/PRM",
+      "description": "Personal Relationship Manager is an open source mobile AI powered CRM-like tool aimed at individual mobile users who want to further their career. This Application was developed as part of a 2 week challenge from inception to completition as part of the Tokyo Le Wagon bootcamp.",
+      "additionalDescription": "Login Credentials for the live demo: user: admin@admin.com pw: adminadmin",
+      "images": ["/prm1.png"],
+      "tech": [
+        "Ruby",
+        "Ruby on Rails",
+        "Javascript",
+        "OpenAI API",
+        "PostgreSQL",
+        "Bootstrap",
+        "SASS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Desktop first fully responsive MPA",
+      "name": "Code and Create",
+      "demo": "https://yasakura-vanillajs-1.netlify.app/",
+      "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
+      "description": "This project is a fully responsive, multi-page web app created using HTML, CSS, and vanilla JavaScript. It features a modern design with dynamic content and advanced CSS techniques, enhancing both the look and functionality of the site.",
+      "additionalDescription": "",
+      "images": ["/codeandcreate.png", "/codeandcreatefull.png"],
+      "tech": [
+        "Javascript",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Fully responsive desktop SPA",
+      "name": "Omnifood Project",
+      "demo": "https://omnifood-yasakura.netlify.app/",
+      "github": "https://github.com/yutaasakura96/Project-Omnifood",
+      "description": "Omnifood is a fictional company specializing in AI-based meal subscriptions, and this single-page website highlights both responsive design and advanced CSS techniques.",
+      "additionalDescription": "",
+      "images": ["/projectomnifood.png", "/omnifoodfull.png"],
+      "tech": [
+        "Javascript",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Fictional real estate website",
+      "name": "Nexter Project",
+      "demo": "https://yasakura-nexterproject.netlify.app/",
+      "github": "https://github.com/yutaasakura96/Nexter-Project",
+      "description": "Nexter is a fictional real estate website designed to showcase luxurious homes and provide users with a seamless home-buying experience. This project demonstrates advanced CSS Grid and SCSS techniques, resulting in a fully responsive layout with rich features and an elegant design.",
+      "additionalDescription": "",
+      "images": ["/nexterproject.png", "/nexterfull.png"],
+      "tech": [
+        "Javascript",
+        "SASS",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Fictional tour company website",
+      "name": "Natours Project",
+      "demo": "https://natoursproject-yasakura.netlify.app/",
+      "github": "https://github.com/yutaasakura96/Natours-Project",
+      "description": "Natours is a fictional tour company website designed to inspire people to explore the natural world through exciting adventures. This project is built using advanced SCSS techniques, showcasing features like animations, color management, responsive design with Sass mixins, and modern web design practices.",
+      "additionalDescription": "",
+      "images": ["/natoursproject.png", "/natoursfull.png"],
+      "tech": [
+        "Javascript",
+        "SASS",
+        "HTML"
+      ]
+    }
+  ]
+}

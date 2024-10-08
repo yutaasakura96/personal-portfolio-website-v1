@@ -1,12 +1,15 @@
 import React from "react";
 import { Hind } from "next/font/google";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function HomeComponent() {
+  const t = useTranslations("HomeComponent");
   return (
     <React.Fragment>
       <div
@@ -28,28 +31,28 @@ export default function HomeComponent() {
                   <p
                     className={`text-[#47AEDE]   text-3xl md:text-base lg:text-2xl ${hind.className}`}
                   >
-                    Hi There!
+                    {t('greeting')}
                   </p>
                   <h1 className="text-[#223740] font-recoletaBlack text-5xl md:text-5xl lg:text-7xl xl:text-7xl mt-5 md:mt-3">
-                    I&apos;m Yuta Asakura
+                  {t('name')}
                   </h1>
                   <h2
                     className={`text-[#223740] py-2 font-bold uppercase md:text-xl ${hind.className}`}
                   >
-                    Full-Stack Web Developer
+                     {t('title')}
                   </h2>
                   <a
                     href="/page/contactme"
                     className={`cursor-pointer inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
-                    Hire Me
+                    {t('hireMe')}
                   </a>
                   <a
-                    href="yutafullstackcv.pdf"
-                    download="yuta yutafullstackcv.pdf"
+                    href={t('resumeFileName')}
+                    download={t('resumeFileName')}
                     className={`cursor-pointer ml-10 inline-block bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
-                    My Resume
+                    {t('myResume')}
                   </a>
                 </div>
               </div>

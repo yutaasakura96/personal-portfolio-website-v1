@@ -6,6 +6,7 @@ import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 import { Hind } from "next/font/google";
 import { ToastClassName, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslations } from "next-intl";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -13,6 +14,8 @@ const hind = Hind({
 });
 
 export default function Page() {
+  const t = useTranslations("ContactPage");
+
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -70,13 +73,13 @@ export default function Page() {
           toast(response.message);
         } else {
           clearState();
-          toast("something went wrong");
+          toast(t('successMessage'));
         }
       })
       .catch((e) => {
         setLoading(false);
         clearState();
-        toast("something went wrong");
+        toast(t('errorMessage'));
       });
   };
 
@@ -88,21 +91,17 @@ export default function Page() {
           <div className="flex flex-col items-center justify-center  w-full h-full bg-[#223740]/70 backdrop-brightness-50 p-special">
             <div className="text-center bg-[#48AFDE] py-[5px] px-[10px] tracking-wide uppercase font-semibold text-[20px] text-white rounded-lg hover:translate-y-1 hover:bg-[#223740]">
               <a href="#contact" className="cursor-pointer">
-                Contact Form
+              {t('contactForm')}
               </a>
             </div>
             <div className="mt-[10px]">
               <h1 className="recoletaBold text-5xl text-[#48AFDE] p-2 text-center tracking-wide">
-                Hire Me
+              {t('hireMeTitle')}
               </h1>
             </div>
             <div className="flex justify-center text-center mt-[10px] md:w-[700px] ">
               <p className="text-white font-[300] text-cener text-xl">
-                Looking for a reliable, professional full-stack web developer
-                for your website or web application projects? Or perhaps you’d
-                like to connect and collaborate on an exciting project? Feel
-                free to reach out and let me know how I can assist you. I’d love
-                to help!
+              {t('introParagraph')}
               </p>
             </div>
           </div>
@@ -125,12 +124,12 @@ export default function Page() {
 
                   <div className="flex flex-col">
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Let&apos;s Meet!</p>
+                      <p>{t('letsMeet')}</p>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666]">Kanagawa, Kawasaki City</p>
+                  <p className="text-[#666666]">{t('location')}</p>
                 </div>
               </div>
 
@@ -145,11 +144,11 @@ export default function Page() {
 
                   <div className="flex flex-col">
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Reach Me At</p>
+                      <p>{t('reachMeAt')}</p>
                     </div>
                   </div>
                 </div>
-                  <p className="text-[#666666]">Mobile: 070-1481-7160</p>
+                <p className="text-[#666666]">{t('mobileNumber')}</p>
               </div>
             </div>
 
@@ -165,7 +164,7 @@ export default function Page() {
 
                   <div className="flex flex-col">
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>E-Mail Address</p>
+                      <p>{t('emailAddress')}</p>
                     </div>
                   </div>
                 </div>
@@ -185,12 +184,12 @@ export default function Page() {
 
                   <div className="flex flex-col">
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Active Hours</p>
+                      <p>{t('activeHours')}</p>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666]">Mon - Fri : 9am - 7pm</p>
+                  <p className="text-[#666666]">{t('workingHours')}</p>
                 </div>
               </div>
             </div>
@@ -209,23 +208,17 @@ export default function Page() {
           />
           <div className="absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70"></div>
           <div className="absolute inset-0 flex flex-col gap-[20px] items-center justify-end text-white shadow-lg p-6">
-            <div className="font-semibold text-[24px]">Let&apos;s Connect!</div>
+            <div className="font-semibold text-[24px]">{t('letsConnect')}</div>
             <div>
               <p className="text-center font-[200] text-xl">
-                {" "}
-                Interested in collaborating on a project, freelance/contract
-                work, or looking to hire a professional full-stack web developer
-                and designer? If you have suggestions about my projects or
-                portfolio, or simply want to connect, feel free to reach out by
-                sending me a message through the contact form. I’d be happy to
-                hear from you!
+              {t('connectParagraph')}
               </p>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-[20px]">
           <div className="">
-            <p className="text-[30px] text-[#48AFDE]"> Contact Me</p>
+            <p className="text-[30px] text-[#48AFDE]"> {t('contactMe')}</p>
           </div>
           <form className="flex flex-col gap-[20px]" onSubmit={handleSubmit}>
             <div
@@ -234,7 +227,7 @@ export default function Page() {
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name.."
+                placeholder={t('yourName')}
                 required
                 onChange={handleChange}
                 value={state.name}
@@ -243,7 +236,7 @@ export default function Page() {
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email.."
+                placeholder={t('yourEmail')}
                 required
                 onChange={handleChange}
                 value={state.email}
@@ -256,7 +249,7 @@ export default function Page() {
               <input
                 type="text"
                 name="phoneNumber"
-                placeholder="Your Number.."
+                placeholder={t('yourNumber')}
                 required
                 onChange={handlePhoneChange}
                 value={state.phoneNumber}
@@ -265,7 +258,7 @@ export default function Page() {
               <input
                 type="text"
                 name="subject"
-                placeholder="Your Subject.."
+                placeholder={t('yourSubject')}
                 required
                 onChange={handleChange}
                 value={state.subject}
@@ -276,7 +269,7 @@ export default function Page() {
               <textarea
                 required
                 name="message"
-                placeholder="Your Message.."
+                placeholder={t('yourMessage')}
                 onChange={handleChange}
                 value={state.message}
                 className="px-[12px] outline-none h-[180px] w-full rounded-md py-[12px] flex-1 bg-gray-200"
@@ -287,7 +280,7 @@ export default function Page() {
                 <div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rounded-full"></div>
               )}
               <button className="bg-[#48AFDE] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white">
-                Send Me a Message
+              {t('sendMessage')}
               </button>
             </div>
           </form>

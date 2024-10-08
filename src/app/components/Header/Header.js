@@ -5,8 +5,12 @@ import Drawer from "./DiagonalDrawer";
 import "../Header/DiagonalDrawer.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 export default function Header() {
+  const t = useTranslations('Header');
+
   const pathname = usePathname();
   const [selectedIndex1, setSelectedIndex1] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +90,7 @@ export default function Header() {
                 href="/#home"
                 onClick={() => setSelectedIndex1(0)}
               >
-                Home
+                {t('home')}
               </a>
             </li>
             <li className="group text-2xl relative font-bold mr-20">
@@ -102,7 +106,7 @@ export default function Header() {
                 href="/#portfolio"
                 onClick={() => setSelectedIndex1(1)}
               >
-                Portfolio
+                {t('portfolio')}
               </a>
             </li>
             <li className="group text-2xl relative font-bold mr-20">
@@ -118,7 +122,7 @@ export default function Header() {
                 href="/#about-me-component"
                 onClick={() => setSelectedIndex1(2)}
               >
-                About Me
+                {t('aboutMe')}
               </a>
             </li>
             <li className="group text-2xl relative font-bold mr-20">
@@ -134,8 +138,16 @@ export default function Header() {
                 href="/page/contactme"
                 onClick={() => setSelectedIndex1(3)}
               >
-                Hire Me
+                {t('hireMe')}
               </Link>
+            </li>
+            <li className="group text-2xl relative font-bold mr-20">
+              {selectedIndex1 === 4 ? (
+                <span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
+              ) : (
+                <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
+              )}
+              <LanguageSwitcher/>
             </li>
           </ul>
         </nav>

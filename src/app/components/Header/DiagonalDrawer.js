@@ -1,14 +1,18 @@
 import React from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 export default function DiagonalDrawer({
   isOpen,
   setIsOpen,
-  selecttedIndex1,
+  selectedIndex1,
   setSelectedIndex1,
 }) {
   const route = useRouter();
   const pathname = usePathname();
+  const t = useTranslations('DiagonalDrawer');
+
   return (
     <React.Fragment>
       <div className="relative">
@@ -73,9 +77,9 @@ export default function DiagonalDrawer({
                         setIsOpen(false);
                       }}
                     >
-                      Home
+                      {t('home')}
                     </a>
-                    {selecttedIndex1 === 0 ? (
+                    {selectedIndex1 === 0 ? (
                       <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
                     ) : (
                       ""
@@ -93,9 +97,9 @@ export default function DiagonalDrawer({
                         setIsOpen(false);
                       }}
                     >
-                      Portfolio
+                      {t('portfolio')}
                     </a>
-                    {selecttedIndex1 === 1 ? (
+                    {selectedIndex1 === 1 ? (
                       <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
                     ) : (
                       ""
@@ -113,9 +117,9 @@ export default function DiagonalDrawer({
                         setIsOpen(false);
                       }}
                     >
-                      About Me
+                      {t('aboutMe')}
                     </a>
-                    {selecttedIndex1 === 2 ? (
+                    {selectedIndex1 === 2 ? (
                       <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
                     ) : (
                       ""
@@ -133,9 +137,28 @@ export default function DiagonalDrawer({
                         setIsOpen(false);
                       }}
                     >
-                      Hire Me
+                      {t('hireMe')}
                     </a>
-                    {selecttedIndex1 === 3 ? (
+                    {selectedIndex1 === 3 ? (
+                      <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    ) : (
+                      ""
+                    )}
+                    <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                  </div>
+                </li>
+                <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                  <div className="inline-block relative">
+                    <a
+                      href="/page/contactme"
+                      onClick={() => {
+                        setSelectedIndex1(4);
+                        setIsOpen(false);
+                      }}
+                    >
+                      <LanguageSwitcher/>
+                    </a>
+                    {selectedIndex1 === 4 ? (
                       <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
                     ) : (
                       ""
@@ -147,10 +170,10 @@ export default function DiagonalDrawer({
             </nav>
             <section className="mt-14 sm:mt-12 lg:mt-14 text-center relative sm:absolute lg:relative sm:right-0 lg:right-0 h-auto sm:h-full lg:h-auto">
               <h3 className="block sm:hidden lg:block font-bold text-[#48AFDE]  text-2xl uppercase mb-5">
-                Follow Me
+                {t('followMe')}
               </h3>
               <div className="flex flex-row sm:flex-col  lg:flex-row">
-                <a
+              <a
                   target="blank"
                   href="https://x.com/asakurayuta_"
                   className="text-gray-300 hover:text-white transition-colors duration-3000"
@@ -245,7 +268,6 @@ export default function DiagonalDrawer({
           </div>
         </div>
       </header>
-
     </React.Fragment>
   );
 }
