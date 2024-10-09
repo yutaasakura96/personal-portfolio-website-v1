@@ -37,20 +37,22 @@ export default function HomeComponent() {
                   {t('name')}
                   </h1>
                   <h2
-                    className={`text-[#223740] py-2 font-bold uppercase md:text-xl ${hind.className}`}
+                    className={`text-[#223740] py-2 mb-10 font-bold uppercase md:text-xl ${hind.className}`}
                   >
                      {t('title')}
                   </h2>
                   <a
                     href="/page/contactme"
-                    className={`cursor-pointer inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
+                    className={`cursor-pointer
+                       bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold uppercase md:py-2 lg:py-3 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
                     {t('hireMe')}
                   </a>
                   <a
                     href={t('resumeFileName')}
                     download={t('resumeFileName')}
-                    className={`cursor-pointer ml-10 inline-block bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
+                    className={`cursor-pointer ml-10
+                       bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold uppercase md:py-2 lg:py-3 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
                     {t('myResume')}
                   </a>
