@@ -125,8 +125,36 @@ export default function Home() {
               className="h-20 px-10 infinite-icons"
             />
             <Image
+              src="/typescript.svg"
+              alt="typescript"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
               src="/javascript.svg"
               alt="javascript"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vuejs.svg"
+              alt="vuejs"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/nuxtjs.svg"
+              alt="nuxtjs"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/pinia.svg"
+              alt="pinia"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
@@ -167,6 +195,13 @@ export default function Home() {
               className="h-20 px-10 infinite-icons"
             />
             <Image
+              src="/java.svg"
+              alt="java"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
               src="/ruby.svg"
               alt="ruby"
               width={0}
@@ -188,6 +223,20 @@ export default function Home() {
               className="h-20 px-10 infinite-icons"
             />
             <Image
+              src="/vite.svg"
+              alt="vite"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/npm.svg"
+              alt="npm"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
               src="/git.svg"
               alt="git"
               width={0}
@@ -197,6 +246,20 @@ export default function Home() {
             <Image
               src="/github.svg"
               alt="github"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vscode.svg"
+              alt="vscode"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/postman.svg"
+              alt="postman"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
