@@ -119,7 +119,8 @@ export default function Home() {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={t("ogTitle")} />
         <meta property="og:description" content={t("ogDescription")} />
-        <meta property="og:image" content="/customer-care4.png" />
+        <meta property="og:image" content="/personal-portofolio-en.png" />
+        {/* <meta property="og:image" content="/customer-care4.png" /> */}
         <meta property="og:url" content="https://www.asakurayuta.dev/" />
         <meta property="og:type" content="website" />
 
