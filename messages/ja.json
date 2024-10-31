@@ -89,9 +89,9 @@
         "HTML",
         "CSS/SASS",
         "TailwindCSS/Bootstrap",
-        "JavaScript (ES6)",
-        "ReactJS",
-        "NextJS"
+        "JavaScript (ES6)/TypeScript",
+        "ReactJS/VueJS",
+        "NextJS/NuxtJs"
       ]
     },
     {
@@ -99,10 +99,12 @@
       "title": "バックエンド開発者",
       "img": "/third.svg",
       "skills": [
+        "Java",
         "Ruby",
         "Ruby on Rails",
         "PostgreSQL",
-        "Next.js (API)"
+        "NextJS (API)",
+        "NuxtJS (API)"
       ]
     },
     {
@@ -126,11 +128,11 @@
       "skills": [
         "VSCode",
         "Git / Github",
-        "Bash / Powershell",
-        "NPM / Yarn",
+        "NPM / Vite",
         "ESlint / Prettier",
         "Vercel / Heroku / Netlify",
-        "Postman / Insomnia"
+        "Postman",
+        "Pinia"
       ]
     }
   ],
@@ -169,7 +171,7 @@
       ]
     },
     {
-      "title": "完全対応のデスクトップSPA",
+      "title": "完全にレスポンシブなウェブサイト",
       "name": "Omnifood プロジェクト",
       "demo": "https://omnifood-yasakura.netlify.app/",
       "github": "https://github.com/yutaasakura96/Project-Omnifood",
