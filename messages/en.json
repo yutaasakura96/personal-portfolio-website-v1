@@ -167,7 +167,7 @@
       "images": ["/vuello.png"],
       "tech": [
         "Vue JS 3",
-        "Type",
+        "Typescript",
         "Tailwind CSS",
         "Vite",
         "Vercel",
@@ -175,15 +175,15 @@
       ]
     },
     {
-      "title": "Trello-inspired task management app built with Vue.js and TypeScript",
-      "name": "Veullo: Task Management App",
-      "demo": "https://vue-ts-trello-clone.vercel.app/",
-      "github": "https://github.com/yutaasakura96/vue-ts-trello-clone",
-      "description": "This is a Trello-inspired task management app built with Vue.js and TypeScript. Using Vite as the build tool, and deployed on Vercel for fast and reliable hosting, the app allows users to organize tasks into customizable lists, such as 'To Do', 'In Progress', and 'Done'. Users can add, edit, and delete tasks and lists with ease, utilizing features like drag-and-drop reordering, custom list colors, a light/dark mode toggle, fuzzy search, and persistent data in local storage. These features make task management intuitive and visually appealing.",
-      "images": ["/vuello.png"],
+      "title": "Simplified setting page built with Vue.js and TypeScript",
+      "name": "Vue TS Simplified Settings Page",
+      "demo": "https://vue-ts-simplified-settings-page-project.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-simplified-settings-page-project",
+      "description": "This project is built using Vue.js with TypeScript and focuses on creating a simplified settings page using advanced Vue features like Teleport, KeepAlive, and shared state management. The project is styled using Tailwind CSS for a responsive and modern design.",
+      "images": ["/simplified-settings-page.png"],
       "tech": [
         "Vue JS 3",
-        "Type",
+        "Typescript",
         "Tailwind CSS",
         "Vite",
         "Vercel",

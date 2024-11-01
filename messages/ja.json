@@ -174,6 +174,22 @@
       ]
     },
     {
+      "title": "Vue.jsとTypeScriptで構築された簡易設定ページ",
+      "name": "Vue TS 簡易設定ページ",
+      "demo": "https://vue-ts-simplified-settings-page-project.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-simplified-settings-page-project",
+      "description": "このプロジェクトは、TypeScriptを使用したVue.jsで構築されており、Teleport、KeepAlive、共有状態管理などの高度なVue機能を活用して簡易設定ページを作成することに焦点を当てています。プロジェクトは、モダンでレスポンシブなデザインを実現するためにTailwind CSSでスタイリングされています。",
+      "images": ["/simplified-settings-page.png"],
+      "tech": [
+        "Vue JS 3",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML"
+      ]
+    },
+    {
       "title": "デスクトップ初の完全対応 MPA",
       "name": "コードとクリエイト",
       "demo": "https://yasakura-vanillajs-1.netlify.app/",
