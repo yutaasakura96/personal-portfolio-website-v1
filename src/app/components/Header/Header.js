@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Utility libraries and hooks
-import { useTranslations } from 'next-intl'; // Translation hook
+import { useTranslations } from "next-intl"; // Translation hook
 
 // Internal project components and styles
 import Drawer from "./DiagonalDrawer"; // Custom drawer component
@@ -17,26 +17,56 @@ import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"; // Language
 import "../Header/DiagonalDrawer.css"; // Styling for Drawer component
 
 export default function Header() {
-  const t = useTranslations('Header'); // Translations for the Header
+  const t = useTranslations("Header"); // Translations for the Header
 
   const pathname = usePathname(); // Get current path to highlight menu items
   const [selectedIndex1, setSelectedIndex1] = useState(0); // Active menu item index
   const [isOpen, setIsOpen] = useState(false); // Drawer open/close state
   const [isScrolled, setIsScrolled] = useState(false); // Header scroll state for styling
 
-  // Update selectedIndex1 based on pathname to highlight active menu item
+  // Update selectedIndex1 based on pathname and Y scroll position to highlight active menu item
+
   useEffect(() => {
-    if (pathname === "/#home") setSelectedIndex1(0);
-    else if (pathname === "/#portfolio") setSelectedIndex1(1);
-    else if (pathname === "/#about-me-component") setSelectedIndex1(2);
-    else if (pathname === "/page/contactme") setSelectedIndex1(3);
+    const updateActiveSection = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+      if (pathname === "/#home" || (scrollY < 900 && pathname !== "/page/contactme")) {
+        setSelectedIndex1(0);
+      } else if (pathname === "/#portfolio" || (scrollY >= 900 && scrollY < 1700)) {
+        setSelectedIndex1(1);
+      } else if (pathname === "/#about-me-component" || (scrollY >= 1700 && scrollY < 2500)) {
+        setSelectedIndex1(2);
+      } else if (pathname === "/page/contactme") {
+        setSelectedIndex1(3);
+      }
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+    };
   }, [pathname]);
+
+  //  log the scroll position (this will be kept for future reference)
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition =
+  //       window.scrollY || document.documentElement.scrollTop;
+  //     console.log("Current scroll position:", scrollPosition);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Cleanup the event listener on component unmount
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   // Toggle `isScrolled` based on page scroll position
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop =
-        window.scrollY || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       setIsScrolled(scrollTop > 0); // Set true if page is scrolled
     };
 
@@ -103,7 +133,7 @@ export default function Header() {
                 href="/#home"
                 onClick={() => setSelectedIndex1(0)}
               >
-                {t('home')}
+                {t("home")}
               </a>
             </li>
             {/* Other menu items */}
@@ -120,7 +150,7 @@ export default function Header() {
                 href="/#portfolio"
                 onClick={() => setSelectedIndex1(1)}
               >
-                {t('portfolio')}
+                {t("portfolio")}
               </a>
             </li>
             {/* About Me menu item */}
@@ -137,7 +167,7 @@ export default function Header() {
                 href="/#about-me-component"
                 onClick={() => setSelectedIndex1(2)}
               >
-                {t('aboutMe')}
+                {t("aboutMe")}
               </a>
             </li>
             {/* Hire Me menu item */}
@@ -154,7 +184,7 @@ export default function Header() {
                 href="/page/contactme"
                 onClick={() => setSelectedIndex1(3)}
               >
-                {t('hireMe')}
+                {t("hireMe")}
               </Link>
             </li>
             {/* Language switcher */}
