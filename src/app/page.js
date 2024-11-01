@@ -77,7 +77,7 @@ export default function Home() {
         <meta name="twitter:title" content={t("twitterTitle")} />
         <meta name="twitter:description" content={t("twitterDescription")} />
         <meta name="twitter:creator" content="@asakurayuta_" />
-        <meta name="twitter:image" content="/customer-care4.png" />
+        <meta name="twitter:image" content="/personal-portofolio-en.png" />
 
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
