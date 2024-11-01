@@ -153,6 +153,23 @@
         "PostgreSQL",
         "Bootstrap",
         "SASS",
+        "HTML",
+        "Heroku"
+      ]
+    },
+    {
+      "title": "Vue.js と TypeScript で構築された Trello 風タスク管理アプリ",
+      "name": "Veullo: タスク管理アプリ",
+      "demo": "https://vue-ts-trello-clone.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-trello-clone",
+      "description": "このプロジェクトは、Vue.js と TypeScript を使用して構築された Trello 風のタスク管理アプリです。ビルドツールとして Vite を採用し、高速かつ信頼性の高いホスティングのために Vercel にデプロイされています。このアプリは、タスクを「To Do」「In Progress」「Done」などのカスタマイズ可能なリストに整理できる機能を提供します。ユーザーはタスクやリストを簡単に追加、編集、削除でき、ドラッグアンドドロップでの並び替え、リストのカスタムカラー、ライト/ダークモード切替、ファジー検索、ローカルストレージでのデータ永続化などの機能を備えています。これらの機能により、タスク管理が直感的で視覚的に魅力的なものとなっています。",
+      "images": ["/vuello.png"],
+      "tech": [
+        "Vue JS 3",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
         "HTML"
       ]
     },
@@ -167,7 +184,8 @@
       "tech": [
         "Javascript",
         "CSS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -181,7 +199,8 @@
       "tech": [
         "Javascript",
         "CSS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -195,7 +214,8 @@
       "tech": [
         "Javascript",
         "SASS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -209,7 +229,8 @@
       "tech": [
         "Javascript",
         "SASS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     }
   ]
