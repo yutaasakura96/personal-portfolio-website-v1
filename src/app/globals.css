@@ -9,6 +9,15 @@
   --background-end-rgb: 255, 255, 255;
   }
 
+  html {
+    box-sizing: border-box;
+  }
+  body, html {
+    overscroll-behavior: none;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
   body {
   color: rgb(var(--foreground-rgb));
   font-family: 'Recoleta', sans-serif;

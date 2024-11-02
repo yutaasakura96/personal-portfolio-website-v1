@@ -1,35 +1,39 @@
-"use client";
+"use client"; // Enables client-side rendering for this component
+
 import React, { useState } from "react";
-import { Hind } from "next/font/google";
+import { Hind } from "next/font/google"; // Google font for consistent styling
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl"; // Translation hook
 
 import "./aboutme.css";
 
+// Font configuration for the Hind font with multiple weights
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function AboutMe() {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [isFaded, setIsFaded] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false); // Track if the card is flipped
+  const [isFaded, setIsFaded] = useState(false); // Track if the card is faded
+  const [selectedIndex, setSelectedIndex] = useState(0); // Track the selected card index
 
-  // Initialize useTranslations with the 'AboutMe' namespace
+  // Initialize translations with the 'AboutMe' namespace
   const t = useTranslations('AboutMe');
-  // Access 'AboutData' from the root level
+  // Access root-level translations for 'AboutData'
   const tGlobal = useTranslations();
   const aboutData = tGlobal.raw('AboutData');
 
-  const [mapData, setMapData] = useState(aboutData[0]);
+  const [mapData, setMapData] = useState(aboutData[0]); // Set initial map data
 
+  // Resets states and updates displayed map data
   const myFunctions = (data) => {
     setIsFlipped(false);
     setIsFaded(false);
     setMapData(data);
   };
 
+  // Handles clicking on a card, flips and fades the card, then updates data
   const handleCardClick = (data, index) => {
     setIsFlipped(true);
     setIsFaded(true);
@@ -38,6 +42,7 @@ export default function AboutMe() {
     setTimeout(() => myFunctions(data), 600);
   };
 
+  // Handles navigating to the next card in the list
   const HandleNext = () => {
     if (selectedIndex < aboutData.length - 1) {
       handleCardClick(aboutData[selectedIndex + 1], selectedIndex + 1);
@@ -46,6 +51,7 @@ export default function AboutMe() {
     }
   };
 
+  // Handles navigating to the previous card in the list
   const HandlePrev = () => {
     if (selectedIndex > 0) {
       handleCardClick(aboutData[selectedIndex - 1], selectedIndex - 1);
@@ -56,6 +62,7 @@ export default function AboutMe() {
 
   return (
     <React.Fragment>
+      {/* Main container for the About Me section */}
       <div
         id="about-me-component"
         className="bg-[##eef7fb] pt-[250px] mt-4 pb-[100px] lg:pb-[250px] relative lg:h-100"
@@ -67,6 +74,7 @@ export default function AboutMe() {
       >
         <div className="container m-auto">
           <div>
+            {/* Main title and subtitle for About Me */}
             <h1 className="relative font-recoletaBlack text-5xl text-[#48AFDE] mb-5 -mt-40 md:px-24 px-5">
               {t('aboutMeTitle')}
             </h1>
@@ -74,6 +82,7 @@ export default function AboutMe() {
               {t('fullStackDeveloper')}
             </h4>
           </div>
+          {/* Description section with image */}
           <section className="relative flex flex-col justify-between lg:flex-row px-5 md:px-24">
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className} text-[16px] leading-7`}
@@ -91,7 +100,9 @@ export default function AboutMe() {
             />
           </section>
         </div>
+        {/* Cards section displaying skills */}
         <section className="container flex pt-[250px] flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]">
+          {/* Grid for displaying skill cards */}
           <div className="hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
             <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-6 mr-0 lg:mr-10">
               {aboutData.map((item, index) => (
@@ -127,6 +138,7 @@ export default function AboutMe() {
             </div>
           </div>
 
+          {/* Card details section */}
           <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
             <div
               style={{ height: "30rem" }}
@@ -137,6 +149,7 @@ export default function AboutMe() {
                   isFaded ? "fade-out" : ""
                 }`}
               >
+                {/* Display selected card title and list of skills */}
                 <p
                   className={`text-[#47626D] ${hind.className} text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100`}
                 >
@@ -155,6 +168,7 @@ export default function AboutMe() {
                   ))}
                 </ul>
               </section>
+              {/* Count card for selected item */}
               <div
                 className={`absolute perspective-500 -top-7 sm:top-30 right-0 sm:-right-20 card ${
                   isFlipped ? "flipped" : ""
@@ -168,11 +182,13 @@ export default function AboutMe() {
                 </div>
               </div>
 
+              {/* Navigation buttons */}
               <div className="absolute right-10 -bottom-5 flex">
                 <a
                   onClick={HandlePrev}
                   className="w-12 h-12 rounded-xl mr-1 transform transition duration-500 cursor-pointer hover:-translate-y-1 hover:shadow-lg flex justify-center items-center bg-[#47626D]"
                 >
+                  {/* Previous button */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -193,6 +209,7 @@ export default function AboutMe() {
                   onClick={HandleNext}
                   className="w-12 h-12 rounded-xl mr-1 transform transition duration-500 cursor-pointer hover:-translate-y-1 hover:shadow-lg flex justify-center items-center bg-[#47626D]"
                 >
+                  {/* Next button */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

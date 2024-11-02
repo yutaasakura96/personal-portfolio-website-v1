@@ -27,7 +27,7 @@
   "AboutMe": {
     "aboutMeTitle": "私について",
     "fullStackDeveloper": "フルスタックウェブ開発者",
-    "aboutMeDescription": "技術業界に転向する前は、8年間建設業界で現場監督として働いていました。これらの経験は、チームを率い、問題を解決し、高品質の結果を提供する能力を形作り、現在はウェブ開発者としての仕事に活かしています。最近、Le Wagon Tokyoのフルタイムのフルスタックウェブ開発ブートキャンプを卒業し、ウェブ開発のスキルを磨きました。成長し、意味のあるプロジェクトに貢献し続けることができるフルスタック開発者の役割を積極的に探しています。学ぶことへの愛と知識の無限の追求に駆り立てられており、それが私のすべての行動に目的を与えると信じています。私の目標は、チームと協力して革新的なソリューションを構築しながら、影響力のあるユーザー中心のプロジェクトを作成することです。また、いつか他の志ある開発者を指導することを楽しみにしています。特にJavaScriptとReactに興味があり、自由な時間にはボルダリング、スケートボード、ボディービル、ヨガを楽しんでいます。",
+    "aboutMeDescription": "IT業界に転身する前、私は8年間建設業界で鳶職として働いていました。これらの経験は、チームを率いる能力、問題解決力、高品質な結果を提供することへの集中力を育み、現在フルスタックウェブ開発者としての仕事に活かしています。Le Wagon Tokyoの全日制フルスタックウェブ開発ブートキャンプを卒業した後、ウェブ開発のスキルを磨きました。その後、Tierline Inc.にフルスタックウェブ開発者として入社しました。私は学ぶことへの愛と終わりなき知識の追求に駆り立てられており、それが私のすべての活動に目的を与えると信じています。ユーザー体験を向上させ、ビジネス目標を達成するシームレスで効率的なウェブアプリケーションを構築することを目指し、信頼性が高くスケーラブルなソリューションを提供するためにチームと緊密に協力しています。また、将来的には他の志望する開発者を指導することを楽しみにしています。特にJavaScript、Vue.js、Reactに興味があり、余暇にはボルダリング、スケートボード、ボディビル、ヨガを楽しんでいます。",
     "frontendDeveloper": "フロントエンド開発者",
     "backendDeveloper": "バックエンド開発者",
     "uiUxDesigner": "UI / UX デザイナー",
@@ -89,22 +89,22 @@
         "HTML",
         "CSS/SASS",
         "TailwindCSS/Bootstrap",
-        "JavaScript (ES6)",
-        "ReactJS",
-        "NextJS"
+        "JavaScript (ES6)/TypeScript",
+        "ReactJS/VueJS",
+        "NextJS/NuxtJs"
       ]
     },
     {
       "count": 2,
       "title": "バックエンド開発者",
       "img": "/third.svg",
-      "demo": "https://yasakura-vanillajs-1.netlify.app/",
-      "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
       "skills": [
+        "Java",
         "Ruby",
         "Ruby on Rails",
         "PostgreSQL",
-        "Next.js (API)"
+        "NextJS (API)",
+        "NuxtJS (API)"
       ]
     },
     {
@@ -128,11 +128,11 @@
       "skills": [
         "VSCode",
         "Git / Github",
-        "Bash / Powershell",
-        "NPM / Yarn",
+        "NPM / Vite",
         "ESlint / Prettier",
         "Vercel / Heroku / Netlify",
-        "Postman / Insomnia"
+        "Postman",
+        "Pinia"
       ]
     }
   ],
@@ -153,7 +153,60 @@
         "PostgreSQL",
         "Bootstrap",
         "SASS",
+        "HTML",
+        "Heroku"
+      ]
+    },
+    {
+      "title": "Vue.js と TypeScript で構築された Trello 風タスク管理アプリ",
+      "name": "Veullo: タスク管理アプリ",
+      "demo": "https://vue-ts-trello-clone.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-trello-clone",
+      "description": "このプロジェクトは、Vue.js と TypeScript を使用して構築された Trello 風のタスク管理アプリです。ビルドツールとして Vite を採用し、高速かつ信頼性の高いホスティングのために Vercel にデプロイされています。このアプリは、タスクを「To Do」「In Progress」「Done」などのカスタマイズ可能なリストに整理できる機能を提供します。ユーザーはタスクやリストを簡単に追加、編集、削除でき、ドラッグアンドドロップでの並び替え、リストのカスタムカラー、ライト/ダークモード切替、ファジー検索、ローカルストレージでのデータ永続化などの機能を備えています。これらの機能により、タスク管理が直感的で視覚的に魅力的なものとなっています。",
+      "images": ["/vuello.png"],
+      "tech": [
+        "Vue JS 3",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML",
+        "Vue Draggable",
+        "Vueuse",
+        "Fuse.js"
+      ]
+    },
+    {
+      "title": "Vue.jsとTypeScriptで構築された簡易設定ページ",
+      "name": "Vue TS 簡易設定ページ",
+      "demo": "https://vue-ts-simplified-settings-page-project.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-simplified-settings-page-project",
+      "description": "このプロジェクトは、TypeScriptを使用したVue.jsで構築されており、Teleport、KeepAlive、共有状態管理などの高度なVue機能を活用して簡易設定ページを作成することに焦点を当てています。プロジェクトは、モダンでレスポンシブなデザインを実現するためにTailwind CSSでスタイリングされています。",
+      "images": ["/simplified-settings-page.png"],
+      "tech": [
+        "Vue JS 3",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
         "HTML"
+      ]
+    },{
+      "title": "Ticketmaster APIを使用したVue.jsで構築されたイベント予約マネージャー",
+      "name": "Vueイベント予約マネージャー",
+      "demo": "https://vue-vite-event-bookin-manager.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-vite-event-manager",
+      "description": "Vueイベント予約マネージャーは、Ticketmaster Discovery APIから取得したイベントを閲覧し、予約を管理できるVue.jsの架空の個人予約管理ウェブアプリケーションです。ユーザーはイベントに登録し、自分の予約を確認し、必要に応じて予約をキャンセルするシンプルなインターフェースを提供します。",
+      "images": ["/vue-event-manager.png", "/vue-event-manager-full.png"],
+      "tech": [
+        "Vue JS 3",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML",
+        "Ticketmaster API",
+        "Radix Vue",
+        "Lucide Icons"
       ]
     },
     {
@@ -167,11 +220,12 @@
       "tech": [
         "Javascript",
         "CSS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
-      "title": "完全対応のデスクトップSPA",
+      "title": "完全にレスポンシブなウェブサイト",
       "name": "Omnifood プロジェクト",
       "demo": "https://omnifood-yasakura.netlify.app/",
       "github": "https://github.com/yutaasakura96/Project-Omnifood",
@@ -181,7 +235,8 @@
       "tech": [
         "Javascript",
         "CSS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -195,7 +250,8 @@
       "tech": [
         "Javascript",
         "SASS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -209,7 +265,8 @@
       "tech": [
         "Javascript",
         "SASS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     }
   ]

@@ -27,7 +27,7 @@
   "AboutMe": {
     "aboutMeTitle": "About Me",
     "fullStackDeveloper": "Full-Stack Web Developer",
-    "aboutMeDescription": "Before transitioning into tech, I spent 8 years in the construction industry as a construction foreman. These experiences shaped my ability to lead teams, solve problems, and focus on delivering high-quality results, all of which I now apply to my work as a web developer. Recently, I graduated from Le Wagon Tokyo’s full-time full-stack web development bootcamp, where I honed my skills in web development. I am actively seeking a full-stack developer role where I can continue growing and contributing to meaningful projects. I’m driven by a love for learning and the endless pursuit of knowledge, as I believe it brings purpose to everything I do. My goal is to create impactful, user-centered projects while collaborating with teams to build innovative solutions. I also look forward to one day mentoring other aspiring developers. I have a particular interest in JavaScript and React, and in my free time, I enjoy bouldering, skateboarding, bodybuilding, and practicing yoga.",
+    "aboutMeDescription": "Before transitioning into tech, I spent 8 years in the construction industry as a construction foreman. These experiences shaped my ability to lead teams, solve problems, and focus on delivering high-quality results, all of which I now apply to my work as a full-stack web developer. Shortly after I graduated from Le Wagon Tokyo’s full-time full-stack web development bootcamp, where I honed my skills in web development, I joined Tierline Inc. as a full-stack web developer. I’m driven by a love for learning and the endless pursuit of knowledge, as I believe it brings purpose to everything I do. I aim to build seamless, efficient web applications that enhance user experience while meeting business goals, working closely with teams to deliver reliable, scalable solutions. I also look forward to one day mentoring other aspiring developers. I have a particular interest in JavaScript, Vue.js, React, and in my free time, I enjoy bouldering, skateboarding, bodybuilding, and practicing yoga.",
     "frontendDeveloper": "Front-end Developer",
     "backendDeveloper": "Back-end Developer",
     "uiUxDesigner": "UI / UX Designer",
@@ -89,22 +89,23 @@
         "HTML",
         "CSS/SASS",
         "TailwindCSS/Bootstrap",
-        "JavaScript (ES6)",
-        "ReactJS",
-        "NextJS"
+        "JavaScript (ES6)/TypeScript",
+        "ReactJS/VueJS",
+        "NextJS/NuxtJs"
       ]
     },
     {
       "count": 2,
       "title": "Back-end Developer",
       "img": "/third.svg",
-      "demo": "https://yasakura-vanillajs-1.netlify.app/",
-      "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
       "skills": [
+        "Java",
         "Ruby",
         "Ruby on Rails",
         "PostgreSQL",
-        "Next.js (API)"
+        "NextJS (API)",
+        "NuxtJS (API)"
+
       ]
     },
     {
@@ -128,11 +129,11 @@
       "skills": [
         "VSCode",
         "Git / Github",
-        "Bash / Powershell",
-        "NPM / Yarn",
+        "NPM / Vite",
         "ESlint / Prettier",
         "Vercel / Heroku / Netlify",
-        "Postman / Insomnia"
+        "Postman",
+        "Pinia"
       ]
     }
   ],
@@ -153,7 +154,61 @@
         "PostgreSQL",
         "Bootstrap",
         "SASS",
+        "HTML",
+        "Heroku"
+      ]
+    },
+    {
+      "title": "Trello-inspired task management app built with Vue.js and TypeScript",
+      "name": "Veullo: Task Management App",
+      "demo": "https://vue-ts-trello-clone.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-trello-clone",
+      "description": "This is a Trello-inspired task management app built with Vue.js and TypeScript. Using Vite as the build tool, and deployed on Vercel for fast and reliable hosting, the app allows users to organize tasks into customizable lists, such as 'To Do', 'In Progress', and 'Done'. Users can add, edit, and delete tasks and lists with ease, utilizing features like drag-and-drop reordering, custom list colors, a light/dark mode toggle, fuzzy search, and persistent data in local storage. These features make task management intuitive and visually appealing.",
+      "images": ["/vuello.png"],
+      "tech": [
+        "Vue JS 3",
+        "Typescript",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML",
+        "Vue Draggable",
+        "Vueuse",
+        "Fuse.js"
+      ]
+    },
+    {
+      "title": "Simplified setting page built with Vue.js and TypeScript",
+      "name": "Vue TS Simplified Settings Page",
+      "demo": "https://vue-ts-simplified-settings-page-project.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-ts-simplified-settings-page-project",
+      "description": "This project is built using Vue.js with TypeScript and focuses on creating a simplified settings page using advanced Vue features like Teleport, KeepAlive, and shared state management. The project is styled using Tailwind CSS for a responsive and modern design.",
+      "images": ["/simplified-settings-page.png"],
+      "tech": [
+        "Vue JS 3",
+        "Typescript",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
         "HTML"
+      ]
+    },
+    {
+      "title": "Event Booking Manager built with Vue.js powered by Ticketmaster API",
+      "name": "Vue Event Booking Manager",
+      "demo": "https://vue-vite-event-bookin-manager.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-vite-event-manager",
+      "description": "The Vue Event Booking Manager is a Vue.js fictional personal booking manager web application that allows users to browse available events coming from the Ticketmaster Discovery API and manage their bookings. It provides a simple interface where users can register for events, view their bookings, and cancel bookings as needed.",
+      "images": ["/vue-event-manager.png","/vue-event-manager-full.png"],
+      "tech": [
+        "Vue JS 3",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML",
+        "Ticketmaster API",
+        "Radix Vue",
+        "Lucide Icons"
       ]
     },
     {
@@ -167,11 +222,12 @@
       "tech": [
         "Javascript",
         "CSS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
-      "title": "Fully responsive desktop SPA",
+      "title": "Fully responsive website",
       "name": "Omnifood Project",
       "demo": "https://omnifood-yasakura.netlify.app/",
       "github": "https://github.com/yutaasakura96/Project-Omnifood",
@@ -181,7 +237,8 @@
       "tech": [
         "Javascript",
         "CSS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -195,7 +252,8 @@
       "tech": [
         "Javascript",
         "SASS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     },
     {
@@ -209,7 +267,8 @@
       "tech": [
         "Javascript",
         "SASS",
-        "HTML"
+        "HTML",
+        "Netlify"
       ]
     }
   ]

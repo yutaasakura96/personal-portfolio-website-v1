@@ -1,11 +1,17 @@
+"use client";
+
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderCard from "./SliderCard";
-import { DataArray } from "@/app/data";
+import { useTranslations } from "next-intl"; // Import translations hook
+
 export default function MySlider() {
-  var settings = {
+  const tGlobal = useTranslations(); // Access root-level translations
+  const dataArray = tGlobal.raw("DataArray"); // Retrieve DataArray from translations
+
+  const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -151,9 +157,9 @@ export default function MySlider() {
 
   return (
     <Slider {...settings}>
-      {DataArray.map((item, index) => (
+      {dataArray.map((item, index) => (
         <div key={index} className="my-slider">
-          <SliderCard item={item} index={index}/>
+          <SliderCard item={item} index={index} />
         </div>
       ))}
     </Slider>

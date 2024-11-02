@@ -26,7 +26,7 @@ const poppins = localFont({
 export const metadata = {
   title: "Yuta Asakura | Full-Stack Web Developer Portfolio",
   description:
-    "Yuta Asakura's portfolio showcasing projects and skills in front-end web development, React, Next.js, and JavaScript.",
+    "Yuta Asakura's portfolio showcasing projects and skills in full-stack web development.",
 };
 
 export default async function RootLayout({ children }) {
