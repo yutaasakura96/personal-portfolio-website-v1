@@ -1,7 +1,13 @@
+// purpose: Define the layout for the entire application
+// Font and global styles
 import localFont from "next/font/local";
 import "./globals.css";
+
+// Layout components
 import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
+
+// Internationalization (i18n) imports
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
@@ -48,9 +54,7 @@ export default async function RootLayout({ children }) {
           <Header aria-label="Site Header" />
 
           {/* Main content area with role="main" */}
-          <main role="main">
-            {children}
-          </main>
+          <main role="main">{children}</main>
 
           {/* Footer component with aria-label for accessibility */}
           <Footer aria-label="Site Footer" />
