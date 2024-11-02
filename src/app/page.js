@@ -1,34 +1,37 @@
-'use client';
+"use client";
 
 // Purpose: The main page of the website, containing the home, portfolio, about, and call-to-action sections
 
-// External libraries
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Image from 'next/image';
-import Head from 'next/head';
+
+// External Libraries
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// Next.js Components
+import Image from "next/image";
+import Head from "next/head";
 
 // Font configuration
-import { Hind } from 'next/font/google';
+import { Hind } from "next/font/google";
 
 // Translation hook
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 // Internal components
-import HomeComponent from './components/HomeComponent/HomeComponent';
-import MySlider from './components/SliderCard/MySlider';
-import AboutMe from './components/AboutMe/AboutMe';
-import CallToAction from './components/CallToAction/CallToAction';
+import HomeComponent from "./components/HomeComponent/HomeComponent";
+import MySlider from "./components/SliderCard/MySlider";
+import AboutMe from "./components/AboutMe/AboutMe";
+import CallToAction from "./components/CallToAction/CallToAction";
 
 // Configure the Hind font for consistent text styling
 const hind = Hind({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function Home() {
-  const t = useTranslations('HomePage'); // Access translations in the "HomePage" namespace
+  const t = useTranslations("HomePage"); // Access translations in the "HomePage" namespace
 
   // Slider settings for infinite auto-scrolling with variable width
   const settings = {
@@ -40,7 +43,7 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 2000,
     loop: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     variableWidth: true,
     adaptiveHeight: true,
     responsive: [
@@ -59,14 +62,14 @@ export default function Home() {
     <>
       <Head>
         {/* SEO meta tags */}
-        <title>{t('pageTitle')}</title>
-        <meta name="description" content={t('pageDescription')} />
-        <meta name="keywords" content={t('pageKeywords')} />
+        <title>{t("pageTitle")}</title>
+        <meta name="description" content={t("pageDescription")} />
+        <meta name="keywords" content={t("pageKeywords")} />
         <meta name="author" content="Yuta Asakura" />
 
         {/* Open Graph meta tags for social media sharing */}
-        <meta property="og:title" content={t('ogTitle')} />
-        <meta property="og:description" content={t('ogDescription')} />
+        <meta property="og:title" content={t("ogTitle")} />
+        <meta property="og:description" content={t("ogDescription")} />
         <meta property="og:image" content="/personal-portofolio-en.png" />
         <meta property="og:url" content="https://www.asakurayuta.dev/" />
         <meta property="og:type" content="website" />
@@ -74,8 +77,8 @@ export default function Home() {
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@asakurayuta_" />
-        <meta name="twitter:title" content={t('twitterTitle')} />
-        <meta name="twitter:description" content={t('twitterDescription')} />
+        <meta name="twitter:title" content={t("twitterTitle")} />
+        <meta name="twitter:description" content={t("twitterDescription")} />
         <meta name="twitter:creator" content="@asakurayuta_" />
         <meta name="twitter:image" content="/personal-portofolio-en.png" />
 
@@ -140,27 +143,30 @@ export default function Home() {
           aria-labelledby="portfolio-section"
           style={{
             backgroundImage:
-              'linear-gradient(-80deg, #E0F3FD 0 50%, #EEF7FB 0% 100%)',
-            width: '100%',
+              "linear-gradient(-80deg, #E0F3FD 0 50%, #EEF7FB 0% 100%)",
+            width: "100%",
           }}
         >
           <div className="container m-auto">
             <div
-              style={{ transform: 'translate(0px, -290px)' }}
+              style={{ transform: "translate(0px, -290px)" }}
               className="mt-[500px]"
             >
               {/* Portfolio title and description */}
-              <h2 id="portfolio-section" className="text-[#48AFDE] md:pl-[80px] px-5 font-extrabold text-5xl">
-                {t('projectsTitle')}
+              <h2
+                id="portfolio-section"
+                className="text-[#48AFDE] md:pl-[80px] px-5 font-extrabold text-5xl"
+              >
+                {t("projectsTitle")}
               </h2>
               <p
                 className={`max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}
               >
-                {t('projectsDescription')}
+                {t("projectsDescription")}
               </p>
             </div>
           </div>
-          <div style={{ transform: 'translate(0px,-170px)' }}>
+          <div style={{ transform: "translate(0px,-170px)" }}>
             <MySlider /> {/* Portfolio project slider */}
           </div>
         </section>
