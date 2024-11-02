@@ -2,7 +2,6 @@
 
 // Purpose: The main page of the website, containing the home, portfolio, about, and call-to-action sections
 
-
 // External Libraries
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -99,40 +98,179 @@ export default function Home() {
             {/* Icon images for various tech stacks */}
             <Image
               src="/html.svg"
-              alt="HTML logo - Markup language for web pages"
+              alt="HTML logo - Markup language for structuring web pages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/css.svg"
-              alt="CSS logo - Styling language for web pages"
+              alt="CSS logo - Styling language for designing web pages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/sass.svg"
-              alt="Sass logo - CSS preprocessor for styling"
+              alt="Sass logo - Preprocessor scripting language that is interpreted into CSS"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/bootstrap.svg"
-              alt="Bootstrap logo - Frontend framework for responsive design"
+              alt="Bootstrap logo - Frontend framework for responsive web design"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/tailwind.svg"
-              alt="Tailwind CSS logo - Utility-first CSS framework"
+              alt="Tailwind CSS logo - Utility-first CSS framework for fast UI development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
-            {/* More Image components with detailed alt text */}
+            <Image
+              src="/typescript.svg"
+              alt="TypeScript logo - Superset of JavaScript for type-safe development"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/javascript.svg"
+              alt="JavaScript logo - Programming language for dynamic web content"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vuejs.svg"
+              alt="Vue.js logo - Progressive JavaScript framework for building user interfaces"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/nuxtjs.svg"
+              alt="Nuxt.js logo - Framework for creating server-rendered Vue applications"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/pinia.svg"
+              alt="Pinia logo - State management library for Vue applications"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/react.svg"
+              alt="React logo - JavaScript library for building user interfaces"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/nextjs.svg"
+              alt="Next.js logo - React framework for server-rendered applications"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vercels.svg"
+              alt="Vercel logo - Platform for frontend frameworks and static sites"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/heroku.svg"
+              alt="Heroku logo - Cloud platform for deploying web applications"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/netlify.svg"
+              alt="Netlify logo - Platform for deploying static sites and web applications"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/java.svg"
+              alt="Java logo - Object-oriented programming language for web and mobile apps"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/ruby.svg"
+              alt="Ruby logo - Programming language for building web applications"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/rails.svg"
+              alt="Ruby on Rails logo - Web application framework written in Ruby"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/postgres.svg"
+              alt="PostgreSQL logo - Open-source relational database system"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vite.svg"
+              alt="Vite logo - Frontend build tool for fast and efficient development"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/npm.svg"
+              alt="NPM logo - Package manager for JavaScript"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/git.svg"
+              alt="Git logo - Version control system for tracking changes in source code"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/github.svg"
+              alt="GitHub logo - Platform for hosting and collaborating on Git repositories"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/vscode.svg"
+              alt="Visual Studio Code logo - Code editor by Microsoft for various languages"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
+            <Image
+              src="/postman.svg"
+              alt="Postman logo - Tool for API development and testing"
+              width={0}
+              height={80}
+              className="h-20 px-10 infinite-icons"
+            />
           </Slider>
         </section>
 
