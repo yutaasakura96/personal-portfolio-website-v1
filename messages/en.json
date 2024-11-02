@@ -171,7 +171,10 @@
         "Tailwind CSS",
         "Vite",
         "Vercel",
-        "HTML"
+        "HTML",
+        "Vue Draggable",
+        "Vueuse",
+        "Fuse.js"
       ]
     },
     {
@@ -188,6 +191,24 @@
         "Vite",
         "Vercel",
         "HTML"
+      ]
+    },
+    {
+      "title": "Event Booking Manager built with Vue.js powered by Ticketmaster API",
+      "name": "Vue Event Booking Manager",
+      "demo": "https://vue-vite-event-bookin-manager.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-vite-event-manager",
+      "description": "The Vue Event Booking Manager is a Vue.js fictional personal booking manager web application that allows users to browse available events coming from the Ticketmaster Discovery API and manage their bookings. It provides a simple interface where users can register for events, view their bookings, and cancel bookings as needed.",
+      "images": ["/vue-event-manager.png","/vue-event-manager-full.png"],
+      "tech": [
+        "Vue JS 3",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML",
+        "Ticketmaster API",
+        "Radix Vue",
+        "Lucide Icons"
       ]
     },
     {

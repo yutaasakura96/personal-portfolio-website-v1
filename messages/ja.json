@@ -170,7 +170,10 @@
         "Tailwind CSS",
         "Vite",
         "Vercel",
-        "HTML"
+        "HTML",
+        "Vue Draggable",
+        "Vueuse",
+        "Fuse.js"
       ]
     },
     {
@@ -187,6 +190,23 @@
         "Vite",
         "Vercel",
         "HTML"
+      ]
+    },{
+      "title": "Ticketmaster APIを使用したVue.jsで構築されたイベント予約マネージャー",
+      "name": "Vueイベント予約マネージャー",
+      "demo": "https://vue-vite-event-bookin-manager.vercel.app/",
+      "github": "https://github.com/yutaasakura96/vue-vite-event-manager",
+      "description": "Vueイベント予約マネージャーは、Ticketmaster Discovery APIから取得したイベントを閲覧し、予約を管理できるVue.jsの架空の個人予約管理ウェブアプリケーションです。ユーザーはイベントに登録し、自分の予約を確認し、必要に応じて予約をキャンセルするシンプルなインターフェースを提供します。",
+      "images": ["/vue-event-manager.png", "/vue-event-manager-full.png"],
+      "tech": [
+        "Vue JS 3",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel",
+        "HTML",
+        "Ticketmaster API",
+        "Radix Vue",
+        "Lucide Icons"
       ]
     },
     {
