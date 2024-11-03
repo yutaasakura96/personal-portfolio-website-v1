@@ -51,8 +51,9 @@ export default async function RootLayout({ children }) {
         {/* Provide translations and locale settings for the app */}
         <NextIntlClientProvider messages={messages}>
           {/* Header component with aria-label for accessibility */}
-          <Header aria-label="Site Header" />
-
+          <div style={{ overflowX: "hidden" }}> {/* Add overflowX to prevent horizontal scrolling without breaking the scroll based bg & shadow behaviour of the Header component */}
+            <Header aria-label="Site Header" />
+          </div>
           {/* Main content area with role="main" */}
           <main role="main">{children}</main>
 
