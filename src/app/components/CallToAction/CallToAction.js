@@ -8,7 +8,8 @@ export default function CallToAction() {
     // Handler to check scroll position and update `isScrolled`
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 0); // Set true if scrolled, false if at top
+       // Set true if scrolled, false if at top
+      setIsScrolled(scrollTop > 0);
     };
 
     // Add scroll event listener to the window
@@ -24,9 +25,11 @@ export default function CallToAction() {
     <div>
       {/* Display scroll-to-top button only when `isScrolled` is true */}
       {isScrolled ? (
-        <div
+        <button
           className="bg-[#48afde] p-4 w-fit rounded-xl fixed bottom-8 right-8 cursor-pointer z-50 animate-bounce"
-          onClick={() => window.scrollTo(0, 0)} // Scroll to top on click
+          onClick={() => window.scrollTo(0, 0)}
+          aria-label="Scroll to top"
+          title="Scroll to top"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,10 +42,10 @@ export default function CallToAction() {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M4.5 15.75l7.5-7.5 7.5 7.5" // Arrow pointing upwards
+              d="M4.5 15.75l7.5-7.5 7.5 7.5"
             />
           </svg>
-        </div>
+        </button>
       ) : (
         "" // Render nothing if `isScrolled` is false
       )}
