@@ -1,43 +1,43 @@
-"use client"; // Enables client-side rendering for this component
+"use client";
+// Purpose: The Header component is responsible for rendering the navigation menu and the drawer component for mobile devices. It also handles the active menu item based on the current path and scroll position.
 
 // React core imports
 import React, { useEffect, useState } from "react";
 
 // Next.js specific imports
-import { usePathname } from "next/navigation"; // Hook to get current URL path
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
 // Utility libraries and hooks
-import { useTranslations } from "next-intl"; // Translation hook
+import { useTranslations } from "next-intl"; // Hook for handling translations
 
 // Internal project components and styles
 import Drawer from "./DiagonalDrawer"; // Custom drawer component
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"; // Language switching component
-import "../Header/DiagonalDrawer.css"; // Styling for Drawer component
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"; // Language switcher component
+import "../Header/DiagonalDrawer.css"; // Styles for the drawer component
 
 export default function Header() {
-  const t = useTranslations("Header"); // Translations for the Header
+  const t = useTranslations("Header"); // Translations for the Header component
 
-  const pathname = usePathname(); // Get current path to highlight menu items
-  const [selectedIndex1, setSelectedIndex1] = useState(0); // Active menu item index
-  const [isOpen, setIsOpen] = useState(false); // Drawer open/close state
-  const [isScrolled, setIsScrolled] = useState(false); // Header scroll state for styling
+  const pathname = usePathname(); // Gets the current path to highlight active menu items
+  const [selectedIndex1, setSelectedIndex1] = useState(0); // Stores the index of the active menu item
+  const [isOpen, setIsOpen] = useState(false); // Controls the open/close state of the drawer
+  const [isScrolled, setIsScrolled] = useState(false); // Tracks if the page is scrolled for header styling
 
-  // Update selectedIndex1 based on pathname and Y scroll position to highlight active menu item
-
+  // Update active menu item based on the current path and scroll position
   useEffect(() => {
     const updateActiveSection = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
 
       if (pathname === "/#home" || (scrollY < 900 && pathname !== "/page/contactme")) {
-        setSelectedIndex1(0);
+        setSelectedIndex1(0); // Highlight "Home"
       } else if (pathname === "/#portfolio" || (scrollY >= 900 && scrollY < 1700)) {
-        setSelectedIndex1(1);
+        setSelectedIndex1(1); // Highlight "Portfolio"
       } else if (pathname === "/#about-me-component" || (scrollY >= 1700 && scrollY < 2500)) {
-        setSelectedIndex1(2);
+        setSelectedIndex1(2); // Highlight "About Me"
       } else if (pathname === "/page/contactme") {
-        setSelectedIndex1(3);
+        setSelectedIndex1(3); // Highlight "Hire Me"
       }
     };
 
@@ -49,25 +49,11 @@ export default function Header() {
     };
   }, [pathname]);
 
-  //  log the scroll position (this will be kept for future reference)
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollPosition =
-  //       window.scrollY || document.documentElement.scrollTop;
-  //     console.log("Current scroll position:", scrollPosition);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Cleanup the event listener on component unmount
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
-  // Toggle `isScrolled` based on page scroll position
+  // Toggle `isScrolled` based on the page scroll position
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 0); // Set true if page is scrolled
+      setIsScrolled(scrollTop > 0); // Set to true if the page is scrolled
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -76,7 +62,7 @@ export default function Header() {
     };
   }, []);
 
-  // Open Drawer
+  // Function to open the Drawer component
   const openDrawer = () => {
     setIsOpen(true);
   };
@@ -96,11 +82,13 @@ export default function Header() {
         className={`${
           isScrolled ? "headerShow" : ""
         } w-full fixed top-0 z-50 transition-all duration-500`}
+        aria-label="Main Header Navigation"
       >
         {/* Drawer toggle button */}
         <div className="relative">
-          <div
+          <button
             onClick={openDrawer}
+            aria-label="Open navigation drawer"
             className="z-30 absolute cursor-pointer w-14 h-14 xl:hidden lg:w-24 lg:h-24 bg-[#48afde] flex justify-center items-center rounded-br-3xl"
           >
             <div className="relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center">
@@ -108,86 +96,101 @@ export default function Header() {
                 height={100}
                 width={100}
                 src="/drawer.png"
-                alt="drawer item"
+                alt="Open navigation drawer"
                 className="w-[150px] h-10"
                 priority
               />
             </div>
-          </div>
+          </button>
         </div>
 
-        {/* Navigation menu */}
-        <nav className="invisible xl:visible flex justify-center">
+        {/* Navigation menu visible on larger screens */}
+        <nav
+          className="invisible xl:visible flex justify-center"
+          aria-label="Primary navigation"
+        >
           <ul className="flex font-recoletaBlack flex-row items-center h-24">
             {/* Home menu item */}
             <li className="group text-2xl relative font-bold mr-20">
-              {selectedIndex1 === 0 ? (
-                <span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              ) : (
-                <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              )}
               <a
+                href="/#home"
+                onClick={() => setSelectedIndex1(0)}
+                aria-current={selectedIndex1 === 0 ? "page" : undefined}
                 className={`menu-item ${
                   selectedIndex1 === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-black`}
-                href="/#home"
-                onClick={() => setSelectedIndex1(0)}
               >
                 {t("home")}
               </a>
+              <span
+                className={`menu-effect transform ${
+                  selectedIndex1 === 0 ? "opacity-100 -rotate-12" : "opacity-0 rotate-12"
+                } group-hover:-rotate-12 group-hover:opacity-100`}
+                aria-hidden="true"
+              ></span>
             </li>
-            {/* Other menu items */}
+
+            {/* Portfolio menu item */}
             <li className="group text-2xl relative font-bold mr-20">
-              {selectedIndex1 === 1 ? (
-                <span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              ) : (
-                <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              )}
               <a
+                href="/#portfolio"
+                onClick={() => setSelectedIndex1(1)}
+                aria-current={selectedIndex1 === 1 ? "page" : undefined}
                 className={`menu-item ${
                   selectedIndex1 === 1 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-black`}
-                href="/#portfolio"
-                onClick={() => setSelectedIndex1(1)}
               >
                 {t("portfolio")}
               </a>
+              <span
+                className={`menu-effect transform ${
+                  selectedIndex1 === 1 ? "opacity-100 -rotate-12" : "opacity-0 rotate-12"
+                } group-hover:-rotate-12 group-hover:opacity-100`}
+                aria-hidden="true"
+              ></span>
             </li>
+
             {/* About Me menu item */}
             <li className="group text-2xl relative font-bold mr-20">
-              {selectedIndex1 === 2 ? (
-                <span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              ) : (
-                <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              )}
               <a
+                href="/#about-me-component"
+                onClick={() => setSelectedIndex1(2)}
+                aria-current={selectedIndex1 === 2 ? "page" : undefined}
                 className={`menu-item ${
                   selectedIndex1 === 2 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-black`}
-                href="/#about-me-component"
-                onClick={() => setSelectedIndex1(2)}
               >
                 {t("aboutMe")}
               </a>
+              <span
+                className={`menu-effect transform ${
+                  selectedIndex1 === 2 ? "opacity-100 -rotate-12" : "opacity-0 rotate-12"
+                } group-hover:-rotate-12 group-hover:opacity-100`}
+                aria-hidden="true"
+              ></span>
             </li>
+
             {/* Hire Me menu item */}
             <li className="group text-2xl relative font-bold mr-20">
-              {selectedIndex1 === 3 ? (
-                <span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              ) : (
-                <span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
-              )}
               <Link
+                href="/page/contactme"
+                onClick={() => setSelectedIndex1(3)}
+                aria-current={selectedIndex1 === 3 ? "page" : undefined}
                 className={`menu-item ${
                   selectedIndex1 === 3 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-black`}
-                href="/page/contactme"
-                onClick={() => setSelectedIndex1(3)}
               >
                 {t("hireMe")}
               </Link>
+              <span
+                className={`menu-effect transform ${
+                  selectedIndex1 === 3 ? "opacity-100 -rotate-12" : "opacity-0 rotate-12"
+                } group-hover:-rotate-12 group-hover:opacity-100`}
+                aria-hidden="true"
+              ></span>
             </li>
-            {/* Language switcher */}
+
+            {/* Language Switcher component */}
             <li className="group text-2xl relative font-bold mr-20">
               <LanguageSwitcher />
             </li>

@@ -1,4 +1,4 @@
-// DiagonalDrawer.js - A navigation drawer component with diagonal hover effects
+// Purpose: DiagonalDrawer.js - A navigation drawer component with diagonal hover effects
 
 // React and Next.js imports
 import React from "react";
