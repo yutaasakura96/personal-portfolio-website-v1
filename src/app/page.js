@@ -65,13 +65,26 @@ export default function Home() {
         <meta name="description" content={t("pageDescription")} />
         <meta name="keywords" content={t("pageKeywords")} />
         <meta name="author" content="Yuta Asakura" />
+        <link rel="canonical" href="https://www.asakurayuta.dev/" />
 
         {/* Open Graph meta tags for social media sharing */}
+        <meta
+          property="article:author"
+          content="https://www.linkedin.com/in/asakurayuta/"
+        />
         <meta property="og:title" content={t("ogTitle")} />
         <meta property="og:description" content={t("ogDescription")} />
         <meta property="og:image" content="/personal-portofolio-en.png" />
         <meta property="og:url" content="https://www.asakurayuta.dev/" />
         <meta property="og:type" content="website" />
+        <meta
+          property="article:published_time"
+          content="2024-9-06T00:00:00+00:00"
+        />
+        <meta
+          property="article:modified_time"
+          content="2024-11-06T00:00:00+00:00"
+        />
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -83,6 +96,27 @@ export default function Home() {
 
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "author": {
+                "@type": "Person",
+                "name": "Yuta Asakura",
+                "url": "https://www.linkedin.com/in/asakurayuta/"
+              },
+              "datePublished": "2024-09-06",
+              "dateModified": "2024-11-06",
+              "headline": "Full-Stack Web Developer Portfolio",
+              "description": "Yuta Asakura's portfolio showcasing full-stack web development projects and experience.",
+              "mainEntityOfPage": "https://www.asakurayuta.dev/",
+              "image": "https://www.asakurayuta.dev/personal-portofolio-en.png"
+            }
+          `}
+        </script>
       </Head>
       <main className="min-h-screen relative">
         <section aria-labelledby="home-section">

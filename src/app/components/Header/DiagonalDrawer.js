@@ -1,3 +1,4 @@
+// DiagonalDrawer.js - A navigation drawer component with diagonal hover effects
 import React from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -15,16 +16,14 @@ export default function DiagonalDrawer({
 
   return (
     <React.Fragment>
+      {/* Hamburger Menu Button */}
       <div className="relative">
-        <div
-          className={`z-50 ${
-            pathname === "/" ? "top-[0px]" : "top-[0px]"
-          } cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] top-0 flex justify-center items-center rounded-br-3xl `}
-        >
-          <div
-            onClick={() => setIsOpen(false)}
-            className="relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center"
-          >
+        <div className={`z-50 ${pathname === "/" ? "top-[0px]" : "top-[0px]"} 
+          cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] top-0 
+          flex justify-center items-center rounded-br-3xl`}>
+          <div onClick={() => setIsOpen(false)}
+            className="relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center">
+            {/* Toggle between close (X) and menu icon based on isOpen state */}
             {isOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,15 +58,23 @@ export default function DiagonalDrawer({
           </div>
         </div>
       </div>
-      <header
-        className={`fixed w-full transition-all duration-500 z-40 ${
-          pathname === "/" ? "top-0" : "top-[0px]"
-        }`}
-      >
+
+      {/* Navigation Menu Header */}
+      <header className={`fixed w-full transition-all duration-500 z-40 
+        ${pathname === "/" ? "top-0" : "top-[0px]"}`}>
         <div className="relative">
-          <div className="z-20 absolute transform-gpu ease-in-out duration-300 transition-all scale-100 opacity-100 bg-[#223740] bg-opacity-95 w-full  h-screen top-0 flex flex-col sm:flex-row lg:flex-col items-center justify-center ">
-            <nav className="text-white font-recoletaBold text-center text-4xl lg:text-4xl 2xl:text-6xl uppercase">
+          {/* Main Navigation Menu Container */}
+          <div className="z-20 absolute transform-gpu ease-in-out duration-300 
+            transition-all scale-100 opacity-100 bg-[#223740] bg-opacity-95 
+            w-full h-screen top-0 flex flex-col sm:flex-row lg:flex-col 
+            items-center justify-center">
+            
+            {/* Navigation Links */}
+            <nav className="text-white font-recoletaBold text-center text-4xl 
+              lg:text-4xl 2xl:text-6xl uppercase">
               <ul className="flex flex-col">
+                {/* Each menu item has a hover effect with diagonal background */}
+                {/* The selected item shows a permanent diagonal background */}
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
                   <div className="inline-block relative">
                     <a
@@ -152,11 +159,13 @@ export default function DiagonalDrawer({
                     <LanguageSwitcher />
                   </div>
                 </li>
+                {/* Social Media Links Section */}
                 <li className="mt-10">
-                  <h3 className="font-bold text-[#48AFDE]  text-2xl uppercase mb-5">
+                  <h3 className="font-bold text-[#48AFDE] text-2xl uppercase mb-5">
                     {t("followMe")}
                   </h3>
                   <div className="flex flex-row justify-between">
+                    {/* Social media icons with hover effects */}
                     <a
                       target="blank"
                       href="https://x.com/asakurayuta_"
