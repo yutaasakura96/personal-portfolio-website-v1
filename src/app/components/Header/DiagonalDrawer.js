@@ -113,7 +113,75 @@ export default function DiagonalDrawer({
                     </div>
                   </li>
 
-                  {/* Similar structure for other menu items here */}
+                  <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                    <div className="inline-block relative">
+                      <a
+                        href="/#portfolio"
+                        onClick={() => {
+                          setSelectedIndex1(1);
+                          setIsOpen(false);
+                        }}
+                        aria-current={
+                          selectedIndex1 === 1 ? "page" : undefined
+                        }
+                        aria-label="Navigate to Portfolio section"
+                      >
+                        {t("portfolio")}
+                      </a>
+                      {selectedIndex1 === 1 ? (
+                        <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      ) : (
+                        ""
+                      )}
+                      <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    </div>
+                  </li>
+
+                  <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                    <div className="inline-block relative">
+                      <a
+                        href="/#about-me-component"
+                        onClick={() => {
+                          setSelectedIndex1(2);
+                          setIsOpen(false);
+                        }}
+                        aria-current={
+                          selectedIndex1 === 2 ? "page" : undefined
+                        }
+                        aria-label="Navigate to About Me section"
+                      >
+                        {t("aboutMe")}
+                      </a>
+                      {selectedIndex1 === 2 ? (
+                        <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      ) : (
+                        ""
+                      )}
+                      <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    </div>
+                  </li>
+
+                  <li className="group my-4 xl:my-4 2xl:my-6 relative">
+                    <div className="inline-block relative">
+                      <a
+                        href="/page/contactme"
+                        onClick={() => {
+                          setSelectedIndex1(3);
+                          setIsOpen(false);
+                        }}
+                        aria-current={selectedIndex1 === 3 ? "page" : undefined}
+                        aria-label="Navigate to Hire Me section"
+                      >
+                        {t("hireMe")}
+                      </a>
+                      {selectedIndex1 === 3 ? (
+                        <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      ) : (
+                        ""
+                      )}
+                      <div className="absolute top-2  -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    </div>
+                  </li>
 
                   <li className="group my-4 xl:my-4 2xl:my-6 relative">
                     <div className="inline-block relative">
@@ -133,7 +201,7 @@ export default function DiagonalDrawer({
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit my Twitter profile"
-                        className="text-gray-300 hover:text-white transition-colors duration-3000"
+                        className="text-gray-300 hover:text-white transition-colors duration-1000"
                       >
                         <svg
                           stroke="currentColor"
@@ -157,7 +225,7 @@ export default function DiagonalDrawer({
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit my GitHub profile"
-                        className="text-gray-300 hover:text-white transition-colors duration-3000"
+                        className="text-gray-300 hover:text-white transition-colors duration-1000"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +249,7 @@ export default function DiagonalDrawer({
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit my Wantedly profile"
-                        className="text-gray-300 hover:text-white transition-colors duration-3000"
+                        className="text-gray-300 hover:text-white transition-colors duration-1000"
                       >
                         <svg
                           role="img"
@@ -194,10 +262,10 @@ export default function DiagonalDrawer({
                         >
                           <title>Wantedly</title>
                           <path
-                          d="M76.8875 60.645833333333336c-0.7125000000000001 -0.4625 -2.741666666666667 -3.1833333333333336 -8.358333333333333 -16.59166666666667a38.300000000000004 38.300000000000004 0 0 0 -0.9875 -2.191666666666667l-1.1416666666666668 -2.766666666666667 -9.841666666666669 -23.758333333333336H36.875l9.841666666666669 23.758333333333336 9.841666666666669 23.775000000000002 9.0875 21.945833333333336a0.8166666666666668 0.8166666666666668 0 0 0 1.5083333333333333 0l9.887500000000001 -23.675000000000004a0.41666666666666674 0.41666666666666674 0 0 0 -0.15416666666666667 -0.49583333333333335zm-36.875 0c-0.7125000000000001 -0.4625 -2.741666666666667 -3.1833333333333336 -8.358333333333333 -16.59166666666667a37.37916666666667 37.37916666666667 0 0 0 -0.9833333333333334 -2.1875000000000004l-1.1500000000000001 -2.7708333333333335 -9.833333333333334 -23.758333333333336H0l9.841666666666669 23.758333333333336 9.841666666666669 23.775000000000002 9.0875 21.945833333333336a0.8166666666666668 0.8166666666666668 0 0 0 1.5083333333333333 0l9.891666666666667 -23.675000000000004a0.4083333333333334 0.4083333333333334 0 0 0 -0.15833333333333335 -0.49583333333333335ZM100 26.562500000000004a11.879166666666668 11.879166666666668 0 0 1 -11.879166666666668 11.883333333333333 11.879166666666668 11.879166666666668 0 0 1 -11.883333333333333 -11.883333333333333 11.879166666666668 11.879166666666668 0 0 1 11.883333333333333 -11.879166666666668A11.879166666666668 11.879166666666668 0 0 1 100 26.562500000000004Z"
-                          fill="#ddd"
-                          strokeWidth="1"
-                        ></path>
+                            d="M76.8875 60.645833333333336c-0.7125000000000001 -0.4625 -2.741666666666667 -3.1833333333333336 -8.358333333333333 -16.59166666666667a38.300000000000004 38.300000000000004 0 0 0 -0.9875 -2.191666666666667l-1.1416666666666668 -2.766666666666667 -9.841666666666669 -23.758333333333336H36.875l9.841666666666669 23.758333333333336 9.841666666666669 23.775000000000002 9.0875 21.945833333333336a0.8166666666666668 0.8166666666666668 0 0 0 1.5083333333333333 0l9.887500000000001 -23.675000000000004a0.41666666666666674 0.41666666666666674 0 0 0 -0.15416666666666667 -0.49583333333333335zm-36.875 0c-0.7125000000000001 -0.4625 -2.741666666666667 -3.1833333333333336 -8.358333333333333 -16.59166666666667a37.37916666666667 37.37916666666667 0 0 0 -0.9833333333333334 -2.1875000000000004l-1.1500000000000001 -2.7708333333333335 -9.833333333333334 -23.758333333333336H0l9.841666666666669 23.758333333333336 9.841666666666669 23.775000000000002 9.0875 21.945833333333336a0.8166666666666668 0.8166666666666668 0 0 0 1.5083333333333333 0l9.891666666666667 -23.675000000000004a0.4083333333333334 0.4083333333333334 0 0 0 -0.15833333333333335 -0.49583333333333335ZM100 26.562500000000004a11.879166666666668 11.879166666666668 0 0 1 -11.879166666666668 11.883333333333333 11.879166666666668 11.879166666666668 0 0 1 -11.883333333333333 -11.883333333333333 11.879166666666668 11.879166666666668 0 0 1 11.883333333333333 -11.879166666666668A11.879166666666668 11.879166666666668 0 0 1 100 26.562500000000004Z"
+                            fill="#ddd"
+                            strokeWidth="1"
+                          ></path>
                         </svg>
                       </a>
 
@@ -207,7 +275,7 @@ export default function DiagonalDrawer({
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit my LinkedIn profile"
-                        className="text-gray-300 hover:text-white transition-colors duration-3000"
+                        className="text-gray-300 hover:text-white transition-colors duration-1000"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +299,7 @@ export default function DiagonalDrawer({
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit my Instagram profile"
-                        className="text-gray-300 hover:text-white transition-colors duration-3000"
+                        className="text-gray-300 hover:text-white transition-colors duration-1000"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -250,11 +318,11 @@ export default function DiagonalDrawer({
                       </a>
                       {/* Gmail Link */}
                       <a
-                         href="mailto:yuta.asakura.se@gmail.com"
+                        href="mailto:yuta.asakura.se@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Send an email to Yuta Asakura"
-                        className="text-gray-300 hover:text-white transition-colors duration-3000"
+                        className="text-gray-300 hover:text-white transition-colors duration-1000"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
