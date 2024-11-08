@@ -2,10 +2,12 @@
 
 // Purpose: The main page of the website, containing the home, portfolio, about, and call-to-action sections
 
-// External libraries
+// External Libraries
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// Next.js Components
 import Image from "next/image";
 import Head from "next/head";
 
@@ -63,13 +65,26 @@ export default function Home() {
         <meta name="description" content={t("pageDescription")} />
         <meta name="keywords" content={t("pageKeywords")} />
         <meta name="author" content="Yuta Asakura" />
+        <link rel="canonical" href="https://www.asakurayuta.dev/" />
 
         {/* Open Graph meta tags for social media sharing */}
+        <meta
+          property="article:author"
+          content="https://www.linkedin.com/in/asakurayuta/"
+        />
         <meta property="og:title" content={t("ogTitle")} />
         <meta property="og:description" content={t("ogDescription")} />
         <meta property="og:image" content="/personal-portofolio-en.png" />
         <meta property="og:url" content="https://www.asakurayuta.dev/" />
         <meta property="og:type" content="website" />
+        <meta
+          property="article:published_time"
+          content="2024-9-06T00:00:00+00:00"
+        />
+        <meta
+          property="article:modified_time"
+          content="2024-11-06T00:00:00+00:00"
+        />
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -81,196 +96,223 @@ export default function Home() {
 
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "author": {
+                "@type": "Person",
+                "name": "Yuta Asakura",
+                "url": "https://www.linkedin.com/in/asakurayuta/"
+              },
+              "datePublished": "2024-09-06",
+              "dateModified": "2024-11-06",
+              "headline": "Full-Stack Web Developer Portfolio",
+              "description": "Yuta Asakura's portfolio showcasing full-stack web development projects and experience.",
+              "mainEntityOfPage": "https://www.asakurayuta.dev/",
+              "image": "https://www.asakurayuta.dev/personal-portofolio-en.png"
+            }
+          `}
+        </script>
       </Head>
       <main className="min-h-screen relative">
-        <HomeComponent />
+        <section aria-labelledby="home-section">
+          <HomeComponent />
+        </section>
 
         {/* Horizontal slider for tech stack icons */}
-        <div className="hide-slider w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons">
+        <section
+          aria-label="Tech stack carousel"
+          className="hide-slider w-[100vw] absolute left-0 lg:py-10 md:py-6 sm:py-6 cursor-all-scroll infinite-icons"
+        >
           <Slider {...settings}>
             {/* Icon images for various tech stacks */}
             <Image
               src="/html.svg"
-              alt="html"
+              alt="HTML logo - Markup language for structuring web pages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/css.svg"
-              alt="css"
+              alt="CSS logo - Styling language for designing web pages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/sass.svg"
-              alt="sass"
+              alt="Sass logo - Preprocessor scripting language that is interpreted into CSS"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/bootstrap.svg"
-              alt="bootstrap"
+              alt="Bootstrap logo - Frontend framework for responsive web design"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/tailwind.svg"
-              alt="tailwind"
+              alt="Tailwind CSS logo - Utility-first CSS framework for fast UI development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/typescript.svg"
-              alt="typescript"
+              alt="TypeScript logo - Superset of JavaScript for type-safe development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/javascript.svg"
-              alt="javascript"
+              alt="JavaScript logo - Programming language for dynamic web content"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/vuejs.svg"
-              alt="vuejs"
+              alt="Vue.js logo - Progressive JavaScript framework for building user interfaces"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/nuxtjs.svg"
-              alt="nuxtjs"
+              alt="Nuxt.js logo - Framework for creating server-rendered Vue applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/pinia.svg"
-              alt="pinia"
+              alt="Pinia logo - State management library for Vue applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/react.svg"
-              alt="react"
+              alt="React logo - JavaScript library for building user interfaces"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/nextjs.svg"
-              alt="next"
+              alt="Next.js logo - React framework for server-rendered applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/vercels.svg"
-              alt="vercels"
+              alt="Vercel logo - Platform for frontend frameworks and static sites"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/heroku.svg"
-              alt="heroku"
+              alt="Heroku logo - Cloud platform for deploying web applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/netlify.svg"
-              alt="netlify"
+              alt="Netlify logo - Platform for deploying static sites and web applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/java.svg"
-              alt="java"
+              alt="Java logo - Object-oriented programming language for web and mobile apps"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/ruby.svg"
-              alt="ruby"
+              alt="Ruby logo - Programming language for building web applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/rails.svg"
-              alt="rails"
+              alt="Ruby on Rails logo - Web application framework written in Ruby"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/postgres.svg"
-              alt="postgres"
+              alt="PostgreSQL logo - Open-source relational database system"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/vite.svg"
-              alt="vite"
+              alt="Vite logo - Frontend build tool for fast and efficient development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/npm.svg"
-              alt="npm"
+              alt="NPM logo - Package manager for JavaScript"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/git.svg"
-              alt="git"
+              alt="Git logo - Version control system for tracking changes in source code"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/github.svg"
-              alt="github"
+              alt="GitHub logo - Platform for hosting and collaborating on Git repositories"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/vscode.svg"
-              alt="vscode"
+              alt="Visual Studio Code logo - Code editor by Microsoft for various languages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
               src="/postman.svg"
-              alt="postman"
+              alt="Postman logo - Tool for API development and testing"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
           </Slider>
-        </div>
+        </section>
 
         {/* Portfolio section with gradient background */}
-        <div
+        <section
           className="mt-0 pt-5 -mb-40"
           id="portfolio"
+          aria-labelledby="portfolio-section"
           style={{
             backgroundImage:
               "linear-gradient(-80deg, #E0F3FD 0 50%, #EEF7FB 0% 100%)",
@@ -283,9 +325,12 @@ export default function Home() {
               className="mt-[500px]"
             >
               {/* Portfolio title and description */}
-              <p className="text-[#48AFDE] md:pl-[80px] px-5 font-extrabold text-5xl">
+              <h2
+                id="portfolio-section"
+                className="text-[#48AFDE] md:pl-[80px] px-5 font-extrabold text-5xl"
+              >
                 {t("projectsTitle")}
-              </p>
+              </h2>
               <p
                 className={`max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}
               >
@@ -296,11 +341,15 @@ export default function Home() {
           <div style={{ transform: "translate(0px,-170px)" }}>
             <MySlider /> {/* Portfolio project slider */}
           </div>
-        </div>
+        </section>
 
         {/* About and call-to-action sections */}
-        <AboutMe />
-        <CallToAction />
+        <section aria-labelledby="about-section">
+          <AboutMe />
+        </section>
+        <section aria-labelledby="cta-button-section">
+          <CallToAction />
+        </section>
       </main>
     </>
   );

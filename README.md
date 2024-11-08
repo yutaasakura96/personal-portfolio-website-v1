@@ -4,6 +4,8 @@ Welcome to my personal portfolio website! This project showcases my skills as a 
 
 Now with internationalization (i18n) support, the website is available in both English and Japanese, providing a localized experience for users. The language switcher allows seamless toggling between languages, ensuring accessibility for a global audience.
 
+The website also includes extensive accessibility improvements, providing a better experience for all users.
+
 ## 🌐 Demo
 
 [🚀 Live Demo](https://www.asakurayuta.dev/)
@@ -26,23 +28,25 @@ Media Queries
 - ⚛️ **React.js & Next.js**: Components built for a dynamic user interface with optimized performance using Next.js, now featuring internationalization (i18n) for seamless language switching between English and Japanese.
 - 🎡 **Slider Carousel**: A smooth, infinite carousel of skills and technologies using `react-slick` and custom configurations.
 - ✉️ **Contact Form**: A contact form with real-time validation and submission using **Nodemailer**.
-- 🔍 **SEO Optimized**: Meta tags for social sharing (Twitter, LinkedIn) and search engine visibility.
+- 🔍 **SEO Optimized**:  Structured data (JSON-LD) for improved SEO, Meta tags for social sharing (Twitter, LinkedIn) and search engine visibility.
 - 📜 **Drawer Menu**: A custom diagonal drawer menu built for easy navigation in smaller screen sizes.
 - 🌐 **Social Links**: Social media icons with links to profiles on GitHub, LinkedIn, Instagram, and more.
 - 🎨 **Smooth Transitions**: Smooth hover effects and animations for buttons, links, and elements throughout the site.
 - 🔝 **Scroll to Top Button**: A button that appears when the user scrolls, allowing them to easily return to the top of the page.
+- 🧑‍🦯 **Enhanced Accessibility**: Detailed ARIA attributes, semantic HTML, and keyboard navigation across components.
 
 ## 🛠️ Technologies Used
 
-- ⚛️ **React.js**: For building the user interface.
-- ⚡ **Next.js**: For server-side rendering and routing and internationalization (i18n) to support multiple languages.
-- 💨 **Tailwind CSS**: For utility-first styling and responsive design.
-- 🚀 **Vercel**: For seamless integration with Next.js and for easy deployment.
-- 📧 **Nodemailer**: For handling contact form submissions.
-- 🛎️ **React Toastify**: For CTA button that scrolls up to the top portion of home page by clicking.
-- 🎡 **React Slick**: For a dynamic, responsive slider component and inifinite slider.
-- ✍️ **Google Fonts**: Custom fonts including Hind for a clean and consistent typography.
-- 🖼️ **Image Optimization**: Next.js `Image` component for optimized image loading.
+- ⚛️ [**React.js**](https://react.dev/): For building dynamic and interactive user interfaces with component-based architecture.
+- ⚡ [**Next.js**](https://nextjs.org/): For server-side rendering, optimized routing, and internationalization (i18n) to support multiple languages.
+- 💨 [**Tailwind CSS**](https://tailwindcss.com/): Utility-first CSS framework for creating responsive designs efficiently.
+- 🚀 [**Vercel**](https://vercel.com/docs): Deployment platform offering seamless integration with Next.js and effortless deployment.
+- 📧 [**Nodemailer**](https://nodemailer.com/about/): For handling contact form submissions and sending emails.
+- 🛎️ [**React Toastify**](https://fkhadra.github.io/react-toastify/introduction): For handling in-app notifications, used for displaying success/error messages on form submissions.
+- 🎡 [**React Slick**](https://react-slick.neostack.com/): A responsive carousel component to showcase projects and skills.
+- ✍️ [**Google Fonts**](https://fonts.google.com/): Custom fonts (e.g., Hind) for clean and consistent typography.
+- 🖼️ [**Next.js Image Optimization**](https://nextjs.org/docs/basic-features/image-optimization): Using the `Image` component for optimized image loading and responsive images.
+- 🌍 [**next-intl**](https://next-intl-docs.vercel.app/): Library for internationalization (i18n) in Next.js, supporting multi-language content and a global audience.
 
 ## 📋 Key Components
 
@@ -79,7 +83,16 @@ The diagonal drawer navigation system enhances mobile usability, providing users
 
 The footer includes social media links (Twitter, GitHub, LinkedIn, Instagram) and copyright information, styled with custom fonts and colors.
 
-🛠️ Deployment
+### 🧑‍🦯 Accessibility Enhancements
+
+The site was optimized with extensive accessibility features:
+	•	Semantic HTML Structure: All sections and components follow a clear, accessible layout with appropriate roles.
+	•	ARIA Labels: Descriptive labels were added across buttons, links, and interactive elements to improve screen reader support.
+	•	Keyboard Navigation: Enhanced keyboard accessibility with focusable elements and navigation cues.
+	•	Slider and Carousel: Screen readers can interpret each item with added ARIA labels and roles.
+
+
+### 🛠️ Deployment
 
 To deploy on Vercel:
 

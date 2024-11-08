@@ -14,17 +14,21 @@ const hind = Hind({
 });
 
 export default function AboutMe() {
-  const [isFlipped, setIsFlipped] = useState(false); // Track if the card is flipped
-  const [isFaded, setIsFaded] = useState(false); // Track if the card is faded
-  const [selectedIndex, setSelectedIndex] = useState(0); // Track the selected card index
+  // Track if the card is flipped
+  const [isFlipped, setIsFlipped] = useState(false);
+  // Track if the card is faded
+  const [isFaded, setIsFaded] = useState(false);
+  // Track the selected card index
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Initialize translations with the 'AboutMe' namespace
-  const t = useTranslations('AboutMe');
+  const t = useTranslations("AboutMe");
   // Access root-level translations for 'AboutData'
   const tGlobal = useTranslations();
-  const aboutData = tGlobal.raw('AboutData');
+  const aboutData = tGlobal.raw("AboutData");
 
-  const [mapData, setMapData] = useState(aboutData[0]); // Set initial map data
+  // Set initial map data
+  const [mapData, setMapData] = useState(aboutData[0]);
 
   // Resets states and updates displayed map data
   const myFunctions = (data) => {
@@ -76,10 +80,10 @@ export default function AboutMe() {
           <div>
             {/* Main title and subtitle for About Me */}
             <h1 className="relative font-recoletaBlack text-5xl text-[#48AFDE] mb-5 -mt-40 md:px-24 px-5">
-              {t('aboutMeTitle')}
+              {t("aboutMeTitle")}
             </h1>
             <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
-              {t('fullStackDeveloper')}
+              {t("fullStackDeveloper")}
             </h4>
           </div>
           {/* Description section with image */}
@@ -87,7 +91,7 @@ export default function AboutMe() {
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className} text-[16px] leading-7`}
             >
-              {t('aboutMeDescription')}
+              {t("aboutMeDescription")}
             </p>
             <Image
               src="/customer-care4.png"
@@ -115,6 +119,14 @@ export default function AboutMe() {
                       ? " -translate-y-2 bg-[#476571]"
                       : "hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white"
                   }`}
+                  role="button"
+                  tabIndex="0"
+                  aria-label={`Skill card for ${item.title}`}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      handleCardClick(item, index);
+                    }
+                  }}
                 >
                   <div className="w-16 h-16 sm:w-10 sm:h-10 lg:w-16 lg:h-16">
                     <Image
@@ -153,7 +165,7 @@ export default function AboutMe() {
                 <p
                   className={`text-[#47626D] ${hind.className} text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100`}
                 >
-                  {t('myTechSkills')}
+                  {t("myTechSkills")}
                 </p>
                 <h2 className="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100">
                   {mapData?.title}
@@ -187,6 +199,14 @@ export default function AboutMe() {
                 <a
                   onClick={HandlePrev}
                   className="w-12 h-12 rounded-xl mr-1 transform transition duration-500 cursor-pointer hover:-translate-y-1 hover:shadow-lg flex justify-center items-center bg-[#47626D]"
+                  role="button"
+                  tabIndex="0"
+                  aria-label="Previous skill card"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      HandlePrev();
+                    }
+                  }}
                 >
                   {/* Previous button */}
                   <svg
@@ -208,6 +228,14 @@ export default function AboutMe() {
                 <a
                   onClick={HandleNext}
                   className="w-12 h-12 rounded-xl mr-1 transform transition duration-500 cursor-pointer hover:-translate-y-1 hover:shadow-lg flex justify-center items-center bg-[#47626D]"
+                  role="button"
+                  tabIndex="0"
+                  aria-label="Next skill card"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      HandleNext();
+                    }
+                  }}
                 >
                   {/* Next button */}
                   <svg
