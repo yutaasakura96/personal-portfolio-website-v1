@@ -74,7 +74,7 @@ export default function Home() {
         />
         <meta property="og:title" content={t("ogTitle")} />
         <meta property="og:description" content={t("ogDescription")} />
-        <meta property="og:image" content="/personal-portofolio-en.png" />
+        <meta property="og:image" content="/public/portfolio-image.png" />
         <meta property="og:url" content="https://www.asakurayuta.dev/" />
         <meta property="og:type" content="website" />
         <meta
@@ -92,7 +92,7 @@ export default function Home() {
         <meta name="twitter:title" content={t("twitterTitle")} />
         <meta name="twitter:description" content={t("twitterDescription")} />
         <meta name="twitter:creator" content="@asakurayuta_" />
-        <meta name="twitter:image" content="/personal-portofolio-en.png" />
+        <meta name="twitter:image" content="/public/portfolio-image.png" />
 
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
