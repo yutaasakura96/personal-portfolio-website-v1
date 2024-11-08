@@ -1,16 +1,26 @@
 "use client";
+// Purpose: Settings and configuration for the slider component.
 
+// External Libraries
 import React from "react";
 import Slider from "react-slick";
+
+// Styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// Components
 import SliderCard from "./SliderCard";
-import { useTranslations } from "next-intl"; // Import translations hook
+
+// Hooks
+import { useTranslations } from "next-intl";
 
 export default function MySlider() {
-  const tGlobal = useTranslations(); // Access root-level translations
-  const dataArray = tGlobal.raw("DataArray"); // Retrieve DataArray from translations
+  // Initialize translations and get data from translation files
+  const tGlobal = useTranslations();
+  const dataArray = tGlobal.raw("DataArray");
 
+  // Core slider configuration
   const settings = {
     infinite: true,
     slidesToShow: 1,
@@ -18,9 +28,12 @@ export default function MySlider() {
     speed: 500,
     arrows: true,
     centerMode: true,
-    centerPadding: "400px",
+    centerPadding: "400px", // Default padding for largest screens
     dots: true,
+
+    // Responsive breakpoints for different screen sizes
     responsive: [
+      // Desktop breakpoints (1700px - 1150px)
       {
         breakpoint: 1700,
         settings: {
@@ -81,6 +94,7 @@ export default function MySlider() {
           centerPadding: "170px",
         },
       },
+      // Tablet breakpoints (1024px - 780px)
       {
         breakpoint: 1024,
         settings: {
@@ -141,6 +155,7 @@ export default function MySlider() {
           centerPadding: "170px",
         },
       },
+      // Mobile breakpoint
       {
         breakpoint: 640,
         settings: {
@@ -148,13 +163,14 @@ export default function MySlider() {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          centerMode: false,
+          centerMode: false, // Disable center mode for mobile
           centerPadding: "0",
         },
       },
     ],
   };
 
+  // Render slider with mapped data items
   return (
     <Slider {...settings}>
       {dataArray.map((item, index) => (

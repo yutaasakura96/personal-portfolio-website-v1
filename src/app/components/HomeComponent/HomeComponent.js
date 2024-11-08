@@ -61,7 +61,7 @@ export default function HomeComponent() {
                   <nav className="action-buttons" aria-label="Primary">
                     <a
                       href="/page/contactme"
-                      className={`cursor-pointer bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold uppercase md:py-2 lg:py-3 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
+                      className={`cursor-pointer bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold uppercase md:py-2 lg:py-3 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-2 ${hind.className}`}
                       aria-label={t("hireMe")}
                       role="button"
                     >
@@ -70,7 +70,7 @@ export default function HomeComponent() {
                     <a
                       href={t("resumeFileName")}
                       download={t("resumeFileName")}
-                      className={`cursor-pointer ml-10 bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold uppercase md:py-2 lg:py-3 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
+                      className={`cursor-pointer ml-10 bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold uppercase md:py-2 lg:py-3 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#47aede] hover:show-lg transform hover:translate-y-2 ${hind.className}`}
                       aria-label={`${t("myResume")} (downloads PDF)`}
                       role="button"
                     >
