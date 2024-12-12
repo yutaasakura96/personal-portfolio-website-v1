@@ -9,6 +9,7 @@ const workExperiences = [
     location: 'Remote',
     hq: 'Osaka, Japan',
     website: 'https://www.tierline.com/index.html',
+    logo: 'https://www.tierline.com/images/tierline_logo.svg',
     description: [
       'Developed and deployed scalable web applications using React, Spring Boot, and MySQL, improving performance and user experience.',
       'Collaborated with cross-functional teams to design and implement new features based on client requirements.',
@@ -17,28 +18,29 @@ const workExperiences = [
   },
   {
     company: 'Watanabe Construction Industry',
-    position: 'Construction Foreman',
-    start: 'January 2020',
-    end: 'June 2024',
+    positions: [
+      {
+        title: 'Construction Foreman',
+        start: 'January 2020',
+        end: 'June 2024',
+        description: [
+          'Supervised construction projects and managed a team of scaffolders.'
+        ]
+      },
+      {
+        title: 'Construction Worker (Scaffolder)',
+        start: 'April 2016',
+        end: 'January 2020',
+        description: [
+          'Worked on various construction projects as a scaffolder.'
+        ]
+      }
+    ],
     location: 'Tokyo, Japan',
     hq: 'Shinjuku, Tokyo, Japan',
     website: 'https://www.w-k-k.com/',
-    description: [
-      'Supervised construction projects and managed a team of scaffolders.'
-    ]
-  },
-  {
-    company: 'Watanabe Construction Industry',
-    position: 'Construction Worker (Scaffolder)',
-    start: 'April 2016',
-    end: 'January 2020',
-    location: 'Tokyo, Japan',
-    hq: 'Shinjuku, Tokyo, Japan',
-    website: 'https://www.w-k-k.com/',
-    description: [
-      'Worked on various construction projects as a scaffolder.'
-    ]
-  },
+    logo: 'wkk_logo.png'
+  }
 ];
 
 const WorkHistory = () => {
@@ -48,12 +50,31 @@ const WorkHistory = () => {
       <ul className="space-y-6">
         {workExperiences.map((experience, index) => (
           <li key={index} className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-semibold">{experience.company}</h3>
-            <p className="text-lg text-gray-700">{experience.position}</p>
-            <p className="text-sm text-gray-500">{experience.start} - {experience.end}</p>
-            <p className="text-sm text-gray-500">{experience.location}</p>
-            <p className="mt-4 text-gray-600">{experience.description.join(' ')}</p>
-            <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-2 inline-block">Company Website</a>
+            <div className="flex flex-col mb-4">
+              {experience.logo && (
+                <img src={experience.logo} alt={`${experience.company} logo`} className="w-28 h-28 mr-4" />
+              )}
+                <h3 className="text-2xl font-semibold">{experience.company}</h3>
+                {experience.position ? (
+                  <>
+                    <p className="text-lg text-gray-700">{experience.position}</p>
+                    <p className="text-sm text-gray-500">{experience.start} - {experience.end}</p>
+                    <p className="text-sm text-gray-500">{experience.location}</p>
+                    <p className="mt-4 text-gray-600">{experience.description.join(' ')}</p>
+                  </>
+                ) : (
+                  experience.positions.map((position, posIndex) => (
+                    <div key={posIndex} className="mt-4">
+                      <p className="text-lg text-gray-700">{position.title}</p>
+                      <p className="text-sm text-gray-500">{position.start} - {position.end}</p>
+                      <p className="mt-2 text-gray-600">{position.description.join(' ')}</p>
+                    </div>
+                  ))
+                )}
+            </div>
+            {experience.website && (
+              <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-2 inline-block">Company Website</a>
+            )}
           </li>
         ))}
       </ul>
