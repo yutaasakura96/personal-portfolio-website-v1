@@ -21,6 +21,7 @@ import { useTranslations } from "next-intl";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/AboutMe";
+import WorkHistory from "./components/WorkHistory/WorkHistory";
 import CallToAction from "./components/CallToAction/CallToAction";
 
 // Configure the Hind font for consistent text styling
@@ -346,6 +347,9 @@ export default function Home() {
         {/* About and call-to-action sections */}
         <section aria-labelledby="about-section">
           <AboutMe />
+        </section>
+        <section aria-labelledby="work-history-section">
+          <WorkHistory />
         </section>
         <section aria-labelledby="cta-button-section">
           <CallToAction />
