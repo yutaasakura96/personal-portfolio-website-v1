@@ -8,7 +8,7 @@ const workExperiences = [
     end: 'January 2020',
     location: 'Tokyo, Japan',
     hq: 'Shinjuku, Tokyo, Japan',
-    website: 'https://www.watanabe-construction.jp',
+    website: '#',
     description: [
       'Worked on various construction projects as a scaffolder.'
     ]
@@ -20,7 +20,7 @@ const workExperiences = [
     end: 'June 2024',
     location: 'Tokyo, Japan',
     hq: 'Shinjuku, Tokyo, Japan',
-    website: 'https://www.watanabe-construction.jp',
+    website: '#',
     description: [
       'Supervised construction projects and managed a team of scaffolders.'
     ]
@@ -32,7 +32,7 @@ const workExperiences = [
     end: 'Present',
     location: 'Remote',
     hq: 'Osaka, Japan',
-    website: 'https://www.tierline.com',
+    website: '#',
     description: [
       'Developed and deployed scalable web applications using React, Spring Boot, and MySQL, improving performance and user experience.',
       'Collaborated with cross-functional teams to design and implement new features based on client requirements.',
@@ -50,8 +50,10 @@ const WorkHistory = () => {
           <li key={index}>
             <h3>{experience.company}</h3>
             <p>{experience.position}</p>
-            <p>{experience.duration}</p>
-            <p>{experience.description}</p>
+            <p>{experience.start} - {experience.end}</p>
+            <p>{experience.location}</p>
+            <p>{experience.description.join(' ')}</p>
+            <a href={experience.website} target="_blank" rel="noopener noreferrer">Company Website</a>
           </li>
         ))}
       </ul>
