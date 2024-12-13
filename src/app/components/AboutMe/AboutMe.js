@@ -69,10 +69,10 @@ export default function AboutMe() {
       {/* Main container for the About Me section */}
       <div
         id="about-me-component"
-        className="bg-[##eef7fb] pt-[250px] mt-4 pb-[100px] lg:pb-[250px] relative lg:h-100"
+        className="bg-[##eef7fb] pt-[250px] mt-4 relative lg:h-100"
         style={{
           backgroundImage:
-            "linear-gradient(108.7deg, #E0F3FD 0 45%, #eef7fb 0% 100%)",
+            "linear-gradient(90deg, #E0F3FD 0 50%, #eef7fb 0% 100%)",
           width: "100%",
         }}
       >

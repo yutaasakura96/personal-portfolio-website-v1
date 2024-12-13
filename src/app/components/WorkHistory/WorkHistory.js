@@ -14,7 +14,8 @@ const workExperiences = [
       'Developed and deployed scalable web applications using React, Spring Boot, and MySQL, improving performance and user experience.',
       'Collaborated with cross-functional teams to design and implement new features based on client requirements.',
       'Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS.'
-    ]
+    ],
+    techStack: ['React', 'Java', 'Spring Boot', 'MySQL/PostgresSQL', 'Javascript' ,'Typescript', 'Tailwind CSS', 'CSS', 'SCSS', 'HTML']
   },
   {
     company: 'Watanabe Construction Industry',
@@ -25,7 +26,8 @@ const workExperiences = [
         end: 'June 2024',
         description: [
           'Supervised construction projects and managed a team of scaffolders.'
-        ]
+        ],
+        techStack: []
       },
       {
         title: 'Construction Worker (Scaffolder)',
@@ -33,7 +35,8 @@ const workExperiences = [
         end: 'January 2020',
         description: [
           'Worked on various construction projects as a scaffolder.'
-        ]
+        ],
+        techStack: []
       }
     ],
     location: 'Tokyo, Japan',
@@ -45,29 +48,37 @@ const workExperiences = [
 
 const WorkHistory = () => {
   return (
-    <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold mb-6 text-center">Work History</h2>
+    <div id="work-history-component"
+    className="bg-[##eef7fb] lg:h-100 pt-24 pb-24"
+    style={{
+      backgroundImage:
+        "linear-gradient(90deg, #eef7fb 0 50%, #E0F3FD 0% 100%)",
+      width: "100%",
+    }}>
+      <div className='container m-auto'>
+      <h1 className="text-5xl text-[#48AFDE] mb-10 md:px-24 px-5">Work History</h1>
       <ul className="space-y-6">
         {workExperiences.map((experience, index) => (
-          <li key={index} className="bg-white p-6 rounded-lg shadow-sm">
+          <li key={index} style={{ boxShadow: '#48AFDE -5px 10px 20px 0px' }} className="p-6 lg:p-10 rounded-xl bg-white mb-10">
+            {/* relative  group  center  flex flex-col justify-center items-center  */}
             <div className="flex flex-col mb-4">
               {experience.logo && (
-                <img src={experience.logo} alt={`${experience.company} logo`} className="w-28 h-28 mr-4" />
+                <img   src={experience.logo} alt={`${experience.company} logo`} className="w-28 h-28 mr-4 mb-5"/>
               )}
-                <h3 className="text-2xl font-semibold">{experience.company}</h3>
+                <h4 className="text-3xl font-semibold">{experience.company}</h4>
                 {experience.position ? (
                   <>
-                    <p className="text-lg text-gray-700">{experience.position}</p>
-                    <p className="text-sm text-gray-500">{experience.start} - {experience.end}</p>
-                    <p className="text-sm text-gray-500">{experience.location}</p>
-                    <p className="mt-4 text-gray-600">{experience.description.join(' ')}</p>
+                    <p className="text-lg">{experience.position}</p>
+                    <p className="text-sm">{experience.start} - {experience.end}</p>
+                    <p className="text-sm">{experience.location}</p>
+                    <p className="mt-4">{experience.description.join(' ')}</p>
                   </>
                 ) : (
                   experience.positions.map((position, posIndex) => (
                     <div key={posIndex} className="mt-4">
-                      <p className="text-lg text-gray-700">{position.title}</p>
-                      <p className="text-sm text-gray-500">{position.start} - {position.end}</p>
-                      <p className="mt-2 text-gray-600">{position.description.join(' ')}</p>
+                      <p className="text-lg">{position.title}</p>
+                      <p className="text-sm">{position.start} - {position.end}</p>
+                      <p className="mt-2">{position.description.join(' ')}</p>
                     </div>
                   ))
                 )}
@@ -78,6 +89,7 @@ const WorkHistory = () => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 };

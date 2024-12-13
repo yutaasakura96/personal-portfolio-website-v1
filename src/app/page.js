@@ -316,7 +316,7 @@ export default function Home() {
           aria-labelledby="portfolio-section"
           style={{
             backgroundImage:
-              "linear-gradient(-80deg, #E0F3FD 0 50%, #EEF7FB 0% 100%)",
+              "linear-gradient(90deg, #EEF7FB 0 50%, #E0F3FD 0% 100%)",
             width: "100%",
           }}
         >

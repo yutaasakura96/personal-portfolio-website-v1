@@ -25,7 +25,7 @@ export default function HomeComponent() {
         className="home-background"
         style={{
           backgroundImage:
-            "linear-gradient(60deg, #E0F3FD 0 50%, #eef7fb 0 100%)",
+            "linear-gradient(90deg, #E0F3FD 0 50%, #eef7fb 0 100%)",
           minHeight: "500px",
           maxHeight: "1200px",
           height: "100%",
