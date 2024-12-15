@@ -65,12 +65,12 @@ const WorkHistory = () => {
                 {experience.logo && (
                   <img src={experience.logo} alt={`${experience.company} logo`} className="w-28 h-28 mr-4 mb-5"/>
                 )}
-                <h4 className="text-3xl font-semibold">{experience.company}</h4>
+                <h4 className="text-3xl font-semibold text-[#48AFDE]">{experience.company}</h4>
                 {experience.position ? (
                   <>
                     <p className="text-lg font-normal">{experience.position}</p>
                     <p className="text-sm font-normal text-[#223740]">{experience.start} - {experience.end}</p>
-                    <p className="text-sm font-normal">{experience.location}</p>
+                    <p className="text-sm font-normal text-[#223740]">{experience.location}</p>
                     <p className="mt-4 font-[300]">{experience.description.join(' ')}</p>
                   </>
                 ) : (
