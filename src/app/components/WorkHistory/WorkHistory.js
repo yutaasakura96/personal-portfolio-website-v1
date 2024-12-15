@@ -59,33 +59,31 @@ const WorkHistory = () => {
       <h1 className="text-5xl text-[#48AFDE] mb-10 md:px-24 px-5">Work History</h1>
       <ul className="space-y-6">
         {workExperiences.map((experience, index) => (
-          <li key={index} style={{ boxShadow: '#48AFDE -5px 10px 20px 0px' }} className="p-6 lg:p-10 rounded-xl bg-white mb-10">
-            {/* relative  group  center  flex flex-col justify-center items-center  */}
-            <div className="flex flex-col mb-4">
-              {experience.logo && (
-                <img   src={experience.logo} alt={`${experience.company} logo`} className="w-28 h-28 mr-4 mb-5"/>
-              )}
+          <li key={index} style={{ boxShadow: '#48AFDE -5px 10px 20px 0px' }} className="p-6 lg:p-10 rounded-xl bg-white mb-10 transition-all transform duration-300 hover:shadow-xl hover:-translate-y-2 cursor-pointer">
+            <a href={experience.website} target="_blank" rel="noopener noreferrer" className="block">
+              <div className="flex flex-col mb-4">
+                {experience.logo && (
+                  <img src={experience.logo} alt={`${experience.company} logo`} className="w-28 h-28 mr-4 mb-5"/>
+                )}
                 <h4 className="text-3xl font-semibold">{experience.company}</h4>
                 {experience.position ? (
                   <>
-                    <p className="text-lg">{experience.position}</p>
-                    <p className="text-sm">{experience.start} - {experience.end}</p>
-                    <p className="text-sm">{experience.location}</p>
-                    <p className="mt-4">{experience.description.join(' ')}</p>
+                    <p className="text-lg font-normal">{experience.position}</p>
+                    <p className="text-sm font-normal text-[#223740]">{experience.start} - {experience.end}</p>
+                    <p className="text-sm font-normal">{experience.location}</p>
+                    <p className="mt-4 font-[300]">{experience.description.join(' ')}</p>
                   </>
                 ) : (
                   experience.positions.map((position, posIndex) => (
                     <div key={posIndex} className="mt-4">
-                      <p className="text-lg">{position.title}</p>
-                      <p className="text-sm">{position.start} - {position.end}</p>
-                      <p className="mt-2">{position.description.join(' ')}</p>
+                      <p className="text-lg font-normal">{position.title}</p>
+                      <p className="text-sm font-normal text-[#223740]">{position.start} - {position.end}</p>
+                      <p className="mt-2 font-[300]">{position.description.join(' ')}</p>
                     </div>
                   ))
                 )}
-            </div>
-            {experience.website && (
-              <a href={experience.website} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-2 inline-block">Company Website</a>
-            )}
+              </div>
+            </a>
           </li>
         ))}
       </ul>
