@@ -333,7 +333,7 @@ export default function Home() {
                 {t("projectsTitle")}
               </h2>
               <p
-                className={`max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}
+                className={`max-w-xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 p-5 ${hind.className}`}
               >
                 {t("projectsDescription")}
               </p>
