@@ -80,7 +80,9 @@
     "previousProject": "Previous Project",
     "nextProject": "Next Project"
   },
-  "WorkHistory": [
+  "WorkHistory": {
+  "title": "Work History",
+  "experiences": [
     {
       "company": "Tierline Inc.",
       "position": "Full Stack Developer",
@@ -95,7 +97,20 @@
         "Collaborated with cross-functional teams to design and implement new features based on client requirements.",
         "Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS."
       ],
-      "techStack": ["React", "Java", "Spring Boot", "MySQL", "PostgresSQL", "Javascript", "Typescript", "Tailwind CSS", "CSS", "SCSS", "HTML"]
+      "techStackTitle": "Tech Stack",
+      "techStack": [
+        "React",
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "PostgresSQL",
+        "Javascript",
+        "Typescript",
+        "Tailwind CSS",
+        "CSS",
+        "SCSS",
+        "HTML"
+      ]
     },
     {
       "company": "Watanabe Construction Industry",
@@ -122,9 +137,10 @@
       "location": "Tokyo, Japan",
       "hq": "Shinjuku, Tokyo, Japan",
       "website": "https://www.w-k-k.com/",
-      "logo": "wkk_logo.png"
+      "logo": "/wkk_logo.png"
     }
-  ],
+  ]
+},
   "AboutData": [
     {
       "count": 1,

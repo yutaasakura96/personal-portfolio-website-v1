@@ -89,7 +89,7 @@ export default function AboutMe() {
           {/* Description section with image */}
           <section className="relative flex flex-col justify-between lg:flex-row px-5 md:px-24">
             <p
-              className={`max-w-md text-[#223740] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className} text-[16px] leading-7`}
+              className={`max-w-md text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
             >
               {t("aboutMeDescription")}
             </p>
