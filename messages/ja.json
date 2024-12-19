@@ -80,6 +80,68 @@
     "previousProject": "前のプロジェクト",
     "nextProject": "次のプロジェクト"
   },
+  "WorkHistory": {
+  "title": "職務経歴",
+  "experiences": [
+    {
+      "company": "株式会社ティアライン",
+      "position": "フルスタックデベロッパー",
+      "start": "2024年10月",
+      "end": "現在",
+      "location": "リモート",
+      "hq": "日本大阪",
+      "website": "https://www.tierline.com/index.html",
+      "logo": "https://www.tierline.com/images/tierline_logo.svg",
+      "description": [
+        "React、Spring Boot、MySQLを使用してスケーラブルなWebアプリケーションを開発および展開し、パフォーマンスとユーザーエクスペリエンスを向上させました。",
+        "クライアントの要件に基づいて、新機能を設計および実装するためにクロスファンクショナルチームと協力しました。",
+        "Java Spring Boot、TypeScript、React、およびTailwind CSSを使用して構築された、企業向けのWebベースの従業員管理システムをチームで開発・実装しました。"
+      ],
+      "techStackTitle": "使用技術",
+      "techStack": [
+        "React",
+        "Vue",
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "PostgresSQL",
+        "Javascript",
+        "Typescript",
+        "Tailwind CSS",
+        "CSS",
+        "SCSS",
+        "HTML"
+      ]
+    },
+    {
+      "company": "株式会社渡部建設工業",
+      "positions": [
+        {
+          "title": "建設現場監督",
+          "start": "2020年1月",
+          "end": "2024年6月",
+          "description": [
+            "建設プロジェクトを監督し、足場作業員のチームを管理しました。"
+          ],
+          "techStack": []
+        },
+        {
+          "title": "建設作業員（足場作業）",
+          "start": "2016年4月",
+          "end": "2020年1月",
+          "description": [
+            "さまざまな建設プロジェクトにおいて足場作業員として従事しました。"
+          ],
+          "techStack": []
+        }
+      ],
+      "location": "日本、東京",
+      "hq": "日本東京新宿区",
+      "website": "https://www.w-k-k.com/",
+      "logo": "/wkk_logo.png"
+    }
+  ]
+},
   "AboutData": [
     {
       "count": 1,
