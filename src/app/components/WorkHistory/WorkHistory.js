@@ -15,7 +15,7 @@ const workExperiences = [
       'Collaborated with cross-functional teams to design and implement new features based on client requirements.',
       'Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS.'
     ],
-    techStack: ['React', 'Java', 'Spring Boot', 'MySQL/PostgresSQL', 'Javascript' ,'Typescript', 'Tailwind CSS', 'CSS', 'SCSS', 'HTML']
+    techStack: ['React', 'Java', 'Spring Boot', 'MySQL', 'PostgresSQL', 'Javascript' ,'Typescript', 'Tailwind CSS', 'CSS', 'SCSS', 'HTML']
   },
   {
     company: 'Watanabe Construction Industry',

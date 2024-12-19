@@ -80,6 +80,51 @@
     "previousProject": "Previous Project",
     "nextProject": "Next Project"
   },
+  "WorkHistory": [
+    {
+      "company": "Tierline Inc.",
+      "position": "Full Stack Developer",
+      "start": "October 2024",
+      "end": "Present",
+      "location": "Remote",
+      "hq": "Osaka, Japan",
+      "website": "https://www.tierline.com/index.html",
+      "logo": "https://www.tierline.com/images/tierline_logo.svg",
+      "description": [
+        "Developed and deployed scalable web applications using React, Spring Boot, and MySQL, improving performance and user experience.",
+        "Collaborated with cross-functional teams to design and implement new features based on client requirements.",
+        "Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS."
+      ],
+      "techStack": ["React", "Java", "Spring Boot", "MySQL", "PostgresSQL", "Javascript", "Typescript", "Tailwind CSS", "CSS", "SCSS", "HTML"]
+    },
+    {
+      "company": "Watanabe Construction Industry",
+      "positions": [
+        {
+          "title": "Construction Foreman",
+          "start": "January 2020",
+          "end": "June 2024",
+          "description": [
+            "Supervised construction projects and managed a team of scaffolders."
+          ],
+          "techStack": []
+        },
+        {
+          "title": "Construction Worker (Scaffolder)",
+          "start": "April 2016",
+          "end": "January 2020",
+          "description": [
+            "Worked on various construction projects as a scaffolder."
+          ],
+          "techStack": []
+        }
+      ],
+      "location": "Tokyo, Japan",
+      "hq": "Shinjuku, Tokyo, Japan",
+      "website": "https://www.w-k-k.com/",
+      "logo": "wkk_logo.png"
+    }
+  ],
   "AboutData": [
     {
       "count": 1,
