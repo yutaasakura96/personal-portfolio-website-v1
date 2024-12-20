@@ -59,9 +59,12 @@ export default function WorkHistory() {
                   </h2>
                   {experience.position ? (
                     <>
-                      <p className="text-lg font-normal">{experience.position}</p>
+                      <p className="text-lg font-normal text-[#47626D]">{experience.position}</p>
                       <p className="text-sm font-normal text-[#223740]">
                         {experience.start} - {experience.end}
+                      </p>
+                      <p className="text-sm font-normal text-[#223740]">
+                        {experience.hq}
                       </p>
                       <p className="text-sm font-normal text-[#223740]">
                         {experience.location}
@@ -88,10 +91,13 @@ export default function WorkHistory() {
                   ) : (
                     experience.positions.map((position, posIndex) => (
                       <div key={posIndex} className="mt-4">
-                        <h3 className="text-lg font-normal">{position.title}</h3>
+                        <h3 className="text-lg font-normal text-[#47626D]">{position.title}</h3>
                         <p className="text-sm font-normal text-[#223740]">
                           {position.start} - {position.end}
                         </p>
+                        <p className="text-sm font-normal text-[#223740]">
+                        {experience.hq}
+                      </p>
                         {position.description.map((desc, descIndex) => (
                           <p
                             key={descIndex}
