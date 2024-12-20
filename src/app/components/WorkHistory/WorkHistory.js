@@ -66,11 +66,14 @@ export default function WorkHistory() {
                       <p className="text-sm font-normal text-[#223740]">
                         {experience.location}
                       </p>
-                      <p
-                        className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
-                      >
-                        {experience.description.join(" ")}
-                      </p>
+                      {experience.description.map((desc, descIndex) => (
+                        <p
+                          key={descIndex}
+                          className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
+                        >
+                          - {desc}
+                        </p>
+                      ))}
                       <h3>
                         <strong>{experience.techStackTitle}:</strong>
                       </h3>
@@ -89,11 +92,14 @@ export default function WorkHistory() {
                         <p className="text-sm font-normal text-[#223740]">
                           {position.start} - {position.end}
                         </p>
-                        <p
-                          className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
-                        >
-                          {position.description.join(" ")}
-                        </p>
+                        {position.description.map((desc, descIndex) => (
+                          <p
+                            key={descIndex}
+                            className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
+                          >
+                            - {desc}
+                          </p>
+                        ))}
                         {position.techStack && position.techStack.length > 0 && (
                           <p className="mt-4 font-[500]">
                             <strong>Tech Stack: </strong>
