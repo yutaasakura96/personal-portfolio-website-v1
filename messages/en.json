@@ -98,20 +98,42 @@
           "Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS."
         ],
         "techStackTitle": "Tech Stack",
-        "techStack": [
-          "React",
-          "Vue",
-          "Java",
-          "Spring Boot",
-          "MySQL",
-          "PostgresSQL",
-          "Javascript",
-          "Typescript",
-          "Tailwind CSS",
-          "CSS",
-          "SCSS",
-          "HTML"
-        ]
+       "techStack": {
+          "frontEnd": [
+            "React",
+            "Vue",
+            "Javascript",
+            "Typescript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind CSS",
+            "Bootstrap"
+          ],
+          "backEnd": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "PostgresSQL"
+          ],
+          "tools": [
+            "Docker",
+            "Webpack",
+            "Npm",
+            "Yarn",
+            "Git",
+            "Github",
+            "Backlog",
+            "Slack",
+            "MS Teams",
+            "ESLint",
+            "Prettier"
+          ],
+          "deployment": [
+            "AWS",
+            "Vercel"
+          ]
+        }
       },
       {
         "company": "Watanabe Construction Industry",

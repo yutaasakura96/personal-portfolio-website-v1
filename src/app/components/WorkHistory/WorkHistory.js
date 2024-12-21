@@ -19,21 +19,25 @@ export default function WorkHistory() {
       id="work-history-component"
       className="bg-[##eef7fb] lg:h-100 pt-24 pb-24"
       style={{
-        backgroundImage: "linear-gradient(90deg, #eef7fb 0 50%, #E0F3FD 0% 100%)",
+        backgroundImage:
+          "linear-gradient(90deg, #eef7fb 0 50%, #E0F3FD 0% 100%)",
         width: "100%",
       }}
       aria-labelledby="work-history-title"
     >
       <div className="container m-auto">
-        <h1 id="work-history-title" className="text-5xl text-[#48AFDE] mb-10 md:px-24 px-5">
+        <h1
+          id="work-history-title"
+          className="text-5xl text-[#48AFDE] mb-12 md:px-24 px-5"
+        >
           {t("title")}
         </h1>
-        <div>
+        <ul className="max-w-6xl mx-auto mb-24 p-6">
           {workExperiences.map((experience, index) => (
-            <article
+            <li
               key={index}
               style={{ boxShadow: "#48AFDE -5px 10px 20px 0px" }}
-              className="p-6 lg:p-10 rounded-xl bg-white mb-10 transition-all transform duration-300 hover:shadow-xl hover:-translate-y-2 cursor-pointer"
+              className="px-6 py-4 lg:px-10 lg:py-4 rounded-xl bg-white mb-10 transition-all transform duration-300 hover:shadow-xl hover:-translate-y-2 cursor-pointer"
               aria-labelledby={`work-experience-${index}-title`}
             >
               <a
@@ -53,73 +57,107 @@ export default function WorkHistory() {
                   />
                   <h2
                     id={`work-experience-${index}-title`}
-                    className="text-3xl font-semibold text-[#48AFDE]"
+                    className="text-4xl font-semibold text-[#48AFDE]"
                   >
                     {experience.company}
                   </h2>
                   {experience.position ? (
                     <>
-                      <p className="text-lg font-normal text-[#47626D]">{experience.position}</p>
-                      <p className="text-sm font-normal text-[#223740]">
+                      <p className="text-xl font-recoletaBold text-[#47626D]">
+                        {experience.position}
+                      </p>
+                      <p className="md font-normal text-[#223740]">
                         {experience.start} - {experience.end}
                       </p>
-                      <p className="text-sm font-normal text-[#223740]">
+                      <p className="md font-normal text-[#223740]">
                         {experience.hq}
                       </p>
-                      <p className="text-sm font-normal text-[#223740]">
+                      <p className="md font-normal mb-2 text-[#223740]">
                         {experience.location}
                       </p>
-                      {experience.description.map((desc, descIndex) => (
-                        <p
-                          key={descIndex}
-                          className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
-                        >
-                          - {desc}
-                        </p>
-                      ))}
-                      <h3>
-                        <strong>{experience.techStackTitle}:</strong>
+                      <ul className="list-disc ml-5">
+                        {experience.description.map((desc, descIndex) => (
+                          <li
+                            key={descIndex}
+                            className={`mt-2 text-[#223740] mb-3 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
+                          >
+                            {desc}
+                          </li>
+                        ))}
+                      </ul>
+                      <h3 className="font-bold text-xl">
+                        {experience.techStackTitle}:
                       </h3>
-                      {experience.techStack && experience.techStack.length > 0 && (
-                        <p
-                          className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
-                        >
-                          {experience.techStack.join(", ")}
-                        </p>
+                      {experience.techStack && (
+                        <div className="mt-2 mb-3 text-[#223740] text-[16px] leading-7">
+                          {experience.techStack.frontEnd &&
+                            experience.techStack.frontEnd.length > 0 && (
+                              <p className={`mb-2 ${hind.className}`}>
+                                <strong>Frontend:</strong>{" "}
+                                {experience.techStack.frontEnd.join(", ")}
+                              </p>
+                            )}
+                          {experience.techStack.backEnd &&
+                            experience.techStack.backEnd.length > 0 && (
+                              <p className={`mb-2 ${hind.className}`}>
+                                <strong>Backend:</strong>{" "}
+                                {experience.techStack.backEnd.join(", ")}
+                              </p>
+                            )}
+                          {experience.techStack.tools &&
+                            experience.techStack.tools.length > 0 && (
+                              <p className={`mb-2 ${hind.className}`}>
+                                <strong>Tools:</strong>{" "}
+                                {experience.techStack.tools.join(", ")}
+                              </p>
+                            )}
+                          {experience.techStack.deployment &&
+                            experience.techStack.deployment.length > 0 && (
+                              <p className={`mb-2 ${hind.className}`}>
+                                <strong>Deployment:</strong>{" "}
+                                {experience.techStack.deployment.join(", ")}
+                              </p>
+                            )}
+                        </div>
                       )}
                     </>
                   ) : (
                     experience.positions.map((position, posIndex) => (
                       <div key={posIndex} className="mt-4">
-                        <h3 className="text-lg font-normal text-[#47626D]">{position.title}</h3>
-                        <p className="text-sm font-normal text-[#223740]">
+                        <h3 className="text-xl font-recoletaBold text-[#47626D]">
+                          {position.title}
+                        </h3>
+                        <p className="text-md font-normal text-[#223740]">
                           {position.start} - {position.end}
                         </p>
-                        <p className="text-sm font-normal text-[#223740]">
-                        {experience.hq}
-                      </p>
-                        {position.description.map((desc, descIndex) => (
-                          <p
-                            key={descIndex}
-                            className={`mt-2 text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
-                          >
-                            - {desc}
-                          </p>
-                        ))}
-                        {position.techStack && position.techStack.length > 0 && (
-                          <p className="mt-4 font-[500]">
-                            <strong>Tech Stack: </strong>
-                            {position.techStack.join(", ")}
-                          </p>
-                        )}
+                        <p className="text-md font-normal mb-3 text-[#223740]">
+                          {experience.hq}
+                        </p>
+                        <ul className="list-disc mb-3 ml-5">
+                          {position.description.map((desc, descIndex) => (
+                            <li
+                              key={descIndex}
+                              className={`mt-2 text-[#223740] font-[500] ${hind.className} text-[16px] leading-7`}
+                            >
+                              {desc}
+                            </li>
+                          ))}
+                        </ul>
+                        {position.techStack &&
+                          position.techStack.length > 0 && (
+                            <p className="mt-4 font-[500]">
+                              <strong>Tech Stack: </strong>
+                              {position.techStack.join(", ")}
+                            </p>
+                          )}
                       </div>
                     ))
                   )}
                 </div>
               </a>
-            </article>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

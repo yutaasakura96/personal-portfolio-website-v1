@@ -87,7 +87,9 @@ export default function AboutMe() {
             </h4>
           </div>
           {/* Description section with image */}
-          <section className="relative flex flex-col justify-between lg:flex-row px-5 md:px-24">
+          <section className="relative flex flex-col justify-between lg:flex-row px-5 md:pl-24 md:pr-20
+          
+          ">
             <p
               className={`max-w-md text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
             >
@@ -98,7 +100,7 @@ export default function AboutMe() {
               alt="yuta"
               width={500}
               height={500}
-              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
+              className="rounded-xl xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
               style={{ objectFit: "cover" }}
               priority
             />

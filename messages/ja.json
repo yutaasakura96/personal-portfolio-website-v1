@@ -98,20 +98,42 @@
         "Java Spring Boot、TypeScript、React、およびTailwind CSSを使用して構築された、企業向けのWebベースの従業員管理システムをチームで開発・実装しました。"
       ],
       "techStackTitle": "使用技術",
-      "techStack": [
-        "React",
-        "Vue",
-        "Java",
-        "Spring Boot",
-        "MySQL",
-        "PostgresSQL",
-        "Javascript",
-        "Typescript",
-        "Tailwind CSS",
-        "CSS",
-        "SCSS",
-        "HTML"
-      ]
+      "techStack": {
+          "frontEnd": [
+            "React",
+            "Vue",
+            "Javascript",
+            "Typescript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind CSS",
+            "Bootstrap"
+          ],
+          "backEnd": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "PostgresSQL"
+          ],
+          "tools": [
+            "Docker",
+            "Webpack",
+            "Npm",
+            "Yarn",
+            "Git",
+            "Github",
+            "Backlog",
+            "Slack",
+            "MS Teams",
+            "ESLint",
+            "Prettier"
+          ],
+          "deployment": [
+            "AWS",
+            "Vercel"
+          ]
+        }
     },
     {
       "company": "株式会社渡部建設工業",
