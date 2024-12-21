@@ -48,19 +48,22 @@ export default function WorkHistory() {
                 aria-label={`Learn more about ${experience.company}`}
               >
                 <div className="flex flex-col mb-4">
-                  <Image
-                    src={experience.logo}
-                    alt={`${experience.company} logo`}
-                    width={112}
-                    height={112}
-                    className="w-28 h-28 mr-4 mb-5"
-                  />
-                  <h2
-                    id={`work-experience-${index}-title`}
-                    className="text-4xl font-semibold text-[#48AFDE]"
-                  >
-                    {experience.company}
-                  </h2>
+                  <div className="flex items-center justify-between">
+                    <h2
+                      id={`work-experience-${index}-title`}
+                      className="text-4xl font-semibold text-[#48AFDE]"
+                    >
+                      {experience.company}
+                    </h2>
+                    <Image
+                      src={experience.logo}
+                      alt={`${experience.company} logo`}
+                      width={112}
+                      height={112}
+                      className="w-28 h-20"
+                    />
+                  </div>
+
                   {experience.position ? (
                     <>
                       <p className="text-xl font-recoletaBold text-[#47626D]">
