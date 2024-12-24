@@ -69,12 +69,7 @@ export default function AboutMe() {
       {/* Main container for the About Me section */}
       <div
         id="about-me-component"
-        className="bg-[##eef7fb] pt-[250px] mt-4 relative lg:h-100"
-        style={{
-          backgroundImage:
-            "linear-gradient(90deg, #E0F3FD 0 50%, #eef7fb 0% 100%)",
-          width: "100%",
-        }}
+        className="pt-[250px] mt-4 relative lg:h-100 bg-[#E0F3FD] md:bg-[linear-gradient(90deg,#EEF7FB_0_50%,#E0F3FD_0_100%)]"
       >
         <div className="container m-auto">
           <div>
@@ -88,7 +83,7 @@ export default function AboutMe() {
           </div>
           {/* Description section with image */}
           <section className="relative flex flex-col justify-between lg:flex-row px-5 md:pl-24 md:pr-20
-          
+
           ">
             <p
               className={`max-w-md text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}

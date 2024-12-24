@@ -17,12 +17,7 @@ export default function WorkHistory() {
   return (
     <section
       id="work-history-component"
-      className="bg-[##eef7fb] lg:h-100 pt-24 pb-24"
-      style={{
-        backgroundImage:
-          "linear-gradient(90deg, #eef7fb 0 50%, #E0F3FD 0% 100%)",
-        width: "100%",
-      }}
+      className="lg:h-100 pt-24 pb-24 bg-[#EEF7FB] md:bg-[linear-gradient(90deg,#EEF7FB_0_50%,#E0F3FD_0_100%)]"
       aria-labelledby="work-history-title"
     >
       <div className="container m-auto">
@@ -48,7 +43,7 @@ export default function WorkHistory() {
                 aria-label={`Learn more about ${experience.company}`}
               >
                 <div className="flex flex-col mb-4">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col-reverse sm:flex-row items-center justify-between ">
                     <h2
                       id={`work-experience-${index}-title`}
                       className="text-4xl font-semibold text-[#48AFDE]"

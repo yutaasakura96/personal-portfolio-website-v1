@@ -311,14 +311,9 @@ export default function Home() {
 
         {/* Portfolio section with gradient background */}
         <section
-          className="mt-0 pt-5 -mb-40"
+          className="mt-0 pt-5 -mb-40 bg-[#EEF7FB] md:bg-[linear-gradient(90deg,#EEF7FB_0_50%,#E0F3FD_0_100%)]"
           id="portfolio"
           aria-labelledby="portfolio-section"
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, #EEF7FB 0 50%, #E0F3FD 0% 100%)",
-            width: "100%",
-          }}
         >
           <div className="container m-auto">
             <div
