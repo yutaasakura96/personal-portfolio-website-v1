@@ -25,7 +25,7 @@ export default function HomeComponent() {
         className="home-background"
         style={{
           backgroundImage:
-            "linear-gradient(60deg, #E0F3FD 0 50%, #eef7fb 0 100%)",
+            "linear-gradient(90deg, #E0F3FD 0 50%, #eef7fb 0 100%)",
           minHeight: "500px",
           maxHeight: "1200px",
           height: "100%",
@@ -39,7 +39,7 @@ export default function HomeComponent() {
               aria-labelledby="intro-section"
             >
               <div className="container m-auto">
-                <div className="header-xs lg:pl-24 sm:pl-10 pl-0 md:py-0 py-20 md:text-start text-center">
+                <div className="md:px-9 lg:px-16 my-9 header-xs md:text-start text-center">
                   <p
                     className={`text-[#47AEDE] text-3xl md:text-base lg:text-2xl ${hind.className}`}
                     aria-label={t("greeting")}

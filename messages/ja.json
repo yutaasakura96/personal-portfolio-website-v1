@@ -80,6 +80,98 @@
     "previousProject": "前のプロジェクト",
     "nextProject": "次のプロジェクト"
   },
+  "WorkHistory": {
+  "title": "職務経歴",
+  "experiences": [
+    {
+      "company": "株式会社ティアライン",
+      "position": "フルスタックデベロッパー",
+      "start": "2024年10月",
+      "end": "現在",
+      "location": "リモート",
+      "hq": "日本大阪",
+      "website": "https://www.tierline.com/index.html",
+      "logo": "https://www.tierline.com/images/tierline_logo.svg",
+      "description": [
+        "React、Spring Boot、MySQLを使用してスケーラブルなWebアプリケーションを開発および展開し、パフォーマンスとユーザーエクスペリエンスを向上させました。",
+        "クライアントの要件に基づいて、新機能を設計および実装するためにクロスファンクショナルチームと協力しました。",
+        "Java Spring Boot、TypeScript、React、およびTailwind CSSを使用して構築された、企業向けのWebベースの従業員管理システムをチームで開発・実装しました。"
+      ],
+      "techStackTitle": "使用技術",
+      "techStack": {
+          "frontEnd": [
+            "React",
+            "Vue",
+            "Javascript",
+            "Typescript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind CSS",
+            "Bootstrap"
+          ],
+          "backEnd": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "PostgresSQL"
+          ],
+          "tools": [
+            "Docker",
+            "Webpack",
+            "Npm",
+            "Yarn",
+            "Git",
+            "Github",
+            "Backlog",
+            "Slack",
+            "MS Teams",
+            "ESLint",
+            "Prettier"
+          ],
+          "deployment": [
+            "AWS",
+            "Vercel"
+          ]
+        }
+    },
+    {
+      "company": "株式会社渡部建設工業",
+      "positions": [
+        {
+          "title": "建設現場監督",
+          "start": "2020年1月",
+          "end": "2024年6月",
+          "description": [
+            "日々の建設現場の運営を監督し、チームを管理してプロジェクトが効率的に、かつ定められた期限内に完了するようにしました。",
+            "健康と安全規制の遵守を徹底し、定期的な現場検査を実施し、スタッフに対するトレーニングを提供することで、職場の安全を推進しました。",
+            "進捗を監視し、問題を特定し、プロジェクトが予定通りかつ予算内で進行するようにタイムリーな解決策を実施することで、プロジェクトの成果を向上させました。",
+            "ジュニアスタッフを指導し、協力を促進し、チームメンバーや関係者との明確でオープンなコミュニケーションを維持することで、強力なチームダイナミクスを育みました。",
+            "複数のタスクと優先事項を管理しながら、すべての業務において高い品質基準を維持することで、優れた組織力とリーダーシップスキルを発揮しました。"
+          ],
+          "techStack": []
+        },
+        {
+          "title": "建設作業員（足場作業）",
+          "start": "2016年4月",
+          "end": "2020年1月",
+          "description": [
+            "複雑な足場作業に取り組むことで問題解決能力を強化し、締め切りに間に合わせるための創造的な解決策を考案しました。",
+            "安全プロトコルと規制基準を厳守し、細部にまで注意を払い、作業の正確性を確保しました。",
+            "現場監督や職人と協力してチームワークと効果的なコミュニケーションを促進し、プロジェクトの円滑かつ効率的な実行に貢献しました。",
+            "プロジェクトの計画と実行を通じてチームを指導し、タスクが安全かつ予定通りに完了するようにしました。",
+            "高圧な環境での作業において、課題を克服するための重要な決定を下し、厳しいスケジュール内でプロジェクトを一貫して納品しました。"
+          ],
+          "techStack": []
+        }
+      ],
+      "location": "日本、東京",
+      "hq": "日本東京新宿区",
+      "website": "https://www.w-k-k.com/",
+      "logo": "/wkk_logo.png"
+    }
+  ]
+},
   "AboutData": [
     {
       "count": 1,

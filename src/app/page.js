@@ -21,6 +21,7 @@ import { useTranslations } from "next-intl";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/AboutMe";
+import WorkHistory from "./components/WorkHistory/WorkHistory";
 import CallToAction from "./components/CallToAction/CallToAction";
 
 // Configure the Hind font for consistent text styling
@@ -310,19 +311,14 @@ export default function Home() {
 
         {/* Portfolio section with gradient background */}
         <section
-          className="mt-0 pt-5 -mb-40"
+          className="mt-0 pt-5 -mb-40 bg-[#EEF7FB] md:bg-[linear-gradient(90deg,#EEF7FB_0_50%,#E0F3FD_0_100%)]"
           id="portfolio"
           aria-labelledby="portfolio-section"
-          style={{
-            backgroundImage:
-              "linear-gradient(-80deg, #E0F3FD 0 50%, #EEF7FB 0% 100%)",
-            width: "100%",
-          }}
         >
           <div className="container m-auto">
             <div
               style={{ transform: "translate(0px, -290px)" }}
-              className="mt-[500px]"
+              className="md:mt-[500px] mt-[350px]"
             >
               {/* Portfolio title and description */}
               <h2
@@ -332,7 +328,7 @@ export default function Home() {
                 {t("projectsTitle")}
               </h2>
               <p
-                className={`max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}
+                className={`max-w-xl md:pl-[80px] px-5 font-[500] text-[16px] text-[#47626D] leading-8 mt-5 p-5 ${hind.className}`}
               >
                 {t("projectsDescription")}
               </p>
@@ -346,6 +342,9 @@ export default function Home() {
         {/* About and call-to-action sections */}
         <section aria-labelledby="about-section">
           <AboutMe />
+        </section>
+        <section aria-labelledby="work-history-section">
+          <WorkHistory />
         </section>
         <section aria-labelledby="cta-button-section">
           <CallToAction />

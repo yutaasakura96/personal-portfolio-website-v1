@@ -69,12 +69,7 @@ export default function AboutMe() {
       {/* Main container for the About Me section */}
       <div
         id="about-me-component"
-        className="bg-[##eef7fb] pt-[250px] mt-4 pb-[100px] lg:pb-[250px] relative lg:h-100"
-        style={{
-          backgroundImage:
-            "linear-gradient(108.7deg, #E0F3FD 0 45%, #eef7fb 0% 100%)",
-          width: "100%",
-        }}
+        className="pt-[250px] mt-4 relative lg:h-100 bg-[#E0F3FD] md:bg-[linear-gradient(90deg,#E0F3FD_0_50%,#EEF7FB_0_100%)]"
       >
         <div className="container m-auto">
           <div>
@@ -87,9 +82,11 @@ export default function AboutMe() {
             </h4>
           </div>
           {/* Description section with image */}
-          <section className="relative flex flex-col justify-between lg:flex-row px-5 md:px-24">
+          <section className="relative flex flex-col justify-between lg:flex-row px-5 md:pl-24 md:pr-20
+
+          ">
             <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5 lg:mr-4 font-[200] ${hind.className} text-[16px] leading-7`}
+              className={`max-w-md text-[#223740] mr-0 mb-5 lg:mr-4 font-[500] ${hind.className} text-[16px] leading-7`}
             >
               {t("aboutMeDescription")}
             </p>
@@ -98,7 +95,7 @@ export default function AboutMe() {
               alt="yuta"
               width={500}
               height={500}
-              className="rounded-xl w-[35%] h-[35%] xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
+              className="rounded-xl xl:w-[45%] lg:h-[50%] lg:w-[50%] md:w-full md:h-full sm:w-full sm:h-full xs"
               style={{ objectFit: "cover" }}
               priority
             />

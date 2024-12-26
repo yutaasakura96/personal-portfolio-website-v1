@@ -80,6 +80,98 @@
     "previousProject": "Previous Project",
     "nextProject": "Next Project"
   },
+  "WorkHistory": {
+    "title": "Work History",
+    "experiences": [
+      {
+        "company": "Tierline Inc.",
+        "position": "Full Stack Developer",
+        "start": "October 2024",
+        "end": "Present",
+        "location": "Remote",
+        "hq": "Osaka, Japan",
+        "website": "https://www.tierline.com/index.html",
+        "logo": "https://www.tierline.com/images/tierline_logo.svg",
+        "description": [
+          "Developed and deployed scalable web applications using React, Spring Boot, and MySQL, improving performance and user experience.",
+          "Collaborated with cross-functional teams to design and implement new features based on client requirements.",
+          "Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS."
+        ],
+        "techStackTitle": "Tech Stack",
+       "techStack": {
+          "frontEnd": [
+            "React",
+            "Vue",
+            "Javascript",
+            "Typescript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind CSS",
+            "Bootstrap"
+          ],
+          "backEnd": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "PostgresSQL"
+          ],
+          "tools": [
+            "Docker",
+            "Webpack",
+            "Npm",
+            "Yarn",
+            "Git",
+            "Github",
+            "Backlog",
+            "Slack",
+            "MS Teams",
+            "ESLint",
+            "Prettier"
+          ],
+          "deployment": [
+            "AWS",
+            "Vercel"
+          ]
+        }
+      },
+      {
+        "company": "Watanabe Construction Industry",
+        "positions": [
+          {
+            "title": "Construction Foreman",
+            "start": "January 2020",
+            "end": "June 2024",
+            "description": [
+              "Supervised and coordinated daily construction site operations, managing teams to ensure projects were completed efficiently and within established deadlines.",
+              "Championed workplace safety by enforcing compliance with health and safety regulations, conducting routine site inspections, and providing training to staff.",
+              "Enhanced project outcomes by monitoring progress, identifying issues, and implementing timely solutions to keep projects on track and within budget.",
+              "Cultivated a strong team dynamic by mentoring junior workers, fostering collaboration, and maintaining clear and open communication among team members and stakeholders.",
+              "Demonstrated strong organizational and leadership skills, managing multiple tasks and priorities while maintaining high-quality standards across all operations."
+            ],
+            "techStack": []
+          },
+          {
+            "title": "Construction Worker (Scaffolder)",
+            "start": "April 2016",
+            "end": "January 2020",
+            "description": [
+              "Enhanced problem-solving skills by tackling complex scaffolding tasks, often devising creative solutions to meet tight deadlines.",
+              "Maintained strict adherence to safety protocols and regulatory standards, demonstrating exceptional attention to detail and ensuring task precision.",
+              "Fostered teamwork and effective communication by collaborating with site managers and tradespeople, contributing to smooth and efficient project execution.",
+              "Gained leadership experience by guiding teams through project planning and execution, ensuring tasks were completed safely and on schedule.",
+              "Thrived in high-pressure environments, making critical decisions to overcome challenges and consistently deliver projects within tight timelines."
+            ],
+            "techStack": []
+          }
+        ],
+        "location": "Tokyo, Japan",
+        "hq": "Shinjuku, Tokyo, Japan",
+        "website": "https://www.w-k-k.com/",
+        "logo": "/wkk_logo.png"
+      }
+    ]
+  },
   "AboutData": [
     {
       "count": 1,
@@ -105,7 +197,6 @@
         "PostgreSQL",
         "NextJS (API)",
         "NuxtJS (API)"
-
       ]
     },
     {
