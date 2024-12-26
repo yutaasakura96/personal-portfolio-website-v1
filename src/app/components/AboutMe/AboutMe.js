@@ -69,7 +69,7 @@ export default function AboutMe() {
       {/* Main container for the About Me section */}
       <div
         id="about-me-component"
-        className="pt-[250px] mt-4 relative lg:h-100 bg-[#E0F3FD] md:bg-[linear-gradient(90deg,#EEF7FB_0_50%,#E0F3FD_0_100%)]"
+        className="pt-[250px] mt-4 relative lg:h-100 bg-[#E0F3FD] md:bg-[linear-gradient(90deg,#E0F3FD_0_50%,#EEF7FB_0_100%)]"
       >
         <div className="container m-auto">
           <div>

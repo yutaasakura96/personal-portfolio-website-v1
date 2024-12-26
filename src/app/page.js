@@ -318,7 +318,7 @@ export default function Home() {
           <div className="container m-auto">
             <div
               style={{ transform: "translate(0px, -290px)" }}
-              className="mt-[500px]"
+              className="md:mt-[500px] mt-[350px]"
             >
               {/* Portfolio title and description */}
               <h2
