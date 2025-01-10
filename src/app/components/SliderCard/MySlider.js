@@ -19,18 +19,16 @@ export default function MySlider() {
   // Initialize translations and get data from translation files
   const tGlobal = useTranslations();
   const dataArray = tGlobal.raw("DataArray");
-
   // Core slider configuration
   const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    arrows: true,
+    arrows: false,
     centerMode: true,
-    centerPadding: "400px", // Default padding for largest screens
+    centerPadding: "400px",
     dots: true,
-
     // Responsive breakpoints for different screen sizes
     responsive: [
       // Desktop breakpoints (1700px - 1150px)
@@ -163,7 +161,7 @@ export default function MySlider() {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          centerMode: false, // Disable center mode for mobile
+          centerMode: false,
           centerPadding: "0",
         },
       },
