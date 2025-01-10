@@ -335,7 +335,8 @@ export default function Home() {
             </div>
           </div>
           <div style={{ transform: "translate(0px,-170px)" }}>
-            <MySlider /> {/* Portfolio project slider */}
+            {/* Portfolio project slider */}
+            <MySlider />
           </div>
         </section>
 
