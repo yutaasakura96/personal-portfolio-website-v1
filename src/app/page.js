@@ -69,23 +69,14 @@ export default function Home() {
         <link rel="canonical" href="https://www.asakurayuta.dev/" />
 
         {/* Open Graph meta tags for social media sharing */}
-        <meta
-          property="article:author"
-          content="https://www.linkedin.com/in/asakurayuta/"
-        />
+        <meta property="article:author" content="https://www.linkedin.com/in/asakurayuta/" />
         <meta property="og:title" content={t("ogTitle")} />
         <meta property="og:description" content={t("ogDescription")} />
         <meta property="og:image" content="/public/portfolio-image.png" />
         <meta property="og:url" content="https://www.asakurayuta.dev/" />
         <meta property="og:type" content="website" />
-        <meta
-          property="article:published_time"
-          content="2024-9-06T00:00:00+00:00"
-        />
-        <meta
-          property="article:modified_time"
-          content="2024-11-06T00:00:00+00:00"
-        />
+        <meta property="article:published_time" content="2024-9-06T00:00:00+00:00" />
+        <meta property="article:modified_time" content="2024-11-06T00:00:00+00:00" />
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -111,8 +102,8 @@ export default function Home() {
               },
               "datePublished": "2024-09-06",
               "dateModified": "2024-11-06",
-              "headline": "Full-Stack Web Developer Portfolio",
-              "description": "Yuta Asakura's portfolio showcasing full-stack web development projects and experience.",
+              "headline": "Software Engineer specializing in cloud-native full stack web development Portfolio",
+              "description": "Yuta Asakura's portfolio showcasing cloud-native full-stack web development projects and experience.",
               "mainEntityOfPage": "https://www.asakurayuta.dev/",
               "image": "https://www.asakurayuta.dev/personal-portofolio-en.png"
             }

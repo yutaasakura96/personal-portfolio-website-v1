@@ -1,6 +1,6 @@
 # 🎨 Personal Portfolio Website
 
-Welcome to my personal portfolio website! This project showcases my skills as a full-stack web developer. It features a fully responsive multi-page design built with modern web technologies, including React.js, Next.js, Tailwind CSS, and Nodemailer.
+Welcome to my personal portfolio website! This project showcases my skills as a Software Engineer . It features a fully responsive multi-page design built with modern web technologies, including React.js, Next.js, Tailwind CSS, and Nodemailer.
 
 Now with internationalization (i18n) support, the website is available in both English and Japanese, providing a localized experience for users. The language switcher allows seamless toggling between languages, ensuring accessibility for a global audience.
 

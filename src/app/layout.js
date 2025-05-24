@@ -33,9 +33,9 @@ const poppins = localFont({
 
 // Define metadata for SEO and page information
 export const metadata = {
-  title: "Yuta Asakura | Full-Stack Web Developer Portfolio", // Page title for better SEO
+  title: "Yuta Asakura | Software Engineer specializing in cloud-native full stack web development Portfolio", // Page title for better SEO
   description:
-    "Yuta Asakura's portfolio showcasing projects and skills in full-stack web development.", // Page description for search engines
+    "Yuta Asakura's portfolio showcasing projects and skills in cloud-native full-stack web development.", // Page description for search engines
 };
 
 export default async function RootLayout({ children }) {

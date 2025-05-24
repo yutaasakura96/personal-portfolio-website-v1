@@ -27,7 +27,7 @@
   "AboutMe": {
     "aboutMeTitle": "About Me",
     "fullStackDeveloper": "Software Engineer",
-    "aboutMeDescription": "I’m a Software Engineer specializing in cloud-native web full-stack development, blending modern frontend frameworks with robust backend systems and scalable cloud infrastructure. My work spans everything from building intuitive UIs with React.js and Tailwind CSS to developing secure, high-performance APIs with Java and Spring Boot, containerized with Docker and deployed to the cloud. With a growing foundation in AWS and recent certifications in AWS Certified Cloud Practitioner and AWS Certified AI Practitioner, I’m committed to deepening my expertise in scalable architecture, serverless technologies, and real-world AI applications. My goal is to build systems that are not just functional, but optimized, maintainable, and ready for growth. What drives me is solving real-world problems through code, whether it’s modernizing legacy workflows, improving system performance, or collaborating across teams to ship production-ready features. I care about writing clean code, delivering business value, and staying sharp through continuous learning.",
+    "aboutMeDescription": "I’m a Software Engineer specializing in cloud-native web full-stack web development, blending modern frontend frameworks with robust backend systems and scalable cloud infrastructure. My work spans everything from building intuitive UIs with React.js and Tailwind CSS to developing secure, high-performance APIs with Java and Spring Boot, containerized with Docker and deployed to the cloud. With a growing foundation in AWS and recent certifications in AWS Certified Cloud Practitioner and AWS Certified AI Practitioner, I’m committed to deepening my expertise in scalable architecture, serverless technologies, and real-world AI applications. My goal is to build systems that are not just functional, but optimized, maintainable, and ready for growth. What drives me is solving real-world problems through code, whether it’s modernizing legacy workflows, improving system performance, or collaborating across teams to ship production-ready features. I care about writing clean code, delivering business value, and staying sharp through continuous learning.",
     "frontendDeveloper": "Front-end Developer",
     "backendDeveloper": "Back-end Developer",
     "uiUxDesigner": "UI / UX Designer",
@@ -53,7 +53,7 @@
   "ContactPage": {
     "contactForm": "Contact Form",
     "hireMeTitle": "Hire Me",
-    "introParagraph": "Looking for a reliable, professional Software Engineer specializing in cloud-native full stack development for your website or web application projects? Or perhaps you’d like to connect and collaborate on an exciting project? Feel free to reach out and let me know how I can assist you. I’d love to help!",
+    "introParagraph": "Looking for a reliable, professional Software Engineer specializing in cloud-native full stack web development for your website or web application projects? Or perhaps you’d like to connect and collaborate on an exciting project? Feel free to reach out and let me know how I can assist you. I’d love to help!",
     "letsMeet": "Let's Meet!",
     "location": "Kanagawa, Kawasaki City",
     "reachMeAt": "Reach Me At",
@@ -62,7 +62,7 @@
     "activeHours": "Active Hours",
     "workingHours": "Mon - Fri : 9am - 7pm",
     "letsConnect": "Let's Connect!",
-    "connectParagraph": "Interested in collaborating on a project, freelance/contract work, or looking to hire a professional Software Engineer specializing in cloud-native full stack development and designer? If you have suggestions about my projects or portfolio, or simply want to connect, feel free to reach out by sending me a message through the contact form. I’d be happy to hear from you!",
+    "connectParagraph": "Interested in collaborating on a project, freelance/contract work, or looking to hire a professional Software Engineer specializing in cloud-native full stack web development? If you have suggestions about my projects or portfolio, or simply want to connect, feel free to reach out by sending me a message through the contact form. I’d be happy to hear from you!",
     "contactMe": "Contact Me",
     "yourName": "Your Name...",
     "yourEmail": "Your Email...",
