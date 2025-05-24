@@ -13,21 +13,21 @@
     "followMe": "Follow Me"
   },
   "HomePage": {
-    "pageTitle": "Yuta Asakura | Full-Stack Web Developer",
-    "pageDescription": "Portfolio of Yuta Asakura, a full-stack web developer.",
-    "pageKeywords": "Yuta Asakura, Web Developer, Full-Stack, Portfolio",
-    "ogTitle": "Yuta Asakura | Full-Stack Web Developer",
+    "pageTitle": "Yuta Asakura | Software Engineer",
+    "pageDescription": "Portfolio of Yuta Asakura, a Software Engineer.",
+    "pageKeywords": "Yuta Asakura, Software Engineer, Portfolio",
+    "ogTitle": "Yuta Asakura | Software Engineer",
     "ogDescription": "Explore the portfolio of Yuta Asakura, showcasing web development projects.",
-    "twitterTitle": "Yuta Asakura | Full-Stack Web Developer",
+    "twitterTitle": "Yuta Asakura | Software Engineer",
     "twitterDescription": "Portfolio of Yuta Asakura, showcasing web development projects.",
     "portfolioTitle": "Portfolio",
     "projectsTitle": "Projects",
-    "projectsDescription": "Here’s a look at some of my recent projects. As a full-stack web developer, I focus on building clean, responsive, and high-performing applications. Each project is a chance to refine my skills, whether I’m optimizing performance, enhancing user experience, or implementing the latest technologies. From concept to deployment, I ensure every detail is carefully crafted to deliver seamless functionality and a polished design. My passion for coding and problem-solving drives me to keep learning and adapting, making sure that every project I work on is modern, efficient, and built for real-world impact."
+    "projectsDescription": "Here’s a look at some of my recent projects. As a Software Engineer specializing in cloud-native full-stack web development, I focus on building clean, responsive, and high-performing applications. Each project is a chance to refine my skills, whether I’m optimizing performance, enhancing user experience, or implementing the latest technologies. From concept to deployment, I ensure every detail is carefully crafted to deliver seamless functionality and a polished design. My passion for coding and problem-solving drives me to keep learning and adapting, making sure that every project I work on is modern, efficient, and built for real-world impact."
   },
   "AboutMe": {
     "aboutMeTitle": "About Me",
-    "fullStackDeveloper": "Full-Stack Web Developer",
-    "aboutMeDescription": "Before transitioning into tech, I spent 8 years in the construction industry as a construction foreman. These experiences shaped my ability to lead teams, solve problems, and focus on delivering high-quality results, all of which I now apply to my work as a full-stack web developer. Shortly after I graduated from Le Wagon Tokyo’s full-time full-stack web development bootcamp, where I honed my skills in web development, I joined Tierline Inc. as a full-stack web developer. I’m driven by a love for learning and the endless pursuit of knowledge, as I believe it brings purpose to everything I do. I aim to build seamless, efficient web applications that enhance user experience while meeting business goals, working closely with teams to deliver reliable, scalable solutions. I also look forward to one day mentoring other aspiring developers. I have a particular interest in JavaScript, Vue.js, React, and in my free time, I enjoy bouldering, skateboarding, bodybuilding, and practicing yoga.",
+    "fullStackDeveloper": "Software Engineer",
+    "aboutMeDescription": "I’m a Software Engineer specializing in cloud-native web full-stack development, blending modern frontend frameworks with robust backend systems and scalable cloud infrastructure. My work spans everything from building intuitive UIs with React.js and Tailwind CSS to developing secure, high-performance APIs with Java and Spring Boot, containerized with Docker and deployed to the cloud. With a growing foundation in AWS and recent certifications in AWS Certified Cloud Practitioner and AWS Certified AI Practitioner, I’m committed to deepening my expertise in scalable architecture, serverless technologies, and real-world AI applications. My goal is to build systems that are not just functional, but optimized, maintainable, and ready for growth. What drives me is solving real-world problems through code, whether it’s modernizing legacy workflows, improving system performance, or collaborating across teams to ship production-ready features. I care about writing clean code, delivering business value, and staying sharp through continuous learning.",
     "frontendDeveloper": "Front-end Developer",
     "backendDeveloper": "Back-end Developer",
     "uiUxDesigner": "UI / UX Designer",
@@ -45,7 +45,7 @@
   "HomeComponent": {
     "greeting": "Hi There!",
     "name": "I'm Yuta Asakura",
-    "title": "Full-Stack Web Developer",
+    "title": "Software Engineer",
     "hireMe": "Hire Me",
     "myResume": "My Resume",
     "resumeFileName": "yutafullstackcv.pdf"
@@ -53,7 +53,7 @@
   "ContactPage": {
     "contactForm": "Contact Form",
     "hireMeTitle": "Hire Me",
-    "introParagraph": "Looking for a reliable, professional full-stack web developer for your website or web application projects? Or perhaps you’d like to connect and collaborate on an exciting project? Feel free to reach out and let me know how I can assist you. I’d love to help!",
+    "introParagraph": "Looking for a reliable, professional Software Engineer specializing in cloud-native full stack development for your website or web application projects? Or perhaps you’d like to connect and collaborate on an exciting project? Feel free to reach out and let me know how I can assist you. I’d love to help!",
     "letsMeet": "Let's Meet!",
     "location": "Kanagawa, Kawasaki City",
     "reachMeAt": "Reach Me At",
@@ -62,7 +62,7 @@
     "activeHours": "Active Hours",
     "workingHours": "Mon - Fri : 9am - 7pm",
     "letsConnect": "Let's Connect!",
-    "connectParagraph": "Interested in collaborating on a project, freelance/contract work, or looking to hire a professional full-stack web developer and designer? If you have suggestions about my projects or portfolio, or simply want to connect, feel free to reach out by sending me a message through the contact form. I’d be happy to hear from you!",
+    "connectParagraph": "Interested in collaborating on a project, freelance/contract work, or looking to hire a professional Software Engineer specializing in cloud-native full stack development and designer? If you have suggestions about my projects or portfolio, or simply want to connect, feel free to reach out by sending me a message through the contact form. I’d be happy to hear from you!",
     "contactMe": "Contact Me",
     "yourName": "Your Name...",
     "yourEmail": "Your Email...",
@@ -84,11 +84,59 @@
     "title": "Work History",
     "experiences": [
       {
+        "company": "HCL Tech - Japan",
+        "position": "Software Engineer",
+        "employmentType": "Full-time",
+        "start": "April 2025",
+        "end": "Present",
+        "location": "Tokyo, Japan (Hybrid)",
+        "hq": "Ark Mori Building 32F EAST, 1-12-32 Akasaka, Minato-ku, Tokyo",
+        "website": "https://www.hcltech.com/",
+        "logo": "/hcltech_logo.jpeg",
+        "description": [
+          "Developing and maintaining enterprise-level applications using modern web technologies.",
+          "Collaborating with international teams to deliver high-quality software solutions.",
+          "Implementing best practices in software development and contributing to code reviews."
+        ],
+        "techStackTitle": "Tech Stack",
+        "techStack": {
+          "frontEnd": [
+            "React",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind CSS"
+          ],
+          "backEnd": [
+            "Java",
+            "Spring Boot",
+            "PostgreSQL",
+            "MySQL"
+          ],
+          "tools": [
+            "Docker",
+            "Webpack",
+            "Npm",
+            "Yarn",
+            "Git",
+            "Github",
+            "MS Teams",
+            "ESLint",
+            "Prettier"
+          ],
+          "deployment": [
+            "AWS"
+          ]
+        }
+      },
+      {
         "company": "Tierline Inc.",
         "position": "Full Stack Developer",
+        "employmentType": "Contract",
         "start": "October 2024",
-        "end": "Present",
-        "location": "Remote",
+        "end": "March 2025",
+        "location": "Full Remote",
         "hq": "Osaka, Japan",
         "website": "https://www.tierline.com/index.html",
         "logo": "https://www.tierline.com/images/tierline_logo.svg",
@@ -98,7 +146,7 @@
           "Played a key role in a team that created and implemented a web-based employee management system for our company, built using Java Spring Boot, Typescript, React, and Tailwind CSS."
         ],
         "techStackTitle": "Tech Stack",
-       "techStack": {
+        "techStack": {
           "frontEnd": [
             "React",
             "Vue",
@@ -140,6 +188,7 @@
         "positions": [
           {
             "title": "Construction Foreman",
+            "employmentType": "Full-time",
             "start": "January 2020",
             "end": "June 2024",
             "description": [
@@ -153,6 +202,7 @@
           },
           {
             "title": "Construction Worker (Scaffolder)",
+            "employmentType": "Full-time",
             "start": "April 2016",
             "end": "January 2020",
             "description": [
@@ -166,7 +216,7 @@
           }
         ],
         "location": "Tokyo, Japan",
-        "hq": "Shinjuku, Tokyo, Japan",
+        "hq": "Tokyo, Japan",
         "website": "https://www.w-k-k.com/",
         "logo": "/wkk_logo.png"
       }

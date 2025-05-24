@@ -65,6 +65,9 @@ export default function WorkHistory() {
                         {experience.position}
                       </p>
                       <p className="md font-normal text-[#223740]">
+                        {experience.employmentType}
+                      </p>
+                      <p className="md font-normal text-[#223740]">
                         {experience.start} - {experience.end}
                       </p>
                       <p className="md font-normal text-[#223740]">
