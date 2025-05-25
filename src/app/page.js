@@ -23,6 +23,7 @@ import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/AboutMe";
 import WorkHistory from "./components/WorkHistory/WorkHistory";
 import CallToAction from "./components/CallToAction/CallToAction";
+import Certifications from "./components/Certifications/Certifications";
 
 // Configure the Hind font for consistent text styling
 const hind = Hind({
@@ -337,6 +338,10 @@ export default function Home() {
         </section>
         <section aria-labelledby="work-history-section">
           <WorkHistory />
+        </section>
+        {/* Certifications Section */}
+        <section aria-labelledby="certifications-section">
+          <Certifications />
         </section>
         <section aria-labelledby="cta-button-section">
           <CallToAction />
