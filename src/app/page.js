@@ -18,12 +18,12 @@ import { Hind } from "next/font/google";
 import { useTranslations } from "next-intl";
 
 // Internal components
-import HomeComponent from "./components/HomeComponent/HomeComponent";
-import MySlider from "./components/SliderCard/MySlider";
-import AboutMe from "./components/AboutMe/AboutMe";
-import WorkHistory from "./components/WorkHistory/WorkHistory";
-import CallToAction from "./components/CallToAction/CallToAction";
-import Certifications from "./components/Certifications/Certifications";
+import HomeComponent from "../components/sections/home/HomeComponent/HomeComponent";
+import MySlider from "../components/sections/portfolio/SliderCard/MySlider";
+import AboutMe from "../components/sections/about/AboutMe/AboutMe";
+import WorkHistory from "../components/sections/work-history/WorkHistory/WorkHistory";
+import CallToAction from "../components/common/ScrollToTop/ScrollToTop";
+import Certifications from "../components/sections/certifications/Certifications/Certifications";
 
 // Configure the Hind font for consistent text styling
 const hind = Hind({

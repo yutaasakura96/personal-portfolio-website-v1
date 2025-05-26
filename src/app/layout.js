@@ -4,8 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 // Layout components
-import Header from "../app/components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "../components/layout/Header/Header";
+import Footer from "../components/layout/Footer/Footer";
 
 // Internationalization (i18n) imports
 import { NextIntlClientProvider } from "next-intl";

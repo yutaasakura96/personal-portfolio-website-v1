@@ -7,7 +7,7 @@ import React from "react";
 import { useTranslations } from "next-intl"; // Translations hook
 
 // Component Imports
-import PortfolioDetailDesign from "../../page/portfolio-detail-design";
+import PortfolioDetailDesign from "../../../components/sections/portfolio/ProjectDetail/ProjectDetail";
 
 const Portfolio = (props) => {
   const tGlobal = useTranslations(); // Access root-level translations

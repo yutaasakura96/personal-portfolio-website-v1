@@ -21,7 +21,7 @@ export default getRequestConfig(async () => {
     // Dynamically import the locale-specific messages
     messages: (await import(
       /* webpackInclude: /\.json$/ */
-      `../../../messages/${locale}.json`
+      `../../messages/${locale}.json`
     )).default,
   };
 });
