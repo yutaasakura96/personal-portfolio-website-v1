@@ -91,7 +91,7 @@ export default function AboutMe() {
               {t("aboutMeDescription")}
             </p>
             <Image
-              src="/customer-care4.png"
+              src="/images/profile/customer-care4.png"
               alt="yuta"
               width={500}
               height={500}

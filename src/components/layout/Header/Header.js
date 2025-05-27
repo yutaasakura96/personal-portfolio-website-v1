@@ -95,7 +95,7 @@ export default function Header() {
               <Image
                 height={100}
                 width={100}
-                src="/drawer.png"
+                src="/icons/ui/drawer.png"
                 alt="Open navigation drawer"
                 className="w-[150px] h-10"
                 priority

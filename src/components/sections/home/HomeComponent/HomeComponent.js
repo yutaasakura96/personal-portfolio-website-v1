@@ -88,7 +88,7 @@ export default function HomeComponent() {
                 <Image
                   className="profile-image"
                   alt={`${t("name")} - ${t("title")}`}
-                  src="/pixaryuta.png"
+                  src="/images/profile/pixaryuta.png"
                   decoding="async"
                   width={0}
                   height={0}

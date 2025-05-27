@@ -124,175 +124,175 @@ export default function Home() {
           <Slider {...settings}>
             {/* Icon images for various tech stacks */}
             <Image
-              src="/html.svg"
+              src="/icons/tech-stack/html.svg"
               alt="HTML logo - Markup language for structuring web pages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/css.svg"
+              src="/icons/tech-stack/css.svg"
               alt="CSS logo - Styling language for designing web pages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/sass.svg"
+              src="/icons/tech-stack/sass.svg"
               alt="Sass logo - Preprocessor scripting language that is interpreted into CSS"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/bootstrap.svg"
+              src="/icons/tech-stack/bootstrap.svg"
               alt="Bootstrap logo - Frontend framework for responsive web design"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/tailwind.svg"
+              src="/icons/tech-stack/tailwind.svg"
               alt="Tailwind CSS logo - Utility-first CSS framework for fast UI development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/typescript.svg"
+              src="/icons/tech-stack/typescript.svg"
               alt="TypeScript logo - Superset of JavaScript for type-safe development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/javascript.svg"
+              src="/icons/tech-stack/javascript.svg"
               alt="JavaScript logo - Programming language for dynamic web content"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/vuejs.svg"
+              src="/icons/tech-stack/vuejs.svg"
               alt="Vue.js logo - Progressive JavaScript framework for building user interfaces"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/nuxtjs.svg"
+              src="/icons/tech-stack/nuxtjs.svg"
               alt="Nuxt.js logo - Framework for creating server-rendered Vue applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/pinia.svg"
+              src="/icons/tech-stack/pinia.svg"
               alt="Pinia logo - State management library for Vue applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/react.svg"
+              src="/icons/tech-stack/react.svg"
               alt="React logo - JavaScript library for building user interfaces"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/nextjs.svg"
+              src="/icons/tech-stack/nextjs.svg"
               alt="Next.js logo - React framework for server-rendered applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/vercels.svg"
+              src="/icons/tech-stack/vercels.svg"
               alt="Vercel logo - Platform for frontend frameworks and static sites"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/heroku.svg"
+              src="/icons/tech-stack/heroku.svg"
               alt="Heroku logo - Cloud platform for deploying web applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/netlify.svg"
+              src="/icons/tech-stack/netlify.svg"
               alt="Netlify logo - Platform for deploying static sites and web applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/java.svg"
+              src="/icons/tech-stack/java.svg"
               alt="Java logo - Object-oriented programming language for web and mobile apps"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/ruby.svg"
+              src="/icons/tech-stack/ruby.svg"
               alt="Ruby logo - Programming language for building web applications"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/rails.svg"
+              src="/icons/tech-stack/rails.svg"
               alt="Ruby on Rails logo - Web application framework written in Ruby"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/postgres.svg"
+              src="/icons/tech-stack/postgres.svg"
               alt="PostgreSQL logo - Open-source relational database system"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/vite.svg"
+              src="/icons/tech-stack/vite.svg"
               alt="Vite logo - Frontend build tool for fast and efficient development"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/npm.svg"
+              src="/icons/tech-stack/npm.svg"
               alt="NPM logo - Package manager for JavaScript"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/git.svg"
+              src="/icons/tech-stack/git.svg"
               alt="Git logo - Version control system for tracking changes in source code"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/github.svg"
+              src="/icons/tech-stack/github.svg"
               alt="GitHub logo - Platform for hosting and collaborating on Git repositories"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/vscode.svg"
+              src="/icons/tech-stack/vscode.svg"
               alt="Visual Studio Code logo - Code editor by Microsoft for various languages"
               width={0}
               height={80}
               className="h-20 px-10 infinite-icons"
             />
             <Image
-              src="/postman.svg"
+              src="/icons/tech-stack/postman.svg"
               alt="Postman logo - Tool for API development and testing"
               width={0}
               height={80}

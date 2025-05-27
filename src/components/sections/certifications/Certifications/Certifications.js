@@ -42,12 +42,12 @@ const Certifications = () => {
               <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center mb-4">
                   <button
-                    onClick={() => openModal("/aws-ccp.png")}
+                    onClick={() => openModal("/images/certifications/aws-ccp.png")}
                     className="transition-transform hover:scale-105 focus:outline-none"
                     aria-label="View full size AWS Cloud Practitioner certification"
                   >
                     <Image
-                      src="/aws-ccp.png"
+                      src="/images/certifications/aws-ccp.png"
                       alt="AWS Cloud Practitioner Badge"
                       width={200}
                       height={120}
@@ -72,12 +72,12 @@ const Certifications = () => {
               <div className="flex flex-col items-center">
                 <div className="flex items-center justify-center mb-4">
                   <button
-                    onClick={() => openModal("/aws-aip.png")}
+                    onClick={() => openModal("/images/certifications/aws-aip.png")}
                     className="transition-transform hover:scale-105 focus:outline-none"
                     aria-label="View full size AWS AI Practitioner certification"
                   >
                     <Image
-                      src="/aws-aip.png"
+                      src="/images/certifications/aws-aip.png"
                       alt="AWS AI Practitioner Badge"
                       width={200}
                       height={120}

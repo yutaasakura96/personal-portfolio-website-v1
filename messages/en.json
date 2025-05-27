@@ -51,7 +51,7 @@
     "title": "Software Engineer",
     "hireMe": "Hire Me",
     "myResume": "My Resume",
-    "resumeFileName": "yutafullstackcv.pdf"
+    "resumeFileName": "/documents/resumes/yutafullstackcv.pdf"
   },
   "ContactPage": {
     "contactForm": "Contact Form",
@@ -95,7 +95,7 @@
         "location": "Tokyo, Japan (Hybrid)",
         "hq": "Ark Mori Building 32F EAST, 1-12-32 Akasaka, Minato-ku, Tokyo",
         "website": "https://www.hcljapan.co.jp/",
-        "logo": "/hcltech_logo.jpeg",
+        "logo": "/images/logos/hcltech_logo.jpeg",
         "description": [
           "Developing and maintaining enterprise-level applications using modern web technologies.",
           "Collaborating with international teams to deliver high-quality software solutions.",
@@ -221,7 +221,7 @@
         "location": "Tokyo, Japan",
         "hq": "Tokyo, Japan",
         "website": "https://www.w-k-k.com/",
-        "logo": "/wkk_logo.png"
+        "logo": "/images/logos/wkk_logo.png"
       }
     ]
   },
@@ -229,7 +229,7 @@
     {
       "count": 1,
       "title": "Front-end Developer",
-      "img": "/second.svg",
+      "img": "/icons/ui/second.svg",
       "skills": [
         "HTML",
         "CSS/SASS",
@@ -242,7 +242,7 @@
     {
       "count": 2,
       "title": "Back-end Developer",
-      "img": "/third.svg",
+      "img": "/icons/ui/third.svg",
       "skills": [
         "Java",
         "Ruby",
@@ -255,7 +255,7 @@
     {
       "count": 3,
       "title": "UI / UX Designer",
-      "img": "/first.svg",
+      "img": "/icons/ui/first.svg",
       "skills": [
         "Wireframing",
         "Prototyping",
@@ -269,7 +269,7 @@
     {
       "count": 4,
       "title": "Tools",
-      "img": "/sisxth.svg",
+      "img": "/icons/ui/sisxth.svg",
       "skills": [
         "VSCode",
         "Git / Github",
@@ -289,7 +289,7 @@
       "github": "https://github.com/jpblicer/PRM",
       "description": "Personal Relationship Manager is an open source mobile AI powered CRM-like tool aimed at individual mobile users who want to further their career. This Application was developed as part of a 2 week challenge from inception to completition as part of the Tokyo Le Wagon bootcamp.",
       "additionalDescription": "Login Credentials for the live demo: user: admin@admin.com pw: adminadmin",
-      "images": ["/prm1.png"],
+      "images": ["/images/projects/prm1.png"],
       "tech": [
         "Ruby",
         "Ruby on Rails",
@@ -308,7 +308,7 @@
       "demo": "https://vue-ts-trello-clone.vercel.app/",
       "github": "https://github.com/yutaasakura96/vue-ts-trello-clone",
       "description": "This is a Trello-inspired task management app built with Vue.js and TypeScript. Using Vite as the build tool, and deployed on Vercel for fast and reliable hosting, the app allows users to organize tasks into customizable lists, such as 'To Do', 'In Progress', and 'Done'. Users can add, edit, and delete tasks and lists with ease, utilizing features like drag-and-drop reordering, custom list colors, a light/dark mode toggle, fuzzy search, and persistent data in local storage. These features make task management intuitive and visually appealing.",
-      "images": ["/vuello.png"],
+      "images": ["/images/projects/vuello.png"],
       "tech": [
         "Vue JS 3",
         "Typescript",
@@ -327,7 +327,7 @@
       "demo": "https://vue-ts-simplified-settings-page-project.vercel.app/",
       "github": "https://github.com/yutaasakura96/vue-ts-simplified-settings-page-project",
       "description": "This project is built using Vue.js with TypeScript and focuses on creating a simplified settings page using advanced Vue features like Teleport, KeepAlive, and shared state management. The project is styled using Tailwind CSS for a responsive and modern design.",
-      "images": ["/simplified-settings-page.png"],
+      "images": ["/images/projects/simplified-settings-page.png"],
       "tech": [
         "Vue JS 3",
         "Typescript",
@@ -343,7 +343,7 @@
       "demo": "https://vue-vite-event-bookin-manager.vercel.app/",
       "github": "https://github.com/yutaasakura96/vue-vite-event-manager",
       "description": "The Vue Event Booking Manager is a Vue.js fictional personal booking manager web application that allows users to browse available events coming from the Ticketmaster Discovery API and manage their bookings. It provides a simple interface where users can register for events, view their bookings, and cancel bookings as needed.",
-      "images": ["/vue-event-manager.png","/vue-event-manager-full.png"],
+      "images": ["/images/projects/vue-event-manager.png","/images/projects/vue-event-manager-full.png"],
       "tech": [
         "Vue JS 3",
         "Tailwind CSS",
@@ -362,7 +362,7 @@
       "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
       "description": "This project is a fully responsive, multi-page web app created using HTML, CSS, and vanilla JavaScript. It features a modern design with dynamic content and advanced CSS techniques, enhancing both the look and functionality of the site.",
       "additionalDescription": "",
-      "images": ["/codeandcreate.png", "/codeandcreatefull.png"],
+      "images": ["/images/projects/codeandcreate.png", "/images/projects/codeandcreatefull.png"],
       "tech": [
         "Javascript",
         "CSS",
@@ -377,7 +377,7 @@
       "github": "https://github.com/yutaasakura96/Project-Omnifood",
       "description": "Omnifood is a fictional company specializing in AI-based meal subscriptions, and this single-page website highlights both responsive design and advanced CSS techniques.",
       "additionalDescription": "",
-      "images": ["/projectomnifood.png", "/omnifoodfull.png"],
+      "images": ["/images/projects/projectomnifood.png", "/images/projects/omnifoodfull.png"],
       "tech": [
         "Javascript",
         "CSS",
@@ -392,7 +392,7 @@
       "github": "https://github.com/yutaasakura96/Nexter-Project",
       "description": "Nexter is a fictional real estate website designed to showcase luxurious homes and provide users with a seamless home-buying experience. This project demonstrates advanced CSS Grid and SCSS techniques, resulting in a fully responsive layout with rich features and an elegant design.",
       "additionalDescription": "",
-      "images": ["/nexterproject.png", "/nexterfull.png"],
+      "images": ["/images/projects/nexterproject.png", "/images/projects/nexterfull.png"],
       "tech": [
         "Javascript",
         "SASS",
@@ -407,7 +407,7 @@
       "github": "https://github.com/yutaasakura96/Natours-Project",
       "description": "Natours is a fictional tour company website designed to inspire people to explore the natural world through exciting adventures. This project is built using advanced SCSS techniques, showcasing features like animations, color management, responsive design with Sass mixins, and modern web design practices.",
       "additionalDescription": "",
-      "images": ["/natoursproject.png", "/natoursfull.png"],
+      "images": ["/images/projects/natoursproject.png", "/images/projects/natoursfull.png"],
       "tech": [
         "Javascript",
         "SASS",

@@ -51,7 +51,7 @@
     "title": "ソフトウェアエンジニア",
     "hireMe": "お問い合わせ",
     "myResume": "私の履歴書",
-    "resumeFileName": "yutafullstackcvjp.pdf"
+    "resumeFileName": "/documents/resumes/yutafullstackcvjp.pdf"
   },
   "ContactPage": {
     "contactForm": "お問い合わせフォーム",
@@ -95,7 +95,7 @@
         "location": "日本、東京（ハイブリッド）",
         "hq": "東京都港区赤坂1-12-32 アーク森ビル32階 EAST",
         "website": "https://www.hcljapan.co.jp/",
-        "logo": "/hcltech_logo.jpeg",
+        "logo": "/images/logos/hcltech_logo.jpeg",
         "description": [
           "モダンなWeb技術を使用したエンタープライズレベルのアプリケーションの開発と保守",
           "国際的なチームと協力して高品質なソフトウェアソリューションを提供",
@@ -221,7 +221,7 @@
         "location": "日本、東京",
         "hq": "日本、東京",
         "website": "https://www.w-k-k.com/",
-        "logo": "/wkk_logo.png"
+        "logo": "/images/logos/wkk_logo.png"
       }
     ]
   },
@@ -229,7 +229,7 @@
     {
       "count": 1,
       "title": "フロントエンド開発者",
-      "img": "/second.svg",
+      "img": "/icons/ui/second.svg",
       "skills": [
         "HTML",
         "CSS/SASS",
@@ -242,7 +242,7 @@
     {
       "count": 2,
       "title": "バックエンド開発者",
-      "img": "/third.svg",
+      "img": "/icons/ui/third.svg",
       "skills": [
         "Java",
         "Ruby",
@@ -255,7 +255,7 @@
     {
       "count": 3,
       "title": "UI / UX デザイナー",
-      "img": "/first.svg",
+      "img": "/icons/ui/first.svg",
       "skills": [
         "ワイヤーフレーム",
         "プロトタイピング",
@@ -269,7 +269,7 @@
     {
       "count": 4,
       "title": "ツール",
-      "img": "/sisxth.svg",
+      "img": "/icons/ui/sisxth.svg",
       "skills": [
         "VSCode",
         "Git / Github",
@@ -289,7 +289,7 @@
       "github": "https://github.com/jpblicer/PRM",
       "description": "Personal Relationship Managerは、キャリアをさらに発展させたい個人のモバイルユーザーを対象としたオープンソースのモバイルAI搭載CRMのようなツールです。このアプリケーションは、東京Le Wagonブートキャンプの一環として、発想から完成まで2週間のチャレンジとして開発されました。",
       "additionalDescription": "ライブデモのログイン情報：ユーザー：admin@admin.com パスワード：adminadmin",
-      "images": ["/prm1.png"],
+      "images": ["/images/projects/prm1.png"],
       "tech": [
         "Ruby",
         "Ruby on Rails",
@@ -308,7 +308,7 @@
       "demo": "https://vue-ts-trello-clone.vercel.app/",
       "github": "https://github.com/yutaasakura96/vue-ts-trello-clone",
       "description": "このプロジェクトは、Vue.js と TypeScript を使用して構築された Trello 風のタスク管理アプリです。ビルドツールとして Vite を採用し、高速かつ信頼性の高いホスティングのために Vercel にデプロイされています。このアプリは、タスクを「To Do」「In Progress」「Done」などのカスタマイズ可能なリストに整理できる機能を提供します。ユーザーはタスクやリストを簡単に追加、編集、削除でき、ドラッグアンドドロップでの並び替え、リストのカスタムカラー、ライト/ダークモード切替、ファジー検索、ローカルストレージでのデータ永続化などの機能を備えています。これらの機能により、タスク管理が直感的で視覚的に魅力的なものとなっています。",
-      "images": ["/vuello.png"],
+      "images": ["/images/projects/vuello.png"],
       "tech": [
         "Vue JS 3",
         "TypeScript",
@@ -327,7 +327,7 @@
       "demo": "https://vue-ts-simplified-settings-page-project.vercel.app/",
       "github": "https://github.com/yutaasakura96/vue-ts-simplified-settings-page-project",
       "description": "このプロジェクトは、TypeScriptを使用したVue.jsで構築されており、Teleport、KeepAlive、共有状態管理などの高度なVue機能を活用して簡易設定ページを作成することに焦点を当てています。プロジェクトは、モダンでレスポンシブなデザインを実現するためにTailwind CSSでスタイリングされています。",
-      "images": ["/simplified-settings-page.png"],
+      "images": ["/images/projects/simplified-settings-page.png"],
       "tech": [
         "Vue JS 3",
         "TypeScript",
@@ -342,7 +342,7 @@
       "demo": "https://vue-vite-event-bookin-manager.vercel.app/",
       "github": "https://github.com/yutaasakura96/vue-vite-event-manager",
       "description": "Vueイベント予約マネージャーは、Ticketmaster Discovery APIから取得したイベントを閲覧し、予約を管理できるVue.jsの架空の個人予約管理ウェブアプリケーションです。ユーザーはイベントに登録し、自分の予約を確認し、必要に応じて予約をキャンセルするシンプルなインターフェースを提供します。",
-      "images": ["/vue-event-manager.png", "/vue-event-manager-full.png"],
+      "images": ["/images/projects/vue-event-manager.png", "/images/projects/vue-event-manager-full.png"],
       "tech": [
         "Vue JS 3",
         "Tailwind CSS",
@@ -361,7 +361,7 @@
       "github": "https://github.com/yutaasakura96/vanilla-js-project-1",
       "description": "このプロジェクトは、HTML、CSS、およびバニラ JavaScript を使用して作成された完全対応のマルチページ Web アプリです。動的なコンテンツと高度な CSS テクニックを備えたモダンなデザインが特徴で、サイトの外観と機能性の両方を強化しています。",
       "additionalDescription": "",
-      "images": ["/codeandcreate.png", "/codeandcreatefull.png"],
+      "images": ["/images/projects/codeandcreate.png", "/images/projects/codeandcreatefull.png"],
       "tech": [
         "Javascript",
         "CSS",
@@ -376,7 +376,7 @@
       "github": "https://github.com/yutaasakura96/Project-Omnifood",
       "description": "Omnifood は、AI ベースの食事サブスクリプションを専門とする架空の会社であり、この単一ページのウェブサイトは、応答性の高いデザインと高度な CSS テクニックの両方を強調しています。",
       "additionalDescription": "",
-      "images": ["/projectomnifood.png", "/omnifoodfull.png"],
+      "images": ["/images/projects/projectomnifood.png", "/images/projects/omnifoodfull.png"],
       "tech": [
         "Javascript",
         "CSS",
@@ -391,7 +391,7 @@
       "github": "https://github.com/yutaasakura96/Nexter-Project",
       "description": "Nexter は、豪華な家を紹介し、ユーザーにシームレスな家購入体験を提供するように設計された架空の不動産サイトです。このプロジェクトは、高度な CSS グリッドおよび SCSS テクニックを示しており、豊富な機能と洗練されたデザインを備えた完全対応のレイアウトを実現しています。",
       "additionalDescription": "",
-      "images": ["/nexterproject.png", "/nexterfull.png"],
+      "images": ["/images/projects/nexterproject.png", "/images/projects/nexterfull.png"],
       "tech": [
         "Javascript",
         "SASS",
@@ -406,7 +406,7 @@
       "github": "https://github.com/yutaasakura96/Natours-Project",
       "description": "Natours は、自然界を探検し、エキサイティングな冒険を楽しむよう人々を鼓舞するために設計された架空のツアー会社のウェブサイトです。このプロジェクトは、高度な SCSS テクニックを使用して構築されており、アニメーション、カラーマネジメント、Sass ミックスインを使用したレスポンシブ デザイン、モダンな Web デザイン プラクティスなどの機能を備えています。",
       "additionalDescription": "",
-      "images": ["/natoursproject.png", "/natoursfull.png"],
+      "images": ["/images/projects/natoursproject.png", "/images/projects/natoursfull.png"],
       "tech": [
         "Javascript",
         "SASS",

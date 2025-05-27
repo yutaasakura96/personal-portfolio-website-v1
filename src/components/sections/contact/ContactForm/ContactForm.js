@@ -97,7 +97,7 @@ export default function Page() {
       <ToastContainer /> {/* Toast notifications container */}
       {/* Page header section with background image */}
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
-        <div className='flex flex-col items-center justify-center bg-[url("/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
+        <div className='flex flex-col items-center justify-center bg-[url("/images/backgrounds/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
           <div className="flex flex-col items-center justify-center  w-full h-full bg-[#223740]/70 backdrop-brightness-50 p-special">
             <div className="text-center bg-[#48AFDE] py-[5px] px-[10px] tracking-wide uppercase font-semibold text-[20px] text-white rounded-lg hover:translate-y-1 hover:bg-[#223740]">
               <a href="#contact" className="cursor-pointer">
@@ -206,7 +206,7 @@ export default function Page() {
           {/* Image and gradient overlay for form illustration */}
           <div
             className="absolute inset-0 bg-center bg-cover"
-            style={{ backgroundImage: `url('/customer-care2.png')` }}
+            style={{ backgroundImage: `url('/images/profile/customer-care2.png')` }}
           />
           <div className="absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70"></div>
           <div className="absolute inset-0 flex flex-col gap-[20px] items-center justify-end text-white shadow-lg p-6">
