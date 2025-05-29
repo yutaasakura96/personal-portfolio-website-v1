@@ -38,7 +38,7 @@ const OptimizedImage = ({
   };
 
   if (fill) {
-    return <Image {...imageProps} fill sizes={responsiveSizes} priority={priority} />;
+    return <Image {...imageProps} fill sizes={responsiveSizes} priority={priority} alt={alt} />;
   }
 
   return (
@@ -48,6 +48,7 @@ const OptimizedImage = ({
       height={height}
       sizes={responsiveSizes}
       priority={priority}
+      alt={alt}
     />
   );
 };
