@@ -4,8 +4,6 @@
 
 // Import necessary libraries and components
 import React, { useState } from "react";
-import { FaLocationDot } from "react-icons/fa6";
-import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 import { Hind } from "next/font/google";
 import { ToastContainer, toast } from "react-toastify";
@@ -117,48 +115,11 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Contact information section with cards for location, phone, email, and hours */}
+        {/* Contact information section */}
         <div className="px-[20px]">
           <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
-              {/* Location card */}
-              <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
-                style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
-              >
-                <div className="flex items-center gap-[15px] pb-2">
-                  <FaLocationDot size={40} color="#48AFDE" />
-                  <div className="flex flex-col">
-                    <div className="font-semibold text-[20px] tracking-wide">
-                      <p>{t("letsMeet")}</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-[#666666]">{t("location")}</p>
-                </div>
-              </div>
-
-              {/* Additional cards for phone, email, and active hours */}
-              {/* Phone card */}
-              <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
-                style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
-              >
-                <div className="flex items-center gap-[15px] pb-2">
-                  <FiPhoneCall size={40} color="#48AFDE" />
-                  <div className="flex flex-col">
-                    <div className="font-semibold text-[20px] tracking-wide">
-                      <p>{t("reachMeAt")}</p>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-[#666666]">{t("mobileNumber")}</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-special">
-              {/* Email card */}
+              {/* New portfolio card */}
               <div
                 className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
@@ -172,7 +133,14 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666]">yuta.asakura.se@gmail.com</p>
+                  <a
+                    href="https://www.asakurayuta.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#48AFDE] underline"
+                  >
+                    Contact via my new portfolio
+                  </a>
                 </div>
               </div>
 

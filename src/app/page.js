@@ -69,10 +69,6 @@ export default function Home() {
         <link rel="canonical" href="https://www.asakurayuta.dev/" />
 
         {/* Open Graph meta tags for social media sharing */}
-        <meta
-          property="article:author"
-          content="https://www.linkedin.com/in/asakurayuta/"
-        />
         <meta property="og:title" content={t("ogTitle")} />
         <meta property="og:description" content={t("ogDescription")} />
         <meta property="og:image" content="/public/portfolio-image.png" />
@@ -89,35 +85,13 @@ export default function Home() {
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@asakurayuta_" />
         <meta name="twitter:title" content={t("twitterTitle")} />
         <meta name="twitter:description" content={t("twitterDescription")} />
-        <meta name="twitter:creator" content="@asakurayuta_" />
         <meta name="twitter:image" content="/public/portfolio-image.png" />
 
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "author": {
-                "@type": "Person",
-                "name": "Yuta Asakura",
-                "url": "https://www.linkedin.com/in/asakurayuta/"
-              },
-              "datePublished": "2024-09-06",
-              "dateModified": "2024-11-06",
-              "headline": "Full-Stack Web Developer Portfolio",
-              "description": "Yuta Asakura's portfolio showcasing full-stack web development projects and experience.",
-              "mainEntityOfPage": "https://www.asakurayuta.dev/",
-              "image": "https://www.asakurayuta.dev/personal-portofolio-en.png"
-            }
-          `}
-        </script>
       </Head>
       <main className="min-h-screen relative">
         <section aria-labelledby="home-section">

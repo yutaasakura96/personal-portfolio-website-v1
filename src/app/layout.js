@@ -33,9 +33,9 @@ const poppins = localFont({
 
 // Define metadata for SEO and page information
 export const metadata = {
-  title: "Yuta Asakura | Full-Stack Web Developer Portfolio", // Page title for better SEO
+  title: "Yuta Asakura | Old Portfolio (Archived)", // Page title for better SEO
   description:
-    "Yuta Asakura's portfolio showcasing projects and skills in full-stack web development.", // Page description for search engines
+    "This is Yuta Asakura's archived portfolio. Visit the new portfolio at www.asakurayuta.dev.", // Page description for search engines
 };
 
 export default async function RootLayout({ children }) {
@@ -59,6 +59,19 @@ export default async function RootLayout({ children }) {
 
           {/* Footer component with aria-label for accessibility */}
           <Footer aria-label="Site Footer" />
+
+          {/* Deprecation banner — sticky at the bottom */}
+          <div className="fixed bottom-0 left-0 right-0 z-50 bg-amber-400 text-black text-center py-4 px-6 font-semibold text-base shadow-lg">
+            This is my old portfolio.{" "}
+            <a
+              href="https://www.asakurayuta.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold"
+            >
+              Visit my new portfolio at www.asakurayuta.dev
+            </a>
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

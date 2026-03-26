@@ -55,9 +55,9 @@
     "hireMeTitle": "Hire Me",
     "introParagraph": "Looking for a reliable, professional full-stack web developer for your website or web application projects? Or perhaps you’d like to connect and collaborate on an exciting project? Feel free to reach out and let me know how I can assist you. I’d love to help!",
     "letsMeet": "Let's Meet!",
-    "location": "Kanagawa, Kawasaki City",
+    "location": "Japan",
     "reachMeAt": "Reach Me At",
-    "mobileNumber": "Mobile: 070-1481-7160",
+    "mobileNumber": "",
     "emailAddress": "E-Mail Address",
     "activeHours": "Active Hours",
     "workingHours": "Mon - Fri : 9am - 7pm",
@@ -84,14 +84,14 @@
     "title": "Work History",
     "experiences": [
       {
-        "company": "Tierline Inc.",
+        "company": "Current Employer",
         "position": "Full Stack Developer",
         "start": "October 2024",
         "end": "Present",
         "location": "Remote",
-        "hq": "Osaka, Japan",
-        "website": "https://www.tierline.com/index.html",
-        "logo": "https://www.tierline.com/images/tierline_logo.svg",
+        "hq": "Japan",
+        "website": "",
+        "logo": "",
         "description": [
           "Developed and deployed scalable web applications using React, Spring Boot, and MySQL, improving performance and user experience.",
           "Collaborated with cross-functional teams to design and implement new features based on client requirements.",
@@ -136,7 +136,7 @@
         }
       },
       {
-        "company": "Watanabe Construction Industry",
+        "company": "Previous Employer",
         "positions": [
           {
             "title": "Construction Foreman",
@@ -165,10 +165,10 @@
             "techStack": []
           }
         ],
-        "location": "Tokyo, Japan",
-        "hq": "Shinjuku, Tokyo, Japan",
-        "website": "https://www.w-k-k.com/",
-        "logo": "/wkk_logo.png"
+        "location": "Japan",
+        "hq": "Japan",
+        "website": "",
+        "logo": ""
       }
     ]
   },
